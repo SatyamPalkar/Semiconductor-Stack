@@ -1,0 +1,11 @@
+{
+  "url": "https://investor.tsmc.com/sites/ir/annual-report/2023/2023%20Annual%20Report_E.pdf",
+  "retrieved_at": "2026-11-15T04:06:00.830105+00:00",
+  "filename": "tsmc-2023-annual.pdf",
+  "original_sha256": "eaefcc326b608a167aa98395690ac8d42800d37f69cfc1676a54bb510c6dca06",
+  "extract_sha256": "725ad6ba89d2249c0fe938418c8bd8a1fcccd176ff4ccb0773714ad7c334eee7",
+  "capture_kind": "recorded_REAL_primary_source_table_excerpt",
+  "publication_date_basis": "Printed date on report cover; not independently archived availability",
+  "human_reviewed": false,
+  "synthetic": false
+}

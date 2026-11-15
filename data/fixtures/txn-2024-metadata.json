@@ -1,0 +1,12 @@
+{
+  "capture_kind": "recorded_primary_source_excerpt",
+  "synthetic": false,
+  "original_url": "https://www.ti.com/en-us/about-ti/newsroom/news-releases/2025/2025-01-23-ti-reports-q4-2024-and-2024-financial-results-and-shareholder-returns",
+  "original_sha256": "b9f3ca0b51c0f112fb0df254accd5ac9fc27218d963e549d42526cc00007c710",
+  "extract_sha256": "b79f2e84262f712213d6004caf957c154bdf8c03d60265db667db18d4e89fe4b",
+  "retrieved_at": "2026-11-15T06:08:15.636135+00:00",
+  "publication_date": "2025-01-23",
+  "availability_rule": "conservative end of publisher day in America/Chicago",
+  "publication_basis": "date printed on official earnings release",
+  "scope": "Selected real consolidated statement tables, not a certified historical archive"
+}

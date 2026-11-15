@@ -14,6 +14,7 @@ AS_OF = date(2025, 3, 1)
 def inputs():
     source = SimpleNamespace(
         id="test-source",
+        title="Synthetic unit-test source",
         accounting_basis="US GAAP",
         checksum="0" * 64,
         url="https://example.test/financials",

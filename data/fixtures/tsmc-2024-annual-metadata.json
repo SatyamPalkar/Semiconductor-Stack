@@ -1,0 +1,11 @@
+{
+  "url": "https://investor.tsmc.com/sites/ir/annual-report/2024/2024%20Annual%20Report-E.pdf",
+  "retrieved_at": "2026-11-15T04:03:39.273366+00:00",
+  "filename": "tsmc-2024-annual.pdf",
+  "original_sha256": "35fb134a4de264d0e68e663cea9bd8d211160abd6d267c6e94bcb8d77921a8a5",
+  "extract_sha256": "fb9f75552005d1391d6b8a191534f5f42080a8c6f2c1f02af58ecb65be689b17",
+  "capture_kind": "recorded_REAL_primary_source_table_excerpt",
+  "publication_date_basis": "Printed date on report cover; not independently archived availability",
+  "human_reviewed": false,
+  "synthetic": false
+}

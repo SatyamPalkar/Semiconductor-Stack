@@ -1,0 +1,12 @@
+{
+  "capture_kind": "recorded_primary_source_excerpt",
+  "synthetic": false,
+  "original_url": "https://ourbrand.asml.com/m/ee9da90a119cc9d/original/2024-Financial-performance-section.pdf",
+  "original_sha256": "507fc583ff674137a134e807835fc934c733998461061a360d7007d75890cd67",
+  "extract_sha256": "7dbcb1b19bf674761ac12ee19b34f6cb19cc3cb793c80f8b6a9691d66ff4cad8",
+  "retrieved_at": "2026-11-15T06:09:30.699566+00:00",
+  "publication_date": "2025-03-05",
+  "availability_rule": "conservative end of publisher day in Europe/Amsterdam",
+  "publication_basis": "ASML official annual-report publication announcement of March 5, 2025",
+  "scope": "Selected real consolidated annual financial table rows only; publisher narrative excluded. Not a certified historical archive."
+}

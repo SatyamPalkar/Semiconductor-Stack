@@ -13,6 +13,14 @@ model:
 	uv run semi prepare-model
 ingest:
 	uv run semi ingest --recorded
+ingest-expanded:
+	uv run semi ingest-expanded --recorded
+ingest-expanded-live:
+	uv run semi ingest-expanded
+ingest-tsmc:
+	uv run semi ingest-tsmc --recorded
+ingest-tsmc-live:
+	uv run semi ingest-tsmc
 ingest-live:
 	uv run semi ingest
 api:

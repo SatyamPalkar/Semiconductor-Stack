@@ -10,7 +10,9 @@ The parent workspace publication guardrail also applies. Keep `.env`, model weig
 - `make db-up` starts the loopback-only Docker PostgreSQL/pgvector service on 55432. Docker is a prerequisite, not installed on the development Mac.
 - Native Mac alternative: `make native-up` uses existing PostgreSQL 17 + pgvector binaries; set the documented socket URL in ignored `.env`. It owns a separate `data/native-postgres` cluster. Never change the user's database on 5432.
 - `make migrate` applies Alembic migrations. `make model` prepares hash-verified MiniLM ONNX assets.
+- `make ingest-expanded` ingests recorded REAL ASML/Micron/TI/Amkor table excerpts; `make ingest-expanded-live` requests only their four fixed official URLs.
 - `make ingest` ingests the clearly labelled recorded primary-source table excerpt. `make ingest-live` requests only the fixed official NVIDIA URL.
+- `make ingest-tsmc` loads recorded REAL annual-report excerpts; `make ingest-tsmc-live` requests only the two fixed public annual-report URLs. `uv run semi ingest-tsmc --offline` verifies downloaded originals.
 - `make api`: loopback FastAPI on 8100. `make web`: Next dev on 3100. `make preview`: built static export on 3100.
 - `make lint`: Ruff and TypeScript. `make test`: unit tests. `make integration`: isolated PostgreSQL tests. `make evaluate`: versioned development evaluation. `make snapshot`: PostgreSQL export. `make build`: Next static export. `make e2e`: explicit Playwright/Chrome browser workflows; start API and preview first.
 - `make verify` performs non-browser checks, evaluation, snapshot export and production build. `make e2e` is separate.
@@ -22,7 +24,9 @@ Financial facts are authoritative in PostgreSQL. Calculations use Decimal; absen
 
 A date-only publication uses a conservative end-of-publisher-day availability cutoff. `publication_date` is the source's stated date; `published_at` is the conservative availability timestamp. Never describe the later-captured unversioned IR page as a certified historical archive. Do not claim point-in-time backtesting readiness.
 
-Keep recorded REAL source excerpts distinct from synthetic test inputs. Synthetic amendment/conflict records are inserted only in rollback-controlled tests and never exported. Do not silently replace blocked sources or bypass source access controls. TSMC ingestion is pending after HTTP 403.
+The financial explorer covers six historical datasets; the separate global directory is discovery metadata, never financial evidence. ASML uses EUR millions and PPE plus intangibles. Micron net capital investment includes equipment-contract payments, PPE sale proceeds and government incentives; missing offsets must never become zero. Amkor uses USD thousands and an explicitly analytical gross-PPE cash residual, not its reported FCF reconciliation. Preserve signed losses.
+
+Keep recorded REAL source excerpts distinct from synthetic test inputs. Synthetic amendment/conflict records are inserted only in rollback-controlled tests and never exported. Do not silently replace blocked sources or bypass source access controls. Earlier TSMC IR access returned HTTP 403. Separately published public 2023/2024 annual reports were ingested for the cash investigation; do not retry or bypass the blocked endpoint. Preserve TWD thousands and CY labels; TSMC’s analytical cash residual is not harmonized with NVIDIA release-defined FCF.
 
 Model output schemas and citation IDs provide structural validation, not proof of entailment. Extractive answers and recorded examples must remain labelled. Live LLM use is opt-in, server-side only; no arbitrary SQL, shell or URLs become model tools. The pilot's bounded vocabulary can abstain on paraphrases; don't claim a general conversational router.
 

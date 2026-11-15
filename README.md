@@ -1,18 +1,22 @@
 # Semiconductor Research Platform
 
-**Milestone 1: a working local research foundation.** The interface is branded **semiscope**. It connects official NVIDIA financial tables to PostgreSQL facts, Decimal calculations, hybrid keyword/vector retrieval, cited answers and a statically exportable research site.
+**A visual semiconductor atlas with 139 companies and businesses, 36 official research resources, and six historical financial datasets.** The interface is branded **semiscope**. It connects official financial tables to PostgreSQL facts, Decimal calculations, hybrid retrieval, cited answers and a static research site.
 
-The historical pilot covers **NVIDIA FY2024 and FY2025**, not today's market. Six companies are in scope; TSMC financial ingestion is pending after its public source returned HTTP 403. No substitute estimates are shown. LangGraph research agents, AWS, DCF and trading are outside this first milestone.
+The directory is a curated discovery catalog, not an exhaustive census. Financial coverage is historical: NVIDIA FY2024/FY2025, Micron FY2023/FY2024, and TSMC, ASML, Texas Instruments and Amkor CY2023/CY2024. Directory metadata is dated separately from the financial evidence cutoff. Native currencies, units, period ends and company-specific cash definitions remain visible. Independent human financial/citation review is pending.
 
 ## What works
 
-- One actual official NVIDIA FY2025 earnings-release HTML ingested with original bytes preserved locally, hashes and row-level provenance.
-- 14 annual reported observations; nine metric definitions, including missing prior-growth handling and NVIDIA's release-defined FCF.
-- PostgreSQL 17 with pgvector, SQLAlchemy and three Alembic migrations (with a guarded downgrade where source metadata is unknown).
-- Pinned 384-dimensional MiniLM CPU embeddings plus PostgreSQL full-text search and reciprocal rank fusion. Company, publication/as-of, period, document type and topic filters.
-- Deterministic financial tools; extractive source answers without API credentials. An optional Groq JSON adapter is implemented but no real hosted-model evaluation was run.
-- Seven Next.js pages, Plotly charts, source inspection, as-of filtering, calculation citations, offline examples and honest unavailable states.
-- A static PostgreSQL export remains useful with the API offline. Recorded examples are calculations from real reported data, not fabricated model outputs.
+- A four-chapter visual story: illustrated business models → the cash investigation → Micron’s changing annual picture → a choice of next research questions. Chapter navigation, original SVG scenes, guided controls and page-to-page continuation links keep the reading connected; motion respects reduced-motion preferences.
+
+- An eight-role orbital atlas, searchable company profiles, official website/IR links, financial-coverage filtering and pagination.
+- A resource library for industry data, filings, research, standards, open tools and policy; discovery destinations are separate from ingested evidence.
+- Seven original primary-source documents preserved locally and 78 selected annual source observations. 124 available derived/reporting metrics across the selected periods, with exact inputs and source locators.
+- Six-company financial exploration: two annual cash periods, per-100-revenue cash visuals, native-currency charts, negative margins and optional source calculations. ASML uses EUR millions; Amkor uses USD thousands; NVIDIA, Micron and TI use USD millions; TSMC uses TWD thousands.
+- A focused NVIDIA/TSMC visual investigation with three chapters, two annual pairs, source inspection and a research note containing counterevidence and invalidation conditions.
+- A bounded six-company evidence desk. Financial questions use deterministic tools; unsupported companies, forecasts and cross-company questions abstain. Extractive answers and offline examples remain labelled.
+- PostgreSQL 17/pgvector, SQLAlchemy and three Alembic migrations. Pinned local MiniLM embeddings, full-text search and reciprocal rank fusion. Seven Next.js pages remain usable with the API offline.
+
+The LangGraph workflow, AWS, DCF and trading are outside this local milestone. A Groq JSON adapter is optional; no live hosted-model evaluation has been run.
 
 ## Prerequisites and clean setup
 
@@ -24,7 +28,9 @@ make setup
 make db-up
 make migrate
 make model
-make ingest             # recorded REAL primary-source excerpt, no data API key
+make ingest             # recorded REAL NVIDIA table excerpt
+make ingest-tsmc        # recorded REAL TSMC annual-report table excerpts
+make ingest-expanded    # recorded REAL ASML, Micron, TI and Amkor excerpts
 make evaluate
 make snapshot
 make build
@@ -50,6 +56,8 @@ make native-up
 make migrate
 make model
 make ingest
+make ingest-tsmc
+make ingest-expanded
 ```
 
 The native socket uses local trust for this isolated public-data development cluster. TCP is loopback-only and uses SCRAM authentication; no public database endpoint is created. Use the Docker credentials from the example only for local Docker development. Stop native PostgreSQL with `make native-down`; stop Docker with `make db-stop`. Neither command destroys data. The Docker path is supplied and checked against the same schema, but Docker execution was not verified on this Mac.
@@ -67,19 +75,32 @@ make build
 make e2e
 ```
 
-See [the milestone verification report](docs/milestone1-report.md) and [the executed development results](evaluations/results/milestone1.json). These checks verify calculations, source resolution, scope/as-of handling and abstention. Important finance answers still need independent human review; no LLM judge or investment-performance result is reported. Pytest also verifies amendments, conflicts, units, missing values and injected instructions. See [evaluation methodology](docs/evaluation-plan.md).
+See [the storytelling update report](docs/storytelling-report.md), [the directory and financial expansion report](docs/industry-expansion-report.md), [the visual-conclusions report](docs/visual-conclusions-report.md), [the cash-investigation report](docs/cash-investigation-report.md), [the original milestone verification report](docs/milestone1-report.md) and [the executed development results](evaluations/results/milestone1.json). These checks verify calculations, source resolution, scope/as-of handling and abstention. Important finance answers still need independent human review; no LLM judge or investment-performance result is reported. Pytest also verifies amendments, conflicts, units, missing values and injected instructions. See [evaluation methodology](docs/evaluation-plan.md).
 
 ## Try it
+
+- Open `/value-chain/` for the company atlas and `/sources/` for the resource library.
+- In `/industry-economics/`, select any of the six companies and switch annual cash periods. Micron FY2023 retains its negative cash residual and gross margin.
+- Select Micron in the evidence desk: “What was Micron free cash flow in FY2024?” → 386 USD million, with all five inputs.
+- Select ASML to see EUR amounts; Amkor cash results are explicitly analytical gross-PPE residuals, separate from its reported FCF.
 
 - “What was NVIDIA free cash flow in FY2025?” → 60,724 USD million, with three source inputs.
 - “What was NVIDIA gross margin in FY2025?” → 74.9887%, calculated from 97,858 / 130,497.
 - “What was reported research and development expense?” → filtered, cited stored evidence.
 - “What is NVIDIA stock price today?” → an explicit limitation.
-- Change the research date to 2025-02-25 → the later results are withheld.
+- Switch the comparison between NVIDIA FY2025 / TSMC CY2024 and NVIDIA FY2024 / TSMC CY2023.
+- Select TSMC in the evidence desk: “What was TSMC free cash flow in CY2024?” → an explicitly qualified analytical cash residual in TWD thousands.
+- Change the research date to 2025-03-11 → TSMC CY2024 figures and comparative findings are withheld. Earlier source records may remain visible.
 
 The release rounds gross margin to 75.0%; recomputing from rounded million-dollar source inputs yields 74.9887%. Both the scale and calculation are visible; they are not claimed to be more precise than the source.
 
 ## Live source and model configuration
+
+`make ingest-expanded` uses hash-verified REAL recorded excerpts. `uv run semi ingest-expanded --offline` verifies downloaded originals; `make ingest-expanded-live` requests only the four fixed official source URLs with bounded downloads and no retries. ASML’s restricted earnings-release route is not retried: its separately published 2024 annual-report financial section is the documented selected source. See the expansion report for dates and definitions.
+
+The directory uses validated public HTTPS destinations and checked-in link observations, not retrieval evidence. To check only newly listed URLs once: `.venv/bin/python scripts/check_directory_links.py --only-new --output data/catalog/directory-links.json`. Restricted responses are retained without retry. HTTP status does not certify content, licensing or future availability.
+
+`make ingest-tsmc-live` requests only the two fixed, separately published annual-report PDF URLs, once each with size limits and no retries. A 403 fails closed. `uv run semi ingest-tsmc --offline` verifies and parses the downloaded originals; `make ingest-tsmc` uses hash-verified recorded REAL excerpts for reproducible setup. The PDFs stay in ignored local storage. TSMC source dates use the printed report dates with an end-of-Taipei-day cutoff; historical availability is not independently certified.
 
 `make ingest-live` makes one request to the fixed NVIDIA catalog URL, preserves immutable original bytes and records a new checksum version. It does not request SEC data. Configure a declared `SEC_USER_AGENT` before implementing SEC ingestion; the code does not send a fake identity to EDGAR.
 
@@ -91,7 +112,12 @@ The embedding model is pinned in `documents/embedding.py`, verified by artifact 
 
 - [Project brief](docs/project-brief.md) · [Implementation plan](docs/implementation-plan.md)
 - [Architecture](docs/architecture.md) · [Methodology](docs/methodology.md)
+- [Interface concept: The Silicon Atlas](docs/design-direction.md)
 - [Metric definitions](docs/metric-definitions.md) · [Data dictionary](docs/data-dictionary.md)
 - [Evaluation plan](docs/evaluation-plan.md) · [Local deployment and teardown](docs/deployment.md)
 
-Next milestone: obtain permitted TSMC source data, review the financial mappings with a human, broaden the retrieval set, then implement the bounded LangGraph research workflow with PostgreSQL checkpoints and run budgets. Only after local validation should AWS costed infrastructure be prepared and deployment explicitly requested.
+Next milestone: independently review all six companies’ financial mappings and citation support, reconcile cash-flow classifications and capital-spending scope, extend the history through a cycle, then implement the bounded LangGraph research workflow with PostgreSQL checkpoints and run budgets. Only after local validation should AWS costed infrastructure be prepared and deployment explicitly requested.
+
+## License and source attribution
+
+Project code uses the repository’s MIT license. Bundled fonts retain their SIL Open Font Licenses in `apps/web/app/fonts`. Recorded financial fixtures contain selected public statement tables with publisher URLs, original/excerpt checksums and row/page attribution; they do not include the complete downloaded documents. Company names and third-party materials retain their respective ownership.

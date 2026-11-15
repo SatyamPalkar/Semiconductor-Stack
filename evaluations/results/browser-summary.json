@@ -1,10 +1,20 @@
 {
-  "kind": "Executed production-export browser checks using isolated Chrome",
-  "passed": 8,
+  "kind": "Executed guided-story, directory and financial production-export browser workflows using isolated Chrome",
+  "executed_at": "2026-11-15T07:29:44.035Z",
+  "passed": 23,
   "failed": 0,
   "skipped": 0,
-  "duration_ms": 3879.2349999999997,
+  "flaky": 0,
+  "duration_ms": 17589.01,
   "runner": "Playwright 1.65.1",
   "backend": "local PostgreSQL/pgvector + FastAPI",
-  "hosted_model_calls": 0
+  "hosted_model_calls": 0,
+  "human_reviewed": false,
+  "responsive_widths": [
+    1440,
+    768,
+    393
+  ],
+  "research_routes_checked": 7,
+  "scope": "Four-chapter narrative, responsive original SVG scenes, accessible business tabs, reading progress, guided cash navigation with header clearance, signed Micron history and as-of withholding, exact source disclosures and page-to-page continuity; prior directory, native-unit financial, offline, keyboard/reduced-motion and seven-route responsive workflows. Not independent financial/citation review."
 }

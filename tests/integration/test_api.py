@@ -7,7 +7,7 @@ def test_api_source_financial_and_question_contracts(session, encoder, monkeypat
     monkeypatch.setitem(main.state, "encoder", encoder)
     with TestClient(main.app) as client:
         assert client.get("/api/health").json()["live_ai_available"] is False
-        source = client.get("/api/sources").json()[0]
+        source = next(s for s in client.get("/api/sources").json() if s["company"] == "NVDA")
         assert source["checksum"] and source["publication_date"] == "2025-02-26"
         assert "storage_key" not in source
         metric = client.get("/api/financials/NVDA?metric=free_cash_flow").json()

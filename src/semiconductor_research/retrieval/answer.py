@@ -1,5 +1,6 @@
 import re
 import time
+from functools import lru_cache
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
@@ -14,10 +15,14 @@ from semiconductor_research.financials.engine import (
     calculate_metric,
     cutoff,
 )
+from semiconductor_research.financials.profiles import PROFILES
 from semiconductor_research.llm.groq import Groq
 from semiconductor_research.retrieval.hybrid import RetrievalFilters, retrieve
+from semiconductor_research.sources.directory import load_directory
 
 ALIASES = {
+    Metric.OCF_MARGIN: ("operating cash flow margin", "operating cash flow / revenue"),
+    Metric.CAPEX_OCF: ("capex / operating cash flow", "capital spending / operating cash flow"),
     Metric.FCF_MARGIN: ("free cash flow margin", "fcf margin"),
     Metric.FREE_CASH_FLOW: ("free cash flow", "fcf"),
     Metric.REVENUE_GROWTH: ("revenue growth", "revenue grow", "sales growth"),
@@ -43,6 +48,18 @@ FACT_TOPICS = {
     "gross_profit": ("gross profit",),
     "operating_income": ("operating income",),
 }
+
+
+@lru_cache(maxsize=1)
+def uncovered_company_patterns():
+    # Directory discovery never becomes permission to answer from another issuer.
+    names = {
+        alias.lower()
+        for company in load_directory()["companies"]
+        if company["financial_company_id"] is None
+        for alias in (company["name"], company["id"].replace("-", " "))
+    }
+    return tuple(re.compile(r"\b" + re.escape(name) + r"\b") for name in names)
 
 
 class Question(BaseModel):
@@ -71,7 +88,7 @@ def answer_question(session: Session, encoder, body: Question):
         "calculation": None,
         "citation_support": "not assessed",
         "model_calls": 0,
-        "limitation": "The pilot covers NVIDIA annual financial rows only; broader company, industry and forecast evidence is pending.",
+        "limitation": "The evidence desk supports selected annual financial rows for NVIDIA, TSMC, ASML, Micron, Texas Instruments and Amkor. Use Company comparison for the qualified two-company investigation; forecasts and general industry research are outside this bounded question router.",
     }
     question = body.question.lower()
     # This explicit financial tool selector is intentionally bounded; it is not a conversational controller.
@@ -86,9 +103,34 @@ def answer_question(session: Session, encoder, body: Question):
         )
     ):
         metric = None
-    requested_years = re.findall(r"\b(?:fy\s*)?(20\d{2})\b", question)
+    profile = PROFILES.get(body.filters.company)
+    company_name = profile.name if profile else body.filters.company
+    label_prefix = profile.prefix if profile else "FY"
+    mentioned = {
+        ticker
+        for ticker, names in {key: p.aliases for key, p in PROFILES.items()}.items()
+        if any(re.search(rf"\b{name}\b", question) for name in names)
+    }
+    requested_years = re.findall(r"\b(?:(?:fy|cy)\s*)?(20\d{2})\b", question)
     unsupported = (
-        bool(re.search(r"\b(?:quarter(?:ly)?|q[1-4]|ttm|trailing)\b", question))
+        profile is None
+        or any(pattern.search(question) for pattern in uncovered_company_patterns())
+        or bool(mentioned - {body.filters.company})
+        or (
+            label_prefix == "FY"
+            and bool(re.search(r"\b(?:cy\s*20\d{2}|calendar year)\b", question))
+        )
+        or (label_prefix == "CY" and bool(re.search(r"\bfy\s*20\d{2}\b", question)))
+        or any(
+            code != (profile.currency if profile else "")
+            for code, pattern in {
+                "USD": r"\b(?:usd|us dollars|u\.s\. dollars)\b",
+                "TWD": r"\b(?:twd|ntd|taiwan dollars)\b",
+                "EUR": r"\b(?:eur|euros?)\b",
+            }.items()
+            if re.search(pattern, question)
+        )
+        or bool(re.search(r"\b(?:quarter(?:ly)?|q[1-4]|ttm|trailing)\b", question))
         or len(set(requested_years)) > 1
         or any(
             term in question
@@ -99,11 +141,6 @@ def answer_question(session: Session, encoder, body: Question):
                 "current",
                 "stock price",
                 "share price",
-                "tsmc",
-                "asml",
-                "micron",
-                "texas instruments",
-                "amkor",
                 "compare",
                 "valuation",
                 "dcf",
@@ -131,7 +168,7 @@ def answer_question(session: Session, encoder, body: Question):
         candidates = [
             end
             for end, label in candidate_rows
-            if not requested_years or label == f"FY{requested_years[-1]}"
+            if not requested_years or label == f"{label_prefix}{requested_years[-1]}"
         ]
         if period is not None and requested_years and period not in candidates:
             response["limitation"] = (
@@ -156,8 +193,8 @@ def answer_question(session: Session, encoder, body: Question):
                             **fact,
                             "citation_id": len(evidence) + 1,
                             "chunk_id": fact["fact_id"],
-                            "text": f"{fact['fiscal_label']} {fact['metric'].replace('_', ' ')}: {fact['value']} {fact['currency']} million.",
-                            "title": "NVIDIA FY2025 earnings release",
+                            "text": f"{fact['fiscal_label']} {fact['metric'].replace('_', ' ')}: {fact['value']} {fact['currency']} at original scale {fact['unit_scale']}.",
+                            "title": fact["source_title"],
                         }
                     )
                 response.update(
@@ -168,7 +205,7 @@ def answer_question(session: Session, encoder, body: Question):
                     citation_support="deterministic calculation from the referenced database facts",
                     paragraphs=[
                         {
-                            "text": f"NVIDIA {calculation['fiscal_label']} {metric.value.replace('_', ' ')} was {calculation['value']} {calculation['unit']} (annual period ended {period}). {calculation['definition']}",
+                            "text": f"{company_name} {calculation['fiscal_label']} {calculation['label']} was {calculation['value']} {calculation['unit']} (annual period ended {period}). {calculation['definition']}",
                             "citations": list(range(1, len(evidence) + 1)),
                             "classification": calculation["classification"],
                         }
@@ -185,7 +222,8 @@ def answer_question(session: Session, encoder, body: Question):
             ends = session.scalars(
                 select(Fact.period_end)
                 .where(
-                    Fact.company == filters.company, Fact.fiscal_label == f"FY{requested_years[-1]}"
+                    Fact.company == filters.company,
+                    Fact.fiscal_label == f"{label_prefix}{requested_years[-1]}",
                 )
                 .distinct()
             ).all()

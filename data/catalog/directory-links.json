@@ -1,0 +1,1699 @@
+{
+  "executed_at": "2026-11-15T06:23:20.515279+00:00",
+  "method": "One bounded GET per fixed catalog URL, 12s timeout, 256KiB read limit, no redirects, retries or access-control bypass. HTTP response is not content validation.",
+  "results": [
+    {
+      "url": "https://abc.xyz/investor/",
+      "checked_at": "2026-11-15T05:57:12.372588+00:00",
+      "status": 200,
+      "page_title": "Alphabet Investor Relations - Investors",
+      "state": "responded"
+    },
+    {
+      "url": "https://amkor.com/",
+      "checked_at": "2026-11-15T05:57:12.372897+00:00",
+      "status": 200,
+      "page_title": "Semiconductor Packaging &amp; Test Services | Amkor Technology",
+      "state": "responded"
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AR/recent",
+      "checked_at": "2026-11-15T05:57:12.372976+00:00",
+      "status": 200,
+      "page_title": "Hardware Architecture",
+      "state": "responded"
+    },
+    {
+      "url": "https://ats.net/",
+      "checked_at": "2026-11-15T05:57:12.373039+00:00",
+      "status": 200,
+      "page_title": "Advanced Technologies &amp; Solutions | AT&amp;S",
+      "state": "responded"
+    },
+    {
+      "url": "https://aws.amazon.com/silicon-innovation/",
+      "checked_at": "2026-11-15T05:57:12.373133+00:00",
+      "status": 200,
+      "page_title": "Silicon Chips and Machine Learning Chips \u2013 AWS Silicon Innovation \u2013 Amazon Web Services",
+      "state": "responded"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/solutions/high-performance-computing/",
+      "checked_at": "2026-11-15T05:57:12.373187+00:00",
+      "status": 200,
+      "page_title": "High Performance Computing (HPC) | Microsoft Azure",
+      "state": "responded"
+    },
+    {
+      "url": "https://cloud.google.com/tpu",
+      "checked_at": "2026-11-15T05:57:12.556151+00:00",
+      "status": 200,
+      "page_title": "Tensor Processing Units (TPUs) | Google Cloud",
+      "state": "responded"
+    },
+    {
+      "url": "https://computeexpresslink.org/cxl-specification/",
+      "checked_at": "2026-11-15T06:23:17.630453+00:00",
+      "status": 200,
+      "page_title": "CXL\u00ae Specification - Compute Express Link",
+      "state": "responded"
+    },
+    {
+      "url": "https://corp.mediatek.com/investor-relations",
+      "checked_at": "2026-11-15T05:57:13.050070+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/european-chips-act",
+      "checked_at": "2026-11-15T05:57:13.063219+00:00",
+      "status": 200,
+      "page_title": "European Chips Act | Shaping Europe\u2019s digital future",
+      "state": "responded"
+    },
+    {
+      "url": "https://disclosure2.edinet-fsa.go.jp/",
+      "checked_at": "2026-11-15T05:57:13.625598+00:00",
+      "status": 200,
+      "page_title": "\u95b2\u89a7\u30b5\u30a4\u30c8",
+      "state": "responded"
+    },
+    {
+      "url": "https://eda.sw.siemens.com/",
+      "checked_at": "2026-11-15T05:57:14.102842+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://electronics.airliquide.com/",
+      "checked_at": "2026-11-15T05:57:14.144683+00:00",
+      "status": 403,
+      "page_title": "Access Denied",
+      "state": "restricted"
+    },
+    {
+      "url": "https://englishdart.fss.or.kr/",
+      "checked_at": "2026-11-15T05:57:14.325758+00:00",
+      "status": 200,
+      "page_title": "DART - Repository of Korea's Corporate Filings",
+      "state": "responded"
+    },
+    {
+      "url": "https://gf.com/",
+      "checked_at": "2026-11-15T05:57:15.204751+00:00",
+      "status": 200,
+      "page_title": "GlobalFoundries | Semiconductor foundry and technology partner",
+      "state": "responded"
+    },
+    {
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK",
+      "checked_at": "2026-11-15T05:57:15.425353+00:00",
+      "status": 200,
+      "page_title": "GitHub - IHP-GmbH/IHP-Open-PDK: 130nm BiCMOS Open Source PDK, dedicated for Analog, Mixed Signal and RF Design. Documentation is here: \u00b7 GitHub",
+      "state": "responded"
+    },
+    {
+      "url": "https://global.canon/en/product/indtech/semicon/",
+      "checked_at": "2026-11-15T05:57:15.566899+00:00",
+      "status": 200,
+      "page_title": "Semiconductor Lithography Equipment | Canon Global",
+      "state": "responded"
+    },
+    {
+      "url": "https://global.kyocera.com/",
+      "checked_at": "2026-11-15T05:57:15.784695+00:00",
+      "status": 200,
+      "page_title": "KYOCERA GROUP GLOBAL SITE",
+      "state": "responded"
+    },
+    {
+      "url": "https://hanamicron.com/eng/",
+      "checked_at": "2026-11-15T06:23:17.630767+00:00",
+      "status": 200,
+      "page_title": "HANA Micron",
+      "state": "responded"
+    },
+    {
+      "url": "https://ieeexplore.ieee.org/",
+      "checked_at": "2026-11-15T05:57:16.585709+00:00",
+      "status": 301,
+      "page_title": "301 Moved Permanently",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.ambarella.com/",
+      "checked_at": "2026-11-15T05:57:16.651393+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Ambarella Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.analog.com/",
+      "checked_at": "2026-11-15T05:57:16.699112+00:00",
+      "status": 200,
+      "page_title": "Investor Relations - Analog Devices",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.apple.com/",
+      "checked_at": "2026-11-15T05:57:16.720263+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.axcelis.com/",
+      "checked_at": "2026-11-15T05:57:17.457504+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Axcelis Technologies Inc",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.cadence.com/overview/default.aspx",
+      "checked_at": "2026-11-15T06:23:17.630858+00:00",
+      "status": 200,
+      "page_title": "Cadence Investor Relations | CDNS Financials &amp; Investor News",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.cirrus.com/",
+      "checked_at": "2026-11-15T05:57:17.742466+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.diodes.com/",
+      "checked_at": "2026-11-15T05:57:18.135487+00:00",
+      "status": 200,
+      "page_title": "Investor Overview | Diodes Incorporated",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.entegris.com/",
+      "checked_at": "2026-11-15T05:57:18.580722+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.kns.com/",
+      "checked_at": "2026-11-15T05:57:18.661956+00:00",
+      "status": null,
+      "state": "error",
+      "note": "ReadTimeout"
+    },
+    {
+      "url": "https://investor.lamresearch.com/",
+      "checked_at": "2026-11-15T05:57:18.771870+00:00",
+      "status": 200,
+      "page_title": "Lam Research Investor Relations - Investors Overview",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.marvell.com/",
+      "checked_at": "2026-11-15T05:57:19.185830+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Marvell Technology, Inc. (MRVL)",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.nvidia.com/",
+      "checked_at": "2026-11-15T05:57:19.407507+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.onsemi.com/",
+      "checked_at": "2026-11-15T05:57:19.432063+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | onsemi | onsemi",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.qualcomm.com/",
+      "checked_at": "2026-11-15T05:57:19.911269+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.rambus.com/",
+      "checked_at": "2026-11-15T05:57:19.958672+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.silabs.com/",
+      "checked_at": "2026-11-15T05:57:20.621069+00:00",
+      "status": 200,
+      "page_title": "Silicon Laboratories",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.synaptics.com/",
+      "checked_at": "2026-11-15T05:57:20.698939+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Synaptics Incorporated",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.synopsys.com/",
+      "checked_at": "2026-11-15T05:57:20.728889+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investor.ti.com/",
+      "checked_at": "2026-11-15T05:57:21.645836+00:00",
+      "status": 200,
+      "page_title": "Investor relations | TI.com",
+      "state": "responded"
+    },
+    {
+      "url": "https://investor.tsmc.com/",
+      "checked_at": "2026-11-15T05:57:21.975976+00:00",
+      "status": null,
+      "state": "not_requested",
+      "note": "Automated fetch deliberately skipped: SEC contact identity / earlier TSMC access restriction."
+    },
+    {
+      "url": "https://investor.wolfspeed.com/",
+      "checked_at": "2026-11-15T05:57:21.976030+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investors.allegromicro.com/",
+      "checked_at": "2026-11-15T05:57:22.249239+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Allegro MicroSystems, Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://investors.arm.com/",
+      "checked_at": "2026-11-15T05:57:22.424658+00:00",
+      "status": 200,
+      "page_title": "Investor Relations \u2013 Arm\u00ae",
+      "state": "responded"
+    },
+    {
+      "url": "https://investors.broadcom.com/",
+      "checked_at": "2026-11-15T05:57:22.845237+00:00",
+      "status": 200,
+      "page_title": "Investor Center | Broadcom Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://investors.gf.com/",
+      "checked_at": "2026-11-15T05:57:24.515887+00:00",
+      "status": 200,
+      "page_title": "Investor relations | GlobalFoundries Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://investors.micron.com/",
+      "checked_at": "2026-11-15T05:57:24.516279+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investors.nxp.com/",
+      "checked_at": "2026-11-15T05:57:24.604696+00:00",
+      "status": 301,
+      "page_title": "Redirecting to https://www.nxp.com/company/about-nxp/investor-relations:INVESTOR-RELATIONS",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investors.ontoinnovation.com/",
+      "checked_at": "2026-11-15T05:57:24.967873+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investors.power.com/",
+      "checked_at": "2026-11-15T05:57:25.320252+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://investors.skyworksinc.com/",
+      "checked_at": "2026-11-15T05:57:25.941019+00:00",
+      "status": 200,
+      "page_title": "Investor Snapshot | Skyworks Solutions, Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://investors.st.com/",
+      "checked_at": "2026-11-15T05:57:26.350233+00:00",
+      "status": 200,
+      "page_title": "Investor Relations - STMicroelectronics",
+      "state": "responded"
+    },
+    {
+      "url": "https://investors.teradyne.com/",
+      "checked_at": "2026-11-15T05:57:26.422533+00:00",
+      "status": 200,
+      "page_title": "Teradyne, Inc. (TER)",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.aboutamazon.com/",
+      "checked_at": "2026-11-15T05:57:26.430837+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://ir.amd.com/",
+      "checked_at": "2026-11-15T05:57:26.736473+00:00",
+      "status": 200,
+      "page_title": "Advanced Micro Devices, Inc. (AMD)",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.amkor.com/",
+      "checked_at": "2026-11-15T05:57:26.908469+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Amkor Technology",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.appliedmaterials.com/",
+      "checked_at": "2026-11-15T05:57:26.914516+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Applied Materials",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.aseglobal.com/",
+      "checked_at": "2026-11-15T05:57:27.037075+00:00",
+      "status": 403,
+      "page_title": "403 Forbidden",
+      "state": "restricted"
+    },
+    {
+      "url": "https://ir.cohu.com/",
+      "checked_at": "2026-11-15T05:57:28.114768+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Cohu, Inc",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.kla.com/",
+      "checked_at": "2026-11-15T05:57:28.431199+00:00",
+      "status": 200,
+      "page_title": "Investor Relations :: KLA Corporation (KLAC)",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.latticesemi.com/",
+      "checked_at": "2026-11-15T05:57:28.714325+00:00",
+      "status": 200,
+      "page_title": "Lattice Semiconductor - Investor Overview",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.microchip.com/",
+      "checked_at": "2026-11-15T05:57:29.231357+00:00",
+      "status": 200,
+      "page_title": "Microchip Technology Incorporated (MCHP)",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.monolithicpower.com/",
+      "checked_at": "2026-11-15T05:57:29.714554+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://ir.navitassemi.com/",
+      "checked_at": "2026-11-15T05:57:29.994749+00:00",
+      "status": 200,
+      "page_title": "Investor Relations - Navitas Semiconductor",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.qnityelectronics.com/",
+      "checked_at": "2026-11-15T06:23:17.630915+00:00",
+      "status": 200,
+      "page_title": "Qnity Electronics, Inc. (Q)",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.qorvo.com/",
+      "checked_at": "2026-11-15T05:57:30.557308+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Qorvo, Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.siliconmotion.com/",
+      "checked_at": "2026-11-15T05:57:31.079416+00:00",
+      "status": 301,
+      "page_title": "Redirecting to https://www.siliconmotion.com/investor",
+      "state": "redirect"
+    },
+    {
+      "url": "https://ir.towersemi.com/",
+      "checked_at": "2026-11-15T05:57:31.272685+00:00",
+      "status": 200,
+      "page_title": "Investor Overview | Tower Semiconductor",
+      "state": "responded"
+    },
+    {
+      "url": "https://ir.veeco.com/",
+      "checked_at": "2026-11-15T05:57:31.318980+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://ir.vishay.com/",
+      "checked_at": "2026-11-15T05:57:31.642092+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Vishay Intertechnology, Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://irds.ieee.org/",
+      "checked_at": "2026-11-15T05:57:32.292860+00:00",
+      "status": 200,
+      "page_title": "IRDS",
+      "state": "responded"
+    },
+    {
+      "url": "https://mops.twse.com.tw/",
+      "checked_at": "2026-11-15T05:57:32.539935+00:00",
+      "status": 200,
+      "page_title": "MOPS",
+      "state": "responded"
+    },
+    {
+      "url": "https://navitassemi.com/",
+      "checked_at": "2026-11-15T05:57:32.850056+00:00",
+      "status": 200,
+      "page_title": "Navitas Semiconductor",
+      "state": "responded"
+    },
+    {
+      "url": "https://ontoinnovation.com/",
+      "checked_at": "2026-11-15T05:57:32.932215+00:00",
+      "status": 200,
+      "page_title": "Semiconductor Manufacturing Software &amp; Solutions | Onto Innovation",
+      "state": "responded"
+    },
+    {
+      "url": "https://openlane2.readthedocs.io/en/latest/",
+      "checked_at": "2026-11-15T05:57:33.243532+00:00",
+      "status": 200,
+      "page_title": "OpenLane Documentation",
+      "state": "responded"
+    },
+    {
+      "url": "https://openroad.readthedocs.io/en/latest/",
+      "checked_at": "2026-11-15T05:57:33.279272+00:00",
+      "status": 200,
+      "page_title": "Welcome to OpenROAD\u2019s documentation! &#8212; OpenROAD documentation",
+      "state": "responded"
+    },
+    {
+      "url": "https://pcisig.com/specifications",
+      "checked_at": "2026-11-15T05:57:33.716801+00:00",
+      "status": 200,
+      "page_title": "Specifications | PCI-SIG",
+      "state": "responded"
+    },
+    {
+      "url": "https://riscv.org/specifications/",
+      "checked_at": "2026-11-15T05:57:33.915736+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://semiconductor.samsung.com/",
+      "checked_at": "2026-11-15T05:57:34.112355+00:00",
+      "status": 200,
+      "page_title": "Samsung Semiconductor Global Official Website | Samsung Semiconductor Global",
+      "state": "responded"
+    },
+    {
+      "url": "https://skywater-pdk.readthedocs.io/",
+      "checked_at": "2026-11-15T05:57:34.150788+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://toshiba.semicon-storage.com/",
+      "checked_at": "2026-11-15T05:57:34.518862+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://towersemi.com/",
+      "checked_at": "2026-11-15T05:57:34.997354+00:00",
+      "status": 200,
+      "page_title": "Home Page - Tower Semiconductor",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.accellera.org/downloads/standards",
+      "checked_at": "2026-11-15T05:57:35.336398+00:00",
+      "status": 200,
+      "page_title": "Accellera Standards - Accellera Systems Initiative",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.accretech.com/en/index.html",
+      "checked_at": "2026-11-15T06:23:17.630963+00:00",
+      "status": 200,
+      "page_title": "Top | ACCRETECH - TOKYO SEIMITSU",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.accretech.com/en/ir/",
+      "checked_at": "2026-11-15T06:23:17.631029+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Investor Relations | ACCRETECH - TOKYO SEIMITSU",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.achronix.com/",
+      "checked_at": "2026-11-15T05:57:35.536330+00:00",
+      "status": 200,
+      "page_title": "Achronix Semiconductor Corporation | Achronix Semiconductor Corporation",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.advantest.com/",
+      "checked_at": "2026-11-15T05:57:35.739262+00:00",
+      "status": 301,
+      "page_title": "301 Moved Permanently",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.airproducts.com/",
+      "checked_at": "2026-11-15T05:57:36.545132+00:00",
+      "status": 403,
+      "page_title": "ERROR: The request could not be satisfied",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.aixtron.com/",
+      "checked_at": "2026-11-15T05:57:36.761142+00:00",
+      "status": 200,
+      "page_title": "AIXTRON \u2013 Anlagenbau mit Liebe zum Detail. :: AIXTRON",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.ajinomoto.com/innovation/action/buildupfilm",
+      "checked_at": "2026-11-15T05:57:36.864633+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.allegromicro.com/",
+      "checked_at": "2026-11-15T05:57:36.937881+00:00",
+      "status": 301,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.allwinnertech.com/",
+      "checked_at": "2026-11-15T05:57:37.065636+00:00",
+      "status": 200,
+      "page_title": "\u73e0\u6d77\u5168\u5fd7\u79d1\u6280\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.altera.com/",
+      "checked_at": "2026-11-15T05:57:37.537408+00:00",
+      "status": 200,
+      "page_title": "Altera FPGAs &amp; SoCs | Accelerating Innovators | Altera",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.ambarella.com/",
+      "checked_at": "2026-11-15T05:57:37.809414+00:00",
+      "status": 200,
+      "page_title": "Ambarella | AI Vision Processors For Edge Applications",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.amd.com/",
+      "checked_at": "2026-11-15T05:57:38.162826+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.amec-inc.com/",
+      "checked_at": "2026-11-15T05:57:38.171255+00:00",
+      "status": 200,
+      "page_title": "\u4e2d\u5fae\u516c\u53f8",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.analog.com/",
+      "checked_at": "2026-11-15T05:57:38.546244+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.apple.com/",
+      "checked_at": "2026-11-15T05:57:39.451667+00:00",
+      "status": 200,
+      "page_title": "Apple",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.appliedmaterials.com/",
+      "checked_at": "2026-11-15T05:57:39.464505+00:00",
+      "status": 200,
+      "page_title": "Applied Materials",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.arm.com/",
+      "checked_at": "2026-11-15T05:57:39.495485+00:00",
+      "status": 200,
+      "page_title": "Where intelligence goes next \u2013 Arm\u00ae",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.aseglobal.com/",
+      "checked_at": "2026-11-15T05:57:39.617090+00:00",
+      "status": 200,
+      "page_title": "Home | ASE Holdings",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.asm.com/",
+      "checked_at": "2026-11-15T05:57:39.709919+00:00",
+      "status": 200,
+      "page_title": "Home | ASM",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.asm.com/investors",
+      "checked_at": "2026-11-15T05:57:39.725469+00:00",
+      "status": 200,
+      "page_title": "Investors | ASM",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.asml.com/",
+      "checked_at": "2026-11-15T05:57:40.228809+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.asml.com/en/investors",
+      "checked_at": "2026-11-15T05:57:40.300961+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.asmpt.com/",
+      "checked_at": "2026-11-15T05:57:40.444098+00:00",
+      "status": 200,
+      "page_title": "ASMPT - Enabling the digital world",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.axcelis.com/",
+      "checked_at": "2026-11-15T05:57:41.786628+00:00",
+      "status": 200,
+      "page_title": "Axcelis | Ion Implantation | Purion Ion Implanters",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.besi.com/",
+      "checked_at": "2026-11-15T05:57:42.181922+00:00",
+      "status": 200,
+      "page_title": "Homepage | Besi",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.besi.com/investor-relations/",
+      "checked_at": "2026-11-15T05:57:42.330594+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Besi",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.bis.gov/",
+      "checked_at": "2026-11-15T05:57:42.364373+00:00",
+      "status": 200,
+      "page_title": "Homepage | Bureau of Industry and Security",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.broadcom.com/",
+      "checked_at": "2026-11-15T05:57:42.793053+00:00",
+      "status": 200,
+      "page_title": "Broadcom Inc. | Connecting Everything",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.cadence.com/",
+      "checked_at": "2026-11-15T05:57:42.841894+00:00",
+      "status": 302,
+      "page_title": "302 Found",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.camtek.com/",
+      "checked_at": "2026-11-15T05:57:43.160160+00:00",
+      "status": 200,
+      "page_title": "Metrology Semiconductor | Semiconductor Inspection",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.camtek.com/investors/",
+      "checked_at": "2026-11-15T06:23:18.241589+00:00",
+      "status": 200,
+      "page_title": "Investors - Camtek",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.carsem.com/",
+      "checked_at": "2026-11-15T05:57:43.933487+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.ceva-ip.com/",
+      "checked_at": "2026-11-15T05:57:44.552502+00:00",
+      "status": 200,
+      "page_title": "Ceva: Empowering Smart Edge with Silicon &amp; Software IP",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.ceva-ip.com/investor-relations/",
+      "checked_at": "2026-11-15T06:23:18.518053+00:00",
+      "status": 200,
+      "page_title": "The Smart Edge Runs on Ceva",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.chipbond.com.tw/",
+      "checked_at": "2026-11-15T05:57:44.553343+00:00",
+      "status": 302,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.chipmos.com/",
+      "checked_at": "2026-11-15T05:57:45.081487+00:00",
+      "status": 200,
+      "page_title": "\u5357\u8302\u79d1\u6280\u80a1\u4efd\u6709\u9650\u516c\u53f8- \u534a\u5c0e\u9ad4\u5c01\u88dd\u6e2c\u8a66\u670d\u52d9\u3001\u8a18\u61b6\u9ad4\u5c01\u88dd\u3001\u8a18\u61b6\u9ad4\u6e2c\u8a66\u3001LCD\u9a45\u52d5IC\u6e2c\u8a66\u3001LCD\u9a45\u52d5IC\u5c01\u88dd\u3001\u5404\u985e\u6676\u5713\u51f8\u584a",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.chipmos.com/english/ir/info2.aspx",
+      "checked_at": "2026-11-15T06:23:18.737788+00:00",
+      "status": 200,
+      "page_title": "ChipMOS TECHNOLOGIES INC. \u2013 Back-end testing service for memory, LCD Diver, Bumping and MEMS.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.cirrus.com/",
+      "checked_at": "2026-11-15T05:57:45.208980+00:00",
+      "status": 200,
+      "page_title": "Cirrus Logic Home | Cirrus Logic",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.cohu.com/",
+      "checked_at": "2026-11-15T05:57:45.501720+00:00",
+      "status": 200,
+      "page_title": "Home | Cohu",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.dbhitek.com/",
+      "checked_at": "2026-11-15T05:57:45.951380+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.diodes.com/",
+      "checked_at": "2026-11-15T05:57:46.049852+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.disco.co.jp/eg/",
+      "checked_at": "2026-11-15T05:57:46.108971+00:00",
+      "status": 200,
+      "page_title": "DISCO CORPORATION",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.efinixinc.com/",
+      "checked_at": "2026-11-15T05:57:46.580839+00:00",
+      "status": 200,
+      "page_title": "Redirecting...",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.emdgroup.com/en/expertise/electronics.html",
+      "checked_at": "2026-11-15T05:57:47.307399+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.entegris.com/",
+      "checked_at": "2026-11-15T05:57:47.525104+00:00",
+      "status": 200,
+      "page_title": "Home | Entegris",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.eusemiconductors.eu/",
+      "checked_at": "2026-11-15T05:57:47.979068+00:00",
+      "status": 200,
+      "page_title": "Home | Eusemiconductors",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.fujifilm.com/products/semiconductor-materials/",
+      "checked_at": "2026-11-15T05:57:48.211444+00:00",
+      "status": 301,
+      "page_title": "301 Moved Permanently",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.gigadevice.com/",
+      "checked_at": "2026-11-15T05:57:48.440375+00:00",
+      "status": 200,
+      "page_title": "Flash | MCU | Sensor | Analog | Solutions | GigaDevice",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.gsaglobal.org/directories/",
+      "checked_at": "2026-11-15T05:57:48.579735+00:00",
+      "status": 200,
+      "page_title": "Directories - GSA - Global Semiconductor Alliance",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.hisilicon.com/",
+      "checked_at": "2026-11-15T05:57:49.009314+00:00",
+      "status": 302,
+      "page_title": "302 Found",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.hitachi-hightech.com/global/en/",
+      "checked_at": "2026-11-15T05:57:49.662646+00:00",
+      "status": 200,
+      "page_title": "Home : Hitachi High-Tech Corporation",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.hkexnews.hk/",
+      "checked_at": "2026-11-15T05:57:50.387988+00:00",
+      "status": 302,
+      "page_title": "302 Found",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.ht-tech.com/",
+      "checked_at": "2026-11-15T05:57:50.406965+00:00",
+      "status": 403,
+      "page_title": "",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.huahonggrace.com/",
+      "checked_at": "2026-11-15T05:57:50.841539+00:00",
+      "status": 403,
+      "page_title": "403 Forbidden",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.ibiden.com/",
+      "checked_at": "2026-11-15T05:57:51.581045+00:00",
+      "status": 200,
+      "page_title": "IBIDEN CO.,LTD.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.ieee-iedm.org/",
+      "checked_at": "2026-11-15T05:57:51.791342+00:00",
+      "status": 301,
+      "page_title": "301 Moved Permanently",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.imec-int.com/en",
+      "checked_at": "2026-11-15T05:57:52.176322+00:00",
+      "status": 200,
+      "page_title": "Imec R&amp;D, nano electronics and digital technologies",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.inari-amertron.com/",
+      "checked_at": "2026-11-15T05:57:52.322801+00:00",
+      "status": 200,
+      "page_title": "Inari Amertron Berhad &#8211; Top Malaysia Semiconductor Company",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.infineon.com/",
+      "checked_at": "2026-11-15T05:57:52.362368+00:00",
+      "status": 200,
+      "page_title": "Semiconductor &amp; System Solutions | Infineon Technologies",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.infineon.com/cms/en/about-infineon/investor/",
+      "checked_at": "2026-11-15T05:57:52.848009+00:00",
+      "status": 301,
+      "page_title": "301 Moved Permanently",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.intc.com/",
+      "checked_at": "2026-11-15T05:57:52.896152+00:00",
+      "status": 200,
+      "page_title": "Investor Relations :: Intel Corporation (INTC)",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.intel.com/",
+      "checked_at": "2026-11-15T05:57:53.232387+00:00",
+      "status": 200,
+      "page_title": "Intel | Data Center Solutions, IoT, and PC Innovation",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.isscc.org/",
+      "checked_at": "2026-11-15T05:57:53.252922+00:00",
+      "status": 200,
+      "page_title": "ISSCC - International Solid-State Circuits Conference",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.issi.com/",
+      "checked_at": "2026-11-15T05:57:53.381080+00:00",
+      "status": 302,
+      "page_title": "Document Moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.jcetglobal.com/",
+      "checked_at": "2026-11-15T05:57:53.627955+00:00",
+      "status": 200,
+      "page_title": "JCET Group \u2014\u2014 Home",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.jedec.org/",
+      "checked_at": "2026-11-15T05:57:53.659887+00:00",
+      "status": 200,
+      "page_title": "Home | JEDEC",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.jsr.co.jp/jsr_e/",
+      "checked_at": "2026-11-15T05:57:53.706042+00:00",
+      "status": 200,
+      "page_title": "JSR Corporation",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.kioxia.com/",
+      "checked_at": "2026-11-15T05:57:54.161369+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.kla.com/",
+      "checked_at": "2026-11-15T05:57:54.595349+00:00",
+      "status": 200,
+      "page_title": "Denied | KLA",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.kns.com/",
+      "checked_at": "2026-11-15T05:57:54.825056+00:00",
+      "status": 200,
+      "page_title": "K&S - Semiconductor Equipment and Interconnected Solutions",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.kokusai-electric.com/",
+      "checked_at": "2026-11-15T05:57:54.972551+00:00",
+      "status": 200,
+      "page_title": "TOP | \u682a\u5f0f\u4f1a\u793e KOKUSAI ELECTRIC",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.lamresearch.com/",
+      "checked_at": "2026-11-15T05:57:55.177627+00:00",
+      "status": 200,
+      "page_title": "Home | Lam Research",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.lasertec.co.jp/en/",
+      "checked_at": "2026-11-15T05:57:55.228963+00:00",
+      "status": 200,
+      "page_title": "Lasertec Corporation",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.latticesemi.com/",
+      "checked_at": "2026-11-15T05:57:55.770690+00:00",
+      "status": 200,
+      "page_title": "Lattice Semiconductor | The Low Power FPGA Leader",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.leti-cea.com/cea-tech/leti/english/",
+      "checked_at": "2026-11-15T05:57:55.775879+00:00",
+      "status": 200,
+      "page_title": "Leti (english) - Welcome",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.linde-gas.com/",
+      "checked_at": "2026-11-15T05:57:56.184251+00:00",
+      "status": 200,
+      "page_title": "Leading global industrial gases and engineering company | Linde",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.macronix.com/",
+      "checked_at": "2026-11-15T05:57:56.321363+00:00",
+      "status": 302,
+      "page_title": "Document Moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.marvell.com/",
+      "checked_at": "2026-11-15T05:57:56.491672+00:00",
+      "status": 200,
+      "page_title": "Marvell Technology, Inc. | Essential technology, done right",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.mediatek.com/",
+      "checked_at": "2026-11-15T05:57:56.832052+00:00",
+      "status": 200,
+      "page_title": "MediaTek | Home Page",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.melexis.com/",
+      "checked_at": "2026-11-15T05:57:57.243813+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.melexis.com/en/investors",
+      "checked_at": "2026-11-15T05:57:57.268847+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.microchip.com/",
+      "checked_at": "2026-11-15T05:57:57.486816+00:00",
+      "status": 200,
+      "page_title": "Empowering Innovation | Microchip Technology",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.micron.com/",
+      "checked_at": "2026-11-15T05:57:57.815042+00:00",
+      "status": 200,
+      "page_title": "Micron Technology | Global Leader in Memory and Storage Solutions | Micron Technology Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/Investor/",
+      "checked_at": "2026-11-15T05:57:57.919755+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.mikroelektronik.fraunhofer.de/en.html",
+      "checked_at": "2026-11-15T05:57:58.448493+00:00",
+      "status": 200,
+      "page_title": "English",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.monolithicpower.com/",
+      "checked_at": "2026-11-15T05:57:58.605366+00:00",
+      "status": 200,
+      "page_title": "MPS | Monolithic Power Systems",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.nanya.com/",
+      "checked_at": "2026-11-15T05:57:58.661761+00:00",
+      "status": 302,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.naura.com/",
+      "checked_at": "2026-11-15T05:57:58.846520+00:00",
+      "status": 200,
+      "page_title": "\u9996\u9875 - \u5317\u65b9\u534e\u521b",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.nexperia.com/",
+      "checked_at": "2026-11-15T05:57:59.377312+00:00",
+      "status": 200,
+      "page_title": "Nexperia: Global semiconductor company",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.nikon.com/business/industry/electronics/",
+      "checked_at": "2026-11-15T06:23:19.033254+00:00",
+      "status": 200,
+      "page_title": "IC Chips / Electronics | Search by industry | Nikon Business",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.nist.gov/chips",
+      "checked_at": "2026-11-15T05:58:00.419757+00:00",
+      "status": 200,
+      "page_title": "CHIPS FOR AMERICA | NIST",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.nordicsemi.com/",
+      "checked_at": "2026-11-15T05:58:00.502273+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.nordicsemi.com/Investor-Relations",
+      "checked_at": "2026-11-15T05:58:00.639959+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.novami.com/",
+      "checked_at": "2026-11-15T05:58:00.645114+00:00",
+      "status": 200,
+      "page_title": "Nova -Metrology Solutions for Semiconductors Manufacturing",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.novami.com/investors/",
+      "checked_at": "2026-11-15T06:23:19.366676+00:00",
+      "status": 200,
+      "page_title": "Investors - Nova",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.novatek.com.tw/",
+      "checked_at": "2026-11-15T05:58:00.778156+00:00",
+      "status": 302,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.nuvoton.com/",
+      "checked_at": "2026-11-15T05:58:00.809923+00:00",
+      "status": 200,
+      "page_title": "Microcontroller (MCU) |M23 |M0 |M4 |IoT - Nuvoton",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.nvidia.com/",
+      "checked_at": "2026-11-15T05:58:01.054175+00:00",
+      "status": 307,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.nxp.com/",
+      "checked_at": "2026-11-15T05:58:01.241498+00:00",
+      "status": 200,
+      "page_title": "Automotive, IoT & Industrial Solutions | NXP Semiconductors",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.onsemi.com/",
+      "checked_at": "2026-11-15T05:58:01.257544+00:00",
+      "status": 200,
+      "page_title": "Intelligent Power and Sensing Technologies | onsemi",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.power.com/",
+      "checked_at": "2026-11-15T05:58:01.392767+00:00",
+      "status": 301,
+      "page_title": "301 Moved Permanently",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.powerchip.com/",
+      "checked_at": "2026-11-15T05:58:01.428255+00:00",
+      "status": 302,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.pti.com.tw/",
+      "checked_at": "2026-11-15T05:58:01.699115+00:00",
+      "status": 200,
+      "page_title": "Home - Powertech Technology Inc.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.qnityelectronics.com/",
+      "checked_at": "2026-11-15T06:23:19.507343+00:00",
+      "status": 200,
+      "page_title": "Qnity Home Page",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.qorvo.com/",
+      "checked_at": "2026-11-15T05:58:02.347707+00:00",
+      "status": 429,
+      "page_title": "Vercel Security Checkpoint",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.qualcomm.com/",
+      "checked_at": "2026-11-15T05:58:02.348703+00:00",
+      "status": 200,
+      "page_title": "Qualcomm: Intelligent Computing Everywhere",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.rambus.com/",
+      "checked_at": "2026-11-15T05:58:02.494052+00:00",
+      "status": 200,
+      "page_title": "Rambus | Memory Interface Chips - Security IP - Interface IP",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.rapidus.inc/",
+      "checked_at": "2026-11-15T05:58:02.533833+00:00",
+      "status": 200,
+      "page_title": "Rapidus\u682a\u5f0f\u4f1a\u793e | \u4e16\u754c\u6700\u5148\u7aef2nm\u534a\u5c0e\u4f53\u306e\u958b\u767a\u30fb\u88fd\u9020",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.realtek.com/",
+      "checked_at": "2026-11-15T05:58:02.761964+00:00",
+      "status": 200,
+      "page_title": "Realtek Official Website",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.renesas.com/",
+      "checked_at": "2026-11-15T05:58:02.762637+00:00",
+      "status": 302,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.renesas.com/en/about/investor-relations",
+      "checked_at": "2026-11-15T05:58:02.930976+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Renesas",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.resonac.com/",
+      "checked_at": "2026-11-15T05:58:03.510247+00:00",
+      "status": 200,
+      "page_title": "Resonac",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.rock-chips.com/",
+      "checked_at": "2026-11-15T05:58:03.523690+00:00",
+      "status": 200,
+      "page_title": "Rockchip-\u745e\u82af\u5fae\u7535\u5b50\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.rohm.com/",
+      "checked_at": "2026-11-15T05:58:03.586494+00:00",
+      "status": 200,
+      "page_title": "ROHM Semiconductor - ROHM Co., Ltd.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.rohm.com/ir",
+      "checked_at": "2026-11-15T05:58:03.661556+00:00",
+      "status": 200,
+      "page_title": "Investor Relations \u2502 ROHM Semiconductor - ROHM Co., Ltd.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.samsung.com/global/ir/",
+      "checked_at": "2026-11-15T05:58:03.843195+00:00",
+      "status": 200,
+      "page_title": "Investor Relations \u2502 Samsung |",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.sas-globalwafers.com/",
+      "checked_at": "2026-11-15T05:58:04.073704+00:00",
+      "status": 200,
+      "page_title": "\u9996\u9801",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.screen.co.jp/spe/en",
+      "checked_at": "2026-11-15T05:58:04.127785+00:00",
+      "status": 200,
+      "page_title": "SCREEN Semiconductor Solutions Co., Ltd.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.sec.gov/edgar/search/",
+      "checked_at": "2026-11-15T05:58:04.372332+00:00",
+      "status": null,
+      "state": "not_requested",
+      "note": "Automated fetch deliberately skipped: SEC contact identity / earlier TSMC access restriction."
+    },
+    {
+      "url": "https://www.semi.org/en/communities/scc/membership-directory",
+      "checked_at": "2026-11-15T05:58:04.372424+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.semi.org/en/market-data",
+      "checked_at": "2026-11-15T05:58:04.411682+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.semi.org/en/standards",
+      "checked_at": "2026-11-15T05:58:04.594334+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.semiconductors.org/resources/",
+      "checked_at": "2026-11-15T05:58:04.734814+00:00",
+      "status": 200,
+      "page_title": "Resources Archive - Semiconductor Industry Association",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.shinetsu.co.jp/en/",
+      "checked_at": "2026-11-15T05:58:04.876011+00:00",
+      "status": 200,
+      "page_title": "Shin-Etsu Chemical Co., Ltd.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.shinko.co.jp/english/",
+      "checked_at": "2026-11-15T05:58:05.186444+00:00",
+      "status": 200,
+      "page_title": "SHINKO ELECTRIC INDUSTRIES | Brightening the Future",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.silabs.com/",
+      "checked_at": "2026-11-15T05:58:05.897330+00:00",
+      "status": 200,
+      "page_title": "Silicon Labs",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.siliconmotion.com/",
+      "checked_at": "2026-11-15T05:58:05.982064+00:00",
+      "status": 200,
+      "page_title": "Silicon Motion",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.siltronic.com/",
+      "checked_at": "2026-11-15T05:58:06.302668+00:00",
+      "status": 302,
+      "page_title": "302 Found",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.skhynix.com/",
+      "checked_at": "2026-11-15T05:58:06.512797+00:00",
+      "status": 200,
+      "page_title": "SK hynix",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.skywatertechnology.com/",
+      "checked_at": "2026-11-15T05:58:06.546533+00:00",
+      "status": 200,
+      "page_title": "Semiconductor Manufacturing Companies USA | SkyWater Technology",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.skyworksinc.com/",
+      "checked_at": "2026-11-15T05:58:06.716254+00:00",
+      "status": 200,
+      "page_title": "Skyworks | Home",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.smics.com/",
+      "checked_at": "2026-11-15T05:58:07.092802+00:00",
+      "status": 200,
+      "page_title": "\u4e2d\u82af\u56fd\u9645-\u9996\u9875",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.soitec.com/",
+      "checked_at": "2026-11-15T05:58:07.948966+00:00",
+      "status": 200,
+      "page_title": "World leader in innovative semiconductor materials | Soitec",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.st.com/",
+      "checked_at": "2026-11-15T05:58:08.062303+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.sumcosi.com/english/",
+      "checked_at": "2026-11-15T05:58:08.085263+00:00",
+      "status": 200,
+      "page_title": "SUMCO CORPORATION - High Quality Silicon Wafers",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.synaptics.com/",
+      "checked_at": "2026-11-15T05:58:08.185485+00:00",
+      "status": 200,
+      "page_title": "Home | Synaptics",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.synopsys.com/",
+      "checked_at": "2026-11-15T05:58:08.319347+00:00",
+      "status": 200,
+      "page_title": "Synopsys | EDA Tools, Semiconductor IP &amp; Systems Verification",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.tel.com/",
+      "checked_at": "2026-11-15T05:58:08.458933+00:00",
+      "status": 200,
+      "page_title": "Tokyo Electron Ltd.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.tel.com/ir/",
+      "checked_at": "2026-11-15T05:58:08.566213+00:00",
+      "status": 200,
+      "page_title": "Investor Relations | Tokyo Electron Ltd.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.teradyne.com/",
+      "checked_at": "2026-11-15T05:58:08.692702+00:00",
+      "status": 200,
+      "page_title": "The leader in semiconductor test &amp; robotics",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.tfme.com/",
+      "checked_at": "2026-11-15T05:58:08.984711+00:00",
+      "status": 200,
+      "page_title": "\u901a\u5bcc\u5fae\u7535\u5b50\u80a1\u4efd\u6709\u9650\u516c\u53f8-\u4e13\u6ce8\u4e8e\u96c6\u6210\u7535\u8def\u5c01\u6d4b",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.ti.com/",
+      "checked_at": "2026-11-15T05:58:09.134220+00:00",
+      "status": 200,
+      "page_title": "The world leader in semiconductor innovation | TI.com",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.tok.co.jp/eng/",
+      "checked_at": "2026-11-15T05:58:09.153334+00:00",
+      "status": 200,
+      "page_title": "TOKYO OHKA KOGYO CO., LTD.",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.tsia.org.tw/",
+      "checked_at": "2026-11-15T05:58:09.264976+00:00",
+      "status": 200,
+      "page_title": "TSIA\u53f0\u7063\u534a\u5c0e\u9ad4\u5354\u6703",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.tsmc.com/english",
+      "checked_at": "2026-11-15T05:58:09.409238+00:00",
+      "status": 200,
+      "page_title": "Taiwan Semiconductor Manufacturing Company Limited",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.uciexpress.org/",
+      "checked_at": "2026-11-15T05:58:09.448699+00:00",
+      "status": 200,
+      "page_title": "Home | UCIe Consortium",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.umc.com/",
+      "checked_at": "2026-11-15T05:58:10.049726+00:00",
+      "status": 403,
+      "page_title": "Just a moment...",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.umc.com/en/IR",
+      "checked_at": "2026-11-15T05:58:10.402197+00:00",
+      "status": 302,
+      "page_title": "Object moved",
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.unimicron.com/",
+      "checked_at": "2026-11-15T05:58:10.538508+00:00",
+      "status": null,
+      "state": "error",
+      "note": "ConnectError"
+    },
+    {
+      "url": "https://www.unisemgroup.com/",
+      "checked_at": "2026-11-15T05:58:10.791355+00:00",
+      "status": 200,
+      "page_title": "Home - Unisem Group",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.unisoc.com/",
+      "checked_at": "2026-11-15T05:58:11.045098+00:00",
+      "status": 200,
+      "state": "responded"
+    },
+    {
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/commodity-statistics-and-information",
+      "checked_at": "2026-11-15T05:58:11.125135+00:00",
+      "status": null,
+      "state": "error",
+      "note": "ReadTimeout"
+    },
+    {
+      "url": "https://www.utacgroup.com/",
+      "checked_at": "2026-11-15T05:58:11.156509+00:00",
+      "status": 301,
+      "state": "redirect"
+    },
+    {
+      "url": "https://www.veeco.com/",
+      "checked_at": "2026-11-15T05:58:11.434912+00:00",
+      "status": 200,
+      "page_title": "Veeco | Innovative Semiconductor Processing Equipment",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.vis.com.tw/",
+      "checked_at": "2026-11-15T05:58:11.452733+00:00",
+      "status": 403,
+      "page_title": "403 Forbidden",
+      "state": "restricted"
+    },
+    {
+      "url": "https://www.vishay.com/",
+      "checked_at": "2026-11-15T05:58:11.965682+00:00",
+      "status": 200,
+      "page_title": "Vishay Intertechnology: Passives &amp; Discrete Semiconductors",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.winbond.com/",
+      "checked_at": "2026-11-15T05:58:13.153128+00:00",
+      "status": 200,
+      "state": "responded"
+    },
+    {
+      "url": "https://www.wolfspeed.com/",
+      "checked_at": "2026-11-15T05:58:13.409202+00:00",
+      "status": 200,
+      "page_title": "Home | Silicon Carbide Power Solutions &amp; Materials | Wolfspeed",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.wsts.org/",
+      "checked_at": "2026-11-15T05:58:13.577764+00:00",
+      "status": 200,
+      "page_title": "WSTS Home",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.xfab.com/",
+      "checked_at": "2026-11-15T05:58:13.894334+00:00",
+      "status": 200,
+      "page_title": "Your specialty foundry for the analog world: X-FAB",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.xfab.com/investors",
+      "checked_at": "2026-11-15T05:58:15.203121+00:00",
+      "status": 200,
+      "page_title": "Investor Relations: X-FAB",
+      "state": "responded"
+    },
+    {
+      "url": "https://www.zeiss.com/semiconductor-manufacturing-technology/",
+      "checked_at": "2026-11-15T05:58:15.492303+00:00",
+      "status": 403,
+      "page_title": "403 Forbidden",
+      "state": "restricted"
+    },
+    {
+      "url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/",
+      "checked_at": "2026-11-15T05:58:15.493903+00:00",
+      "status": 200,
+      "page_title": "YosysHQ Yosys 0.71-dev documentation",
+      "state": "responded"
+    }
+  ]
+}

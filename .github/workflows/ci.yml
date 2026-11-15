@@ -48,6 +48,8 @@ jobs:
           uv run alembic upgrade head
           uv run semi prepare-model
           uv run semi ingest --recorded
+          uv run semi ingest-tsmc --recorded
+          uv run semi ingest-expanded --recorded
       - name: Backend and database contracts
         run: RUN_DB_TESTS=1 uv run pytest -q
       - name: Execute development checks and build the static showcase

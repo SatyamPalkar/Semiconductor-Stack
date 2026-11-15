@@ -1,0 +1,2039 @@
+{
+  "version": "semiconductor-atlas-v1",
+  "catalog_date": "2026-11-15",
+  "scope": "Curated global discovery directory, not an exhaustive census. Organizations and operating businesses are listed; they are not asserted independent issuers or additive revenue pools.",
+  "financial_coverage_note": "Six companies have historical financial datasets: NVIDIA, TSMC, ASML, Micron, Texas Instruments and Amkor. Discovery listings do not imply financial coverage. Inspect native currency, annual periods and company-specific definitions.",
+  "categories": [
+    {
+      "id": "design",
+      "label": "Design & compute",
+      "description": "Fabless chips, connectivity, FPGAs and custom silicon",
+      "color": "#76edb7"
+    },
+    {
+      "id": "manufacturing",
+      "label": "Manufacturing",
+      "description": "Foundries and integrated manufacturing businesses",
+      "color": "#89aaff"
+    },
+    {
+      "id": "memory",
+      "label": "Memory & storage",
+      "description": "DRAM, NAND and other memory technologies",
+      "color": "#ee8bbb"
+    },
+    {
+      "id": "analog-power",
+      "label": "Analog, power & embedded",
+      "description": "Analog signal chains, power devices and embedded control",
+      "color": "#dbb179"
+    },
+    {
+      "id": "equipment",
+      "label": "Equipment & metrology",
+      "description": "Tools that fabricate, inspect, assemble and test chips",
+      "color": "#f3c65e"
+    },
+    {
+      "id": "eda-ip",
+      "label": "EDA & intellectual property",
+      "description": "Design software, processor IP and interface IP",
+      "color": "#b69afa"
+    },
+    {
+      "id": "materials",
+      "label": "Materials & components",
+      "description": "Wafers, chemicals, gases, substrates and enabling components",
+      "color": "#66d5d7"
+    },
+    {
+      "id": "packaging-test",
+      "label": "Packaging & test services",
+      "description": "Outsourced assembly, packaging and test services",
+      "color": "#f39979"
+    }
+  ],
+  "resource_categories": [
+    {
+      "id": "industry-data",
+      "label": "Industry & market data"
+    },
+    {
+      "id": "filings",
+      "label": "Company filings"
+    },
+    {
+      "id": "research",
+      "label": "Research & learning"
+    },
+    {
+      "id": "standards",
+      "label": "Standards & interfaces"
+    },
+    {
+      "id": "open-tools",
+      "label": "Open design tools"
+    },
+    {
+      "id": "policy",
+      "label": "Policy & materials data"
+    }
+  ],
+  "companies": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "roles": [
+        "design"
+      ],
+      "focus": "GPU and accelerated-computing platforms",
+      "website": "https://www.nvidia.com/",
+      "investor_url": "https://investor.nvidia.com/",
+      "financial_company_id": "NVDA"
+    },
+    {
+      "id": "amd",
+      "name": "AMD",
+      "roles": [
+        "design"
+      ],
+      "focus": "CPUs, GPUs and adaptive computing",
+      "website": "https://www.amd.com/",
+      "investor_url": "https://ir.amd.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "qualcomm",
+      "name": "Qualcomm",
+      "roles": [
+        "design"
+      ],
+      "focus": "Mobile, wireless and edge-computing chips",
+      "website": "https://www.qualcomm.com/",
+      "investor_url": "https://investor.qualcomm.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "broadcom",
+      "name": "Broadcom",
+      "roles": [
+        "design"
+      ],
+      "focus": "Networking, connectivity and custom silicon",
+      "website": "https://www.broadcom.com/",
+      "investor_url": "https://investors.broadcom.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "mediatek",
+      "name": "MediaTek",
+      "roles": [
+        "design"
+      ],
+      "focus": "Mobile, connectivity and multimedia chips",
+      "website": "https://www.mediatek.com/",
+      "investor_url": "https://corp.mediatek.com/investor-relations",
+      "financial_company_id": null
+    },
+    {
+      "id": "marvell",
+      "name": "Marvell",
+      "roles": [
+        "design"
+      ],
+      "focus": "Data-infrastructure and connectivity silicon",
+      "website": "https://www.marvell.com/",
+      "investor_url": "https://investor.marvell.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "realtek",
+      "name": "Realtek",
+      "roles": [
+        "design"
+      ],
+      "focus": "Connectivity and multimedia integrated circuits",
+      "website": "https://www.realtek.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "novatek",
+      "name": "Novatek",
+      "roles": [
+        "design"
+      ],
+      "focus": "Display and multimedia integrated circuits",
+      "website": "https://www.novatek.com.tw/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "silicon-motion",
+      "name": "Silicon Motion",
+      "roles": [
+        "design"
+      ],
+      "focus": "Flash-memory controllers",
+      "website": "https://www.siliconmotion.com/",
+      "investor_url": "https://ir.siliconmotion.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "cirrus-logic",
+      "name": "Cirrus Logic",
+      "roles": [
+        "design",
+        "analog-power"
+      ],
+      "focus": "Audio and mixed-signal chips",
+      "website": "https://www.cirrus.com/",
+      "investor_url": "https://investor.cirrus.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "skyworks",
+      "name": "Skyworks",
+      "roles": [
+        "design",
+        "analog-power"
+      ],
+      "focus": "Radio-frequency and connectivity devices",
+      "website": "https://www.skyworksinc.com/",
+      "investor_url": "https://investors.skyworksinc.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "qorvo",
+      "name": "Qorvo",
+      "roles": [
+        "design",
+        "analog-power"
+      ],
+      "focus": "Radio-frequency, connectivity and power solutions",
+      "website": "https://www.qorvo.com/",
+      "investor_url": "https://ir.qorvo.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "nordic",
+      "name": "Nordic Semiconductor",
+      "roles": [
+        "design"
+      ],
+      "focus": "Low-power wireless connectivity",
+      "website": "https://www.nordicsemi.com/",
+      "investor_url": "https://www.nordicsemi.com/Investor-Relations",
+      "financial_company_id": null
+    },
+    {
+      "id": "silicon-labs",
+      "name": "Silicon Labs",
+      "roles": [
+        "design"
+      ],
+      "focus": "Wireless connectivity for embedded systems",
+      "website": "https://www.silabs.com/",
+      "investor_url": "https://investor.silabs.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "lattice",
+      "name": "Lattice Semiconductor",
+      "roles": [
+        "design"
+      ],
+      "focus": "Low-power programmable logic",
+      "website": "https://www.latticesemi.com/",
+      "investor_url": "https://ir.latticesemi.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "altera",
+      "name": "Altera",
+      "roles": [
+        "design"
+      ],
+      "focus": "FPGAs and programmable logic",
+      "website": "https://www.altera.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "achronix",
+      "name": "Achronix",
+      "roles": [
+        "design",
+        "eda-ip"
+      ],
+      "focus": "FPGAs and embedded FPGA IP",
+      "website": "https://www.achronix.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "efinix",
+      "name": "Efinix",
+      "roles": [
+        "design"
+      ],
+      "focus": "Programmable logic devices",
+      "website": "https://www.efinixinc.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "hisilicon",
+      "name": "HiSilicon",
+      "roles": [
+        "design"
+      ],
+      "focus": "Integrated-circuit design and connectivity",
+      "website": "https://www.hisilicon.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "unisoc",
+      "name": "UNISOC",
+      "roles": [
+        "design"
+      ],
+      "focus": "Mobile and connectivity chip platforms",
+      "website": "https://www.unisoc.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "rockchip",
+      "name": "Rockchip",
+      "roles": [
+        "design"
+      ],
+      "focus": "Application processors and multimedia chips",
+      "website": "https://www.rock-chips.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "allwinner",
+      "name": "Allwinner",
+      "roles": [
+        "design"
+      ],
+      "focus": "Application processors and embedded platforms",
+      "website": "https://www.allwinnertech.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "ambarella",
+      "name": "Ambarella",
+      "roles": [
+        "design"
+      ],
+      "focus": "Vision-processing and edge AI chips",
+      "website": "https://www.ambarella.com/",
+      "investor_url": "https://investor.ambarella.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "synaptics",
+      "name": "Synaptics",
+      "roles": [
+        "design"
+      ],
+      "focus": "Connectivity, sensing and embedded processing",
+      "website": "https://www.synaptics.com/",
+      "investor_url": "https://investor.synaptics.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "melexis",
+      "name": "Melexis",
+      "roles": [
+        "design",
+        "analog-power"
+      ],
+      "focus": "Sensing and mixed-signal integrated circuits",
+      "website": "https://www.melexis.com/",
+      "investor_url": "https://www.melexis.com/en/investors",
+      "financial_company_id": null
+    },
+    {
+      "id": "apple",
+      "name": "Apple silicon",
+      "roles": [
+        "design"
+      ],
+      "focus": "Custom silicon for Apple products",
+      "website": "https://www.apple.com/",
+      "investor_url": "https://investor.apple.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "google",
+      "name": "Google / Alphabet",
+      "roles": [
+        "design"
+      ],
+      "focus": "Custom accelerators and computing silicon",
+      "website": "https://cloud.google.com/tpu",
+      "investor_url": "https://abc.xyz/investor/",
+      "financial_company_id": null
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon / AWS",
+      "roles": [
+        "design"
+      ],
+      "focus": "Custom processors and machine-learning accelerators",
+      "website": "https://aws.amazon.com/silicon-innovation/",
+      "investor_url": "https://ir.aboutamazon.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "roles": [
+        "design"
+      ],
+      "focus": "Custom cloud processors and accelerators",
+      "website": "https://azure.microsoft.com/en-us/solutions/high-performance-computing/",
+      "investor_url": "https://www.microsoft.com/en-us/Investor/",
+      "financial_company_id": null
+    },
+    {
+      "id": "tsmc",
+      "name": "TSMC",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Dedicated semiconductor foundry",
+      "website": "https://www.tsmc.com/english",
+      "investor_url": "https://investor.tsmc.com/",
+      "financial_company_id": "TSM"
+    },
+    {
+      "id": "intel",
+      "name": "Intel",
+      "roles": [
+        "design",
+        "manufacturing"
+      ],
+      "focus": "Processors and semiconductor manufacturing",
+      "website": "https://www.intel.com/",
+      "investor_url": "https://www.intc.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung Semiconductor",
+      "roles": [
+        "manufacturing",
+        "memory",
+        "design"
+      ],
+      "focus": "Foundry, memory and system semiconductor businesses",
+      "website": "https://semiconductor.samsung.com/",
+      "investor_url": "https://www.samsung.com/global/ir/",
+      "financial_company_id": null
+    },
+    {
+      "id": "globalfoundries",
+      "name": "GlobalFoundries",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Semiconductor foundry services",
+      "website": "https://gf.com/",
+      "investor_url": "https://investors.gf.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "umc",
+      "name": "UMC",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Semiconductor foundry services",
+      "website": "https://www.umc.com/",
+      "investor_url": "https://www.umc.com/en/IR",
+      "financial_company_id": null
+    },
+    {
+      "id": "smic",
+      "name": "SMIC",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Semiconductor foundry services",
+      "website": "https://www.smics.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "hua-hong",
+      "name": "Hua Hong Semiconductor",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Specialty semiconductor foundry services",
+      "website": "https://www.huahonggrace.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "tower",
+      "name": "Tower Semiconductor",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Analog and specialty foundry services",
+      "website": "https://towersemi.com/",
+      "investor_url": "https://ir.towersemi.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "psmc",
+      "name": "PSMC",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Logic and memory foundry services",
+      "website": "https://www.powerchip.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "vis",
+      "name": "Vanguard International Semiconductor",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Specialty foundry services",
+      "website": "https://www.vis.com.tw/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "db-hitek",
+      "name": "DB HiTek",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Specialty semiconductor foundry services",
+      "website": "https://www.dbhitek.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "x-fab",
+      "name": "X-FAB",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Analog, mixed-signal and specialty foundry services",
+      "website": "https://www.xfab.com/",
+      "investor_url": "https://www.xfab.com/investors",
+      "financial_company_id": null
+    },
+    {
+      "id": "skywater",
+      "name": "SkyWater Technology",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Foundry and technology-development services",
+      "website": "https://www.skywatertechnology.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "rapidus",
+      "name": "Rapidus",
+      "roles": [
+        "manufacturing"
+      ],
+      "focus": "Advanced logic manufacturing development",
+      "website": "https://www.rapidus.inc/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "micron",
+      "name": "Micron",
+      "roles": [
+        "memory"
+      ],
+      "focus": "DRAM, NAND and memory products",
+      "website": "https://www.micron.com/",
+      "investor_url": "https://investors.micron.com/",
+      "financial_company_id": "MU"
+    },
+    {
+      "id": "sk-hynix",
+      "name": "SK hynix",
+      "roles": [
+        "memory"
+      ],
+      "focus": "DRAM and NAND memory products",
+      "website": "https://www.skhynix.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "kioxia",
+      "name": "Kioxia",
+      "roles": [
+        "memory"
+      ],
+      "focus": "Flash-memory and storage technologies",
+      "website": "https://www.kioxia.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "nanya",
+      "name": "Nanya Technology",
+      "roles": [
+        "memory"
+      ],
+      "focus": "DRAM products",
+      "website": "https://www.nanya.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "winbond",
+      "name": "Winbond",
+      "roles": [
+        "memory"
+      ],
+      "focus": "Specialty memory products",
+      "website": "https://www.winbond.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "macronix",
+      "name": "Macronix",
+      "roles": [
+        "memory"
+      ],
+      "focus": "Non-volatile memory products",
+      "website": "https://www.macronix.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "gigadevice",
+      "name": "GigaDevice",
+      "roles": [
+        "memory",
+        "analog-power"
+      ],
+      "focus": "Flash memory and microcontrollers",
+      "website": "https://www.gigadevice.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "issi",
+      "name": "ISSI",
+      "roles": [
+        "memory"
+      ],
+      "focus": "Memory and related semiconductor products",
+      "website": "https://www.issi.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "texas-instruments",
+      "name": "Texas Instruments",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Analog and embedded processing",
+      "website": "https://www.ti.com/",
+      "investor_url": "https://investor.ti.com/",
+      "financial_company_id": "TXN"
+    },
+    {
+      "id": "analog-devices",
+      "name": "Analog Devices",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Analog, mixed-signal and signal-processing ICs",
+      "website": "https://www.analog.com/",
+      "investor_url": "https://investor.analog.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "infineon",
+      "name": "Infineon",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Power, automotive and embedded semiconductors",
+      "website": "https://www.infineon.com/",
+      "investor_url": "https://www.infineon.com/cms/en/about-infineon/investor/",
+      "financial_company_id": null
+    },
+    {
+      "id": "stmicroelectronics",
+      "name": "STMicroelectronics",
+      "roles": [
+        "analog-power",
+        "manufacturing"
+      ],
+      "focus": "Power, sensing and embedded semiconductors",
+      "website": "https://www.st.com/",
+      "investor_url": "https://investors.st.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "nxp",
+      "name": "NXP",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Automotive, industrial and embedded semiconductors",
+      "website": "https://www.nxp.com/",
+      "investor_url": "https://investors.nxp.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "onsemi",
+      "name": "onsemi",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Power and sensing technologies",
+      "website": "https://www.onsemi.com/",
+      "investor_url": "https://investor.onsemi.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "renesas",
+      "name": "Renesas",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Embedded processing, analog and power devices",
+      "website": "https://www.renesas.com/",
+      "investor_url": "https://www.renesas.com/en/about/investor-relations",
+      "financial_company_id": null
+    },
+    {
+      "id": "microchip",
+      "name": "Microchip Technology",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Embedded control and mixed-signal products",
+      "website": "https://www.microchip.com/",
+      "investor_url": "https://ir.microchip.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "rohm",
+      "name": "ROHM",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Analog, power and discrete semiconductors",
+      "website": "https://www.rohm.com/",
+      "investor_url": "https://www.rohm.com/ir",
+      "financial_company_id": null
+    },
+    {
+      "id": "nexperia",
+      "name": "Nexperia",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Discrete, logic and power devices",
+      "website": "https://www.nexperia.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "vishay",
+      "name": "Vishay",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Discrete semiconductors and electronic components",
+      "website": "https://www.vishay.com/",
+      "investor_url": "https://ir.vishay.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "power-integrations",
+      "name": "Power Integrations",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Power-conversion integrated circuits",
+      "website": "https://www.power.com/",
+      "investor_url": "https://investors.power.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "diodes",
+      "name": "Diodes Incorporated",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Discrete, logic, analog and mixed-signal devices",
+      "website": "https://www.diodes.com/",
+      "investor_url": "https://investor.diodes.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "allegro",
+      "name": "Allegro MicroSystems",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Power and magnetic-sensing semiconductors",
+      "website": "https://www.allegromicro.com/",
+      "investor_url": "https://investors.allegromicro.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "mps",
+      "name": "Monolithic Power Systems",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Power-management integrated circuits",
+      "website": "https://www.monolithicpower.com/",
+      "investor_url": "https://ir.monolithicpower.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "navitas",
+      "name": "Navitas Semiconductor",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Gallium-nitride and silicon-carbide power devices",
+      "website": "https://navitassemi.com/",
+      "investor_url": "https://ir.navitassemi.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "wolfspeed",
+      "name": "Wolfspeed",
+      "roles": [
+        "analog-power",
+        "materials"
+      ],
+      "focus": "Silicon-carbide materials and power devices",
+      "website": "https://www.wolfspeed.com/",
+      "investor_url": "https://investor.wolfspeed.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "toshiba",
+      "name": "Toshiba Electronic Devices & Storage",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Discrete devices, system LSIs and storage",
+      "website": "https://toshiba.semicon-storage.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "nuvoton",
+      "name": "Nuvoton",
+      "roles": [
+        "analog-power"
+      ],
+      "focus": "Microcontrollers and embedded semiconductors",
+      "website": "https://www.nuvoton.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "asml",
+      "name": "ASML",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Lithography systems",
+      "website": "https://www.asml.com/",
+      "investor_url": "https://www.asml.com/en/investors",
+      "financial_company_id": "ASML"
+    },
+    {
+      "id": "applied-materials",
+      "name": "Applied Materials",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Materials engineering and wafer-fabrication equipment",
+      "website": "https://www.appliedmaterials.com/",
+      "investor_url": "https://ir.appliedmaterials.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "lam-research",
+      "name": "Lam Research",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Wafer-fabrication equipment",
+      "website": "https://www.lamresearch.com/",
+      "investor_url": "https://investor.lamresearch.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "tokyo-electron",
+      "name": "Tokyo Electron",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor production equipment",
+      "website": "https://www.tel.com/",
+      "investor_url": "https://www.tel.com/ir/",
+      "financial_company_id": null
+    },
+    {
+      "id": "kla",
+      "name": "KLA",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Process control, inspection and metrology",
+      "website": "https://www.kla.com/",
+      "investor_url": "https://ir.kla.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "asm",
+      "name": "ASM",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Deposition and wafer-processing equipment",
+      "website": "https://www.asm.com/",
+      "investor_url": "https://www.asm.com/investors",
+      "financial_company_id": null
+    },
+    {
+      "id": "screen",
+      "name": "SCREEN Semiconductor Solutions",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Wafer-cleaning and semiconductor equipment",
+      "website": "https://www.screen.co.jp/spe/en",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "kokusai",
+      "name": "KOKUSAI ELECTRIC",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor thin-film processing equipment",
+      "website": "https://www.kokusai-electric.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "lasertec",
+      "name": "Lasertec",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Inspection and metrology systems",
+      "website": "https://www.lasertec.co.jp/en/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "asmpt",
+      "name": "ASMPT",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Assembly and advanced-packaging equipment",
+      "website": "https://www.asmpt.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "besi",
+      "name": "Besi",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor assembly equipment",
+      "website": "https://www.besi.com/",
+      "investor_url": "https://www.besi.com/investor-relations/",
+      "financial_company_id": null
+    },
+    {
+      "id": "kulicke-soffa",
+      "name": "Kulicke & Soffa",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor assembly equipment",
+      "website": "https://www.kns.com/",
+      "investor_url": "https://investor.kns.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "disco",
+      "name": "DISCO",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Dicing, grinding and wafer-processing equipment",
+      "website": "https://www.disco.co.jp/eg/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "advantest",
+      "name": "Advantest",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor test systems",
+      "website": "https://www.advantest.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "teradyne",
+      "name": "Teradyne",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Automated semiconductor test equipment",
+      "website": "https://www.teradyne.com/",
+      "investor_url": "https://investors.teradyne.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "cohu",
+      "name": "Cohu",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor test and inspection equipment",
+      "website": "https://www.cohu.com/",
+      "investor_url": "https://ir.cohu.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "accretech",
+      "name": "ACCRETECH / Tokyo Seimitsu",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor manufacturing and measurement equipment",
+      "website": "https://www.accretech.com/en/index.html",
+      "investor_url": "https://www.accretech.com/en/ir/",
+      "financial_company_id": null
+    },
+    {
+      "id": "onto",
+      "name": "Onto Innovation",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Metrology, inspection and process control",
+      "website": "https://ontoinnovation.com/",
+      "investor_url": "https://investors.ontoinnovation.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor metrology",
+      "website": "https://www.novami.com/",
+      "investor_url": "https://www.novami.com/investors/",
+      "financial_company_id": null
+    },
+    {
+      "id": "camtek",
+      "name": "Camtek",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Inspection and metrology",
+      "website": "https://www.camtek.com/",
+      "investor_url": "https://www.camtek.com/investors/",
+      "financial_company_id": null
+    },
+    {
+      "id": "axcelis",
+      "name": "Axcelis",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Ion-implantation equipment",
+      "website": "https://www.axcelis.com/",
+      "investor_url": "https://investor.axcelis.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "veeco",
+      "name": "Veeco",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Thin-film and semiconductor-process equipment",
+      "website": "https://www.veeco.com/",
+      "investor_url": "https://ir.veeco.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "aixtron",
+      "name": "AIXTRON",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Deposition equipment for compound semiconductors",
+      "website": "https://www.aixtron.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "canon",
+      "name": "Canon semiconductor lithography",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor lithography equipment",
+      "website": "https://global.canon/en/product/indtech/semicon/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "nikon",
+      "name": "Nikon semiconductor lithography",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor lithography systems",
+      "website": "https://www.nikon.com/business/industry/electronics/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "hitachi-high-tech",
+      "name": "Hitachi High-Tech",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor manufacturing, inspection and analysis",
+      "website": "https://www.hitachi-hightech.com/global/en/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "naura",
+      "name": "NAURA",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor production equipment",
+      "website": "https://www.naura.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "amec",
+      "name": "AMEC",
+      "roles": [
+        "equipment"
+      ],
+      "focus": "Semiconductor processing equipment",
+      "website": "https://www.amec-inc.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "synopsys",
+      "name": "Synopsys",
+      "roles": [
+        "eda-ip"
+      ],
+      "focus": "Electronic-design automation and semiconductor IP",
+      "website": "https://www.synopsys.com/",
+      "investor_url": "https://investor.synopsys.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "cadence",
+      "name": "Cadence",
+      "roles": [
+        "eda-ip"
+      ],
+      "focus": "Electronic-design automation and design IP",
+      "website": "https://www.cadence.com/",
+      "investor_url": "https://investor.cadence.com/overview/default.aspx",
+      "financial_company_id": null
+    },
+    {
+      "id": "siemens-eda",
+      "name": "Siemens EDA",
+      "roles": [
+        "eda-ip"
+      ],
+      "focus": "Electronic-design automation software",
+      "website": "https://eda.sw.siemens.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "arm",
+      "name": "Arm",
+      "roles": [
+        "eda-ip"
+      ],
+      "focus": "Processor and system IP",
+      "website": "https://www.arm.com/",
+      "investor_url": "https://investors.arm.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "rambus",
+      "name": "Rambus",
+      "roles": [
+        "eda-ip"
+      ],
+      "focus": "Memory, interface and security IP",
+      "website": "https://www.rambus.com/",
+      "investor_url": "https://investor.rambus.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "ceva",
+      "name": "CEVA",
+      "roles": [
+        "eda-ip"
+      ],
+      "focus": "Connectivity, sensing and signal-processing IP",
+      "website": "https://www.ceva-ip.com/",
+      "investor_url": "https://www.ceva-ip.com/investor-relations/",
+      "financial_company_id": null
+    },
+    {
+      "id": "shin-etsu",
+      "name": "Shin-Etsu semiconductor materials",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Silicon wafers and semiconductor materials",
+      "website": "https://www.shinetsu.co.jp/en/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "sumco",
+      "name": "SUMCO",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Silicon wafers",
+      "website": "https://www.sumcosi.com/english/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "globalwafers",
+      "name": "GlobalWafers",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Semiconductor wafers",
+      "website": "https://www.sas-globalwafers.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "siltronic",
+      "name": "Siltronic",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Silicon wafers",
+      "website": "https://www.siltronic.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "soitec",
+      "name": "Soitec",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Engineered semiconductor substrates",
+      "website": "https://www.soitec.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "entegris",
+      "name": "Entegris",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Materials, filtration and contamination-control products",
+      "website": "https://www.entegris.com/",
+      "investor_url": "https://investor.entegris.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "merck-electronics",
+      "name": "Merck Electronics",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Semiconductor chemicals and materials",
+      "website": "https://www.emdgroup.com/en/expertise/electronics.html",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "jsr",
+      "name": "JSR",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Lithography and semiconductor materials",
+      "website": "https://www.jsr.co.jp/jsr_e/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "resonac",
+      "name": "Resonac",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Semiconductor and packaging materials",
+      "website": "https://www.resonac.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "fujifilm",
+      "name": "FUJIFILM Electronic Materials",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Semiconductor process chemicals and materials",
+      "website": "https://www.fujifilm.com/products/semiconductor-materials/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "tok",
+      "name": "Tokyo Ohka Kogyo",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Photoresists and semiconductor chemicals",
+      "website": "https://www.tok.co.jp/eng/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "air-liquide",
+      "name": "Air Liquide Electronics",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Electronic gases and materials",
+      "website": "https://electronics.airliquide.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "linde",
+      "name": "Linde Electronics",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Electronic gases and materials",
+      "website": "https://www.linde-gas.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "air-products",
+      "name": "Air Products",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Industrial gases for electronics manufacturing",
+      "website": "https://www.airproducts.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "qnity",
+      "name": "Qnity",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Electronics and semiconductor materials",
+      "website": "https://www.qnityelectronics.com/",
+      "investor_url": "https://ir.qnityelectronics.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "ajinomoto",
+      "name": "Ajinomoto build-up materials",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Insulating materials for semiconductor substrates",
+      "website": "https://www.ajinomoto.com/innovation/action/buildupfilm",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "ibiden",
+      "name": "IBIDEN",
+      "roles": [
+        "materials"
+      ],
+      "focus": "IC package substrates",
+      "website": "https://www.ibiden.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "shinko",
+      "name": "Shinko Electric Industries",
+      "roles": [
+        "materials",
+        "packaging-test"
+      ],
+      "focus": "IC packages, substrates and assembly",
+      "website": "https://www.shinko.co.jp/english/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "ats",
+      "name": "AT&S",
+      "roles": [
+        "materials"
+      ],
+      "focus": "IC substrates and high-end interconnects",
+      "website": "https://ats.net/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "unimicron",
+      "name": "Unimicron",
+      "roles": [
+        "materials"
+      ],
+      "focus": "IC substrates and printed circuit boards",
+      "website": "https://www.unimicron.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "kyocera",
+      "name": "Kyocera semiconductor components",
+      "roles": [
+        "materials"
+      ],
+      "focus": "Ceramic packages and semiconductor components",
+      "website": "https://global.kyocera.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "zeiss-smt",
+      "name": "ZEISS Semiconductor Manufacturing Technology",
+      "roles": [
+        "equipment",
+        "materials"
+      ],
+      "focus": "Optics and enabling semiconductor equipment",
+      "website": "https://www.zeiss.com/semiconductor-manufacturing-technology/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "ase",
+      "name": "ASE Technology",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor assembly, packaging and test",
+      "website": "https://www.aseglobal.com/",
+      "investor_url": "https://ir.aseglobal.com/",
+      "financial_company_id": null
+    },
+    {
+      "id": "amkor",
+      "name": "Amkor",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Outsourced assembly, packaging and test",
+      "website": "https://amkor.com/",
+      "investor_url": "https://ir.amkor.com/",
+      "financial_company_id": "AMKR"
+    },
+    {
+      "id": "jcet",
+      "name": "JCET",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor packaging and test services",
+      "website": "https://www.jcetglobal.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "tongfu",
+      "name": "Tongfu Microelectronics",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor packaging and test services",
+      "website": "https://www.tfme.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "huatian",
+      "name": "Huatian Technology",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor packaging and test services",
+      "website": "https://www.ht-tech.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "pti",
+      "name": "Powertech Technology",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Memory and logic packaging and test services",
+      "website": "https://www.pti.com.tw/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "chipmos",
+      "name": "ChipMOS",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor assembly and test services",
+      "website": "https://www.chipmos.com/",
+      "investor_url": "https://www.chipmos.com/english/ir/info2.aspx",
+      "financial_company_id": null
+    },
+    {
+      "id": "chipbond",
+      "name": "Chipbond",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor assembly and test services",
+      "website": "https://www.chipbond.com.tw/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "hana",
+      "name": "Hana Micron",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor packaging and test services",
+      "website": "https://hanamicron.com/eng/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "utac",
+      "name": "UTAC",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor assembly and test services",
+      "website": "https://www.utacgroup.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "unisem",
+      "name": "Unisem",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor assembly and test services",
+      "website": "https://www.unisemgroup.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "carsem",
+      "name": "Carsem",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor assembly and test services",
+      "website": "https://www.carsem.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    },
+    {
+      "id": "inari",
+      "name": "Inari Amertron",
+      "roles": [
+        "packaging-test"
+      ],
+      "focus": "Semiconductor assembly and test services",
+      "website": "https://www.inari-amertron.com/",
+      "investor_url": null,
+      "financial_company_id": null
+    }
+  ],
+  "resources": [
+    {
+      "id": "sia",
+      "title": "SIA industry research",
+      "publisher": "Semiconductor Industry Association",
+      "category": "industry-data",
+      "url": "https://www.semiconductors.org/resources/",
+      "description": "Industry reports, policy research and market-statistics releases.",
+      "access": "mixed",
+      "roles": []
+    },
+    {
+      "id": "semi-data",
+      "title": "SEMI market data",
+      "publisher": "SEMI",
+      "category": "industry-data",
+      "url": "https://www.semi.org/en/market-data",
+      "description": "Equipment, materials and fabrication-capacity research.",
+      "access": "mixed",
+      "roles": [
+        "equipment",
+        "materials",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "wsts",
+      "title": "WSTS market statistics",
+      "publisher": "World Semiconductor Trade Statistics",
+      "category": "industry-data",
+      "url": "https://www.wsts.org/",
+      "description": "Market-statistics releases and historical-billings resources; detailed reports can require subscription.",
+      "access": "mixed",
+      "roles": []
+    },
+    {
+      "id": "gsa",
+      "title": "GSA directories",
+      "publisher": "Global Semiconductor Alliance",
+      "category": "industry-data",
+      "url": "https://www.gsaglobal.org/directories/",
+      "description": "Industry directories; member-directory access can require membership.",
+      "access": "mixed",
+      "roles": []
+    },
+    {
+      "id": "semi-directory",
+      "title": "SEMI member directory",
+      "publisher": "SEMI",
+      "category": "industry-data",
+      "url": "https://www.semi.org/en/communities/scc/membership-directory",
+      "description": "Additional companies and organizations across the semiconductor supply chain.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "esia",
+      "title": "European semiconductor industry",
+      "publisher": "European Semiconductor Industry Association",
+      "category": "industry-data",
+      "url": "https://www.eusemiconductors.eu/",
+      "description": "European industry information and policy publications.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "tsia",
+      "title": "Taiwan semiconductor industry",
+      "publisher": "Taiwan Semiconductor Industry Association",
+      "category": "industry-data",
+      "url": "https://www.tsia.org.tw/",
+      "description": "Industry association publications and member information.",
+      "access": "mixed",
+      "roles": []
+    },
+    {
+      "id": "sec",
+      "title": "SEC EDGAR filings",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "category": "filings",
+      "url": "https://www.sec.gov/edgar/search/",
+      "description": "Search company filings. A declared contact User-Agent is required before implementing automated SEC ingestion.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "hkex",
+      "title": "HKEXnews disclosures",
+      "publisher": "Hong Kong Exchanges and Clearing",
+      "category": "filings",
+      "url": "https://www.hkexnews.hk/",
+      "description": "Listed-company announcements and financial disclosures.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "mops",
+      "title": "Taiwan MOPS disclosures",
+      "publisher": "Taiwan Stock Exchange",
+      "category": "filings",
+      "url": "https://mops.twse.com.tw/",
+      "description": "Listed-company disclosure portal.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "edinet",
+      "title": "EDINET disclosures",
+      "publisher": "Japan Financial Services Agency",
+      "category": "filings",
+      "url": "https://disclosure2.edinet-fsa.go.jp/",
+      "description": "Japanese issuer disclosure and securities-report portal.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "dart",
+      "title": "DART English disclosures",
+      "publisher": "Korea Financial Supervisory Service",
+      "category": "filings",
+      "url": "https://englishdart.fss.or.kr/",
+      "description": "Korean company filings and English disclosure access.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "imec",
+      "title": "imec research",
+      "publisher": "imec",
+      "category": "research",
+      "url": "https://www.imec-int.com/en",
+      "description": "Semiconductor technology research and technical publications.",
+      "access": "mixed",
+      "roles": []
+    },
+    {
+      "id": "leti",
+      "title": "CEA-Leti research",
+      "publisher": "CEA-Leti",
+      "category": "research",
+      "url": "https://www.leti-cea.com/cea-tech/leti/english/",
+      "description": "Microelectronics research and technology-development publications.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "fraunhofer",
+      "title": "Fraunhofer microelectronics",
+      "publisher": "Fraunhofer Group for Microelectronics",
+      "category": "research",
+      "url": "https://www.mikroelektronik.fraunhofer.de/en.html",
+      "description": "Applied microelectronics research and institute resources.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "irds",
+      "title": "International Roadmap for Devices and Systems",
+      "publisher": "IEEE IRDS",
+      "category": "research",
+      "url": "https://irds.ieee.org/",
+      "description": "Technology-roadmap reports; distinguish projections from reported outcomes.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "iedm",
+      "title": "International Electron Devices Meeting",
+      "publisher": "IEEE IEDM",
+      "category": "research",
+      "url": "https://www.ieee-iedm.org/",
+      "description": "Device-research conference information and technical-program resources.",
+      "access": "mixed",
+      "roles": []
+    },
+    {
+      "id": "isscc",
+      "title": "International Solid-State Circuits Conference",
+      "publisher": "IEEE ISSCC",
+      "category": "research",
+      "url": "https://www.isscc.org/",
+      "description": "Circuit-design conference information and technical-program resources.",
+      "access": "mixed",
+      "roles": [
+        "design",
+        "analog-power"
+      ]
+    },
+    {
+      "id": "xplore",
+      "title": "IEEE Xplore",
+      "publisher": "IEEE",
+      "category": "research",
+      "url": "https://ieeexplore.ieee.org/",
+      "description": "Technical publications; abstracts and full-text access have different permissions.",
+      "access": "mixed",
+      "roles": []
+    },
+    {
+      "id": "arxiv",
+      "title": "Computer architecture preprints",
+      "publisher": "arXiv",
+      "category": "research",
+      "url": "https://arxiv.org/list/cs.AR/recent",
+      "description": "Research preprints; inclusion is not peer-review certification.",
+      "access": "public",
+      "roles": [
+        "design",
+        "eda-ip"
+      ]
+    },
+    {
+      "id": "semi-standards",
+      "title": "SEMI standards",
+      "publisher": "SEMI",
+      "category": "standards",
+      "url": "https://www.semi.org/en/standards",
+      "description": "Semiconductor manufacturing standards and technical committees.",
+      "access": "mixed",
+      "roles": [
+        "equipment",
+        "materials",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "jedec",
+      "title": "JEDEC standards",
+      "publisher": "JEDEC",
+      "category": "standards",
+      "url": "https://www.jedec.org/",
+      "description": "Memory and semiconductor standards; access conditions vary.",
+      "access": "mixed",
+      "roles": [
+        "memory",
+        "packaging-test"
+      ]
+    },
+    {
+      "id": "accellera",
+      "title": "Accellera standards",
+      "publisher": "Accellera Systems Initiative",
+      "category": "standards",
+      "url": "https://www.accellera.org/downloads/standards",
+      "description": "Design and verification standards with publisher-specific licenses.",
+      "access": "mixed",
+      "roles": [
+        "eda-ip",
+        "design"
+      ]
+    },
+    {
+      "id": "riscv",
+      "title": "RISC-V specifications",
+      "publisher": "RISC-V International",
+      "category": "standards",
+      "url": "https://riscv.org/specifications/",
+      "description": "Instruction-set architecture and related specifications.",
+      "access": "public",
+      "roles": [
+        "design",
+        "eda-ip"
+      ]
+    },
+    {
+      "id": "ucie",
+      "title": "UCIe consortium",
+      "publisher": "UCIe Consortium",
+      "category": "standards",
+      "url": "https://www.uciexpress.org/",
+      "description": "Chiplet-interconnect standards and consortium resources.",
+      "access": "mixed",
+      "roles": [
+        "design",
+        "packaging-test",
+        "eda-ip"
+      ]
+    },
+    {
+      "id": "cxl",
+      "title": "CXL specifications",
+      "publisher": "Compute Express Link Consortium",
+      "category": "standards",
+      "url": "https://computeexpresslink.org/cxl-specification/",
+      "description": "Coherent-interconnect specifications and access terms.",
+      "access": "mixed",
+      "roles": [
+        "design",
+        "memory",
+        "eda-ip"
+      ]
+    },
+    {
+      "id": "pcisig",
+      "title": "PCI-SIG specifications",
+      "publisher": "PCI-SIG",
+      "category": "standards",
+      "url": "https://pcisig.com/specifications",
+      "description": "PCI Express standards; materials can require membership or a license.",
+      "access": "mixed",
+      "roles": [
+        "design",
+        "eda-ip"
+      ]
+    },
+    {
+      "id": "openroad",
+      "title": "OpenROAD documentation",
+      "publisher": "The OpenROAD Project",
+      "category": "open-tools",
+      "url": "https://openroad.readthedocs.io/en/latest/",
+      "description": "Open-source digital physical-design flow documentation.",
+      "access": "public",
+      "roles": [
+        "eda-ip",
+        "design"
+      ]
+    },
+    {
+      "id": "openlane",
+      "title": "OpenLane documentation",
+      "publisher": "OpenLane",
+      "category": "open-tools",
+      "url": "https://openlane2.readthedocs.io/en/latest/",
+      "description": "Open-source ASIC design-flow documentation.",
+      "access": "public",
+      "roles": [
+        "eda-ip",
+        "design"
+      ]
+    },
+    {
+      "id": "yosys",
+      "title": "Yosys documentation",
+      "publisher": "YosysHQ",
+      "category": "open-tools",
+      "url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/",
+      "description": "Open-source synthesis-tool documentation.",
+      "access": "public",
+      "roles": [
+        "eda-ip",
+        "design"
+      ]
+    },
+    {
+      "id": "skywater-pdk",
+      "title": "SkyWater open PDK documentation",
+      "publisher": "SkyWater open PDK project",
+      "category": "open-tools",
+      "url": "https://skywater-pdk.readthedocs.io/",
+      "description": "Process-design-kit documentation; check licenses and supported process versions.",
+      "access": "public",
+      "roles": [
+        "eda-ip",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "ihp-pdk",
+      "title": "IHP open PDK",
+      "publisher": "IHP",
+      "category": "open-tools",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK",
+      "description": "Open process-design-kit source and documentation.",
+      "access": "public",
+      "roles": [
+        "eda-ip",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "nist-chips",
+      "title": "CHIPS research and development",
+      "publisher": "U.S. National Institute of Standards and Technology",
+      "category": "policy",
+      "url": "https://www.nist.gov/chips",
+      "description": "Official CHIPS program and research information.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "bis",
+      "title": "U.S. export-control resources",
+      "publisher": "U.S. Bureau of Industry and Security",
+      "category": "policy",
+      "url": "https://www.bis.gov/",
+      "description": "Official export-control publications. Consult current primary texts for any legal question.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "eu-chips",
+      "title": "European Chips Act resources",
+      "publisher": "European Commission",
+      "category": "policy",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/european-chips-act",
+      "description": "Official European semiconductor-policy information.",
+      "access": "public",
+      "roles": []
+    },
+    {
+      "id": "usgs",
+      "title": "Mineral commodity information",
+      "publisher": "U.S. Geological Survey",
+      "category": "policy",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/commodity-statistics-and-information",
+      "description": "Primary mineral statistics relevant to upstream semiconductor materials.",
+      "access": "public",
+      "roles": [
+        "materials"
+      ]
+    }
+  ]
+}

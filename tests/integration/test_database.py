@@ -20,7 +20,10 @@ def test_ingestion_is_idempotent(session, encoder):
 
 
 def test_no_lookahead_and_company_filter(session, encoder):
-    for filters in [RetrievalFilters(as_of=date(2025, 2, 25)), RetrievalFilters(company="TSM")]:
+    for filters in [
+        RetrievalFilters(as_of=date(2025, 2, 25)),
+        RetrievalFilters(company="TSM", as_of=date(2024, 3, 11)),
+    ]:
         assert retrieve(session, encoder, "annual revenue", filters) == []
     with pytest.raises(MissingEvidence):
         calculate_metric(session, "NVDA", Metric.GROSS_MARGIN, date(2025, 1, 26), date(2025, 2, 25))
@@ -61,7 +64,7 @@ def test_topic_period_document_and_publication_filters(session, encoder):
 
 
 def add_revision(session, published_at, value, suffix):
-    original = session.scalars(select(Source)).first()
+    original = session.scalars(select(Source).where(Source.company == "NVDA")).first()
     revision = Source(**{c.name: getattr(original, c.name) for c in Source.__table__.columns})
     revision.id = "synthetic-test-revision-" + suffix
     revision.published_at = published_at
@@ -90,7 +93,7 @@ def test_later_restatement_is_excluded_until_public(session):
 
 
 def test_same_publication_conflict_requires_review(session):
-    original = session.scalars(select(Source)).first()
+    original = session.scalars(select(Source).where(Source.company == "NVDA")).first()
     add_revision(session, original.published_at, 140000, "conflicting")
     with pytest.raises(MissingEvidence, match="Conflicting"):
         calculate_metric(session, "NVDA", Metric.REVENUE, date(2025, 1, 26), date(2025, 3, 1))

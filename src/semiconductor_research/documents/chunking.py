@@ -1,11 +1,13 @@
-def fact_chunks(facts: list[dict]) -> list[dict]:
+def fact_chunks(
+    facts: list[dict], company="NVIDIA", accounting_basis="US GAAP; unaudited earnings release"
+) -> list[dict]:
     """Bounded, auditable financial row chunks; never split away period or units."""
     chunks = []
     for fact in facts:
         text = (
-            f"NVIDIA {fact['fiscal_label']} annual {fact['metric'].replace('_', ' ')}: "
-            f"{fact['value']:,} {fact['currency']} million. Reporting period ended {fact['period_end']}. "
-            "US GAAP; unaudited earnings release. Cash outflows are positive magnitudes."
+            f"{company} {fact['fiscal_label']} annual {fact['metric'].replace('_', ' ')}: "
+            f"{fact['value']:,} {fact['currency']} at original unit scale {fact['unit_scale']}. Reporting period ended {fact['period_end']}. "
+            f"{accounting_basis}. Cash outflows are positive magnitudes."
         )
         chunks.append(
             {

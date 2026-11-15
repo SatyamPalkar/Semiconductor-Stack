@@ -1,0 +1,12 @@
+{
+  "capture_kind": "recorded_primary_source_excerpt",
+  "synthetic": false,
+  "original_url": "https://investors.micron.com/news/press-release/2024/Micron-Technology-Inc--Reports-Results-for-the-Fourth-Quarter-and-Full-Year-of-Fiscal-2024-09-25-2024/default.aspx",
+  "original_sha256": "4731a91558a187d0a8bc9c2d6e64dbfcd6964ed019b73f6c791fa90cd877d6e5",
+  "extract_sha256": "21f850e4d01a1ad16c305941dfe3668887e8b79d8bc90cf8ffef25bfa69d9470",
+  "retrieved_at": "2026-11-15T06:07:40.665700+00:00",
+  "publication_date": "2024-09-25",
+  "availability_rule": "conservative end of publisher day in America/Boise",
+  "publication_basis": "date printed on official earnings release",
+  "scope": "Selected real consolidated statement tables, not a certified historical archive"
+}

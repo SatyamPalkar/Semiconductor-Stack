@@ -1,0 +1,12 @@
+{
+  "capture_kind": "recorded_primary_source_excerpt",
+  "synthetic": false,
+  "original_url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-reports-financial-results-fourth-quarter-and-10",
+  "original_sha256": "560feb3d8acb435edfad12faad77e1932bb442e1c0bb41b1f5d9e19577241872",
+  "extract_sha256": "a4ee81698ea08e81b6522ff46495e61b681777179e5e8dfe931e41c25275c3a0",
+  "retrieved_at": "2026-11-15T06:07:40.940140+00:00",
+  "publication_date": "2025-02-10",
+  "availability_rule": "conservative end of publisher day in America/Phoenix",
+  "publication_basis": "date printed on official earnings release",
+  "scope": "Selected real consolidated statement tables, not a certified historical archive"
+}

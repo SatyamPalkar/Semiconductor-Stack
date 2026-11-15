@@ -11,3 +11,7 @@ Before any public API deployment: add authentication or restricted demo access, 
 ## Local stop / rollback
 
 Stop foreground preview/API with Ctrl+C. Use `make native-down` or `make db-stop` for the active database profile. Preserve `data/raw` originals, fixture metadata and database exports. Alembic revision 0003 deliberately refuses to restore NOT NULL period starts if those dates remain unknown; inventing financial metadata is not an acceptable rollback. Take a backup and create a fresh isolated database if a destructive schema reset is needed; never reset another project.
+
+## Retained expansion preview (15 November 2026)
+
+The local review remains available at `http://127.0.0.1:3100/value-chain/`, `/sources/` and `/industry-economics/`, with API docs at `http://127.0.0.1:8100/docs`. Stop only these known task-owned processes with `kill 54834` (static preview) and `kill 65736` (API), or Ctrl+C in their terminals. Restart with `make preview` and `make api`. See [the expansion report](industry-expansion-report.md) for actual verification and source scope. No hosted deployment was performed.
