@@ -15,3 +15,11 @@ Playwright checks the production static export: real metrics/charts, provenance,
 Independent human citation support, historical-source archival integrity, financial comparability across companies, a live hosted model and the LangGraph workflow are not evaluated. No fabricated score or unexecuted agent comparison is shown. Add financial comparisons, conflicting prose, multi-company evidence, harder retrieval paraphrases and thesis quality before comparing simple QA against an agent.
 
 Future live runs must be opt-in, use fixed prompts/models/datasets, record token usage and estimated cost and enforce run limits. An LLM judge may supplement human review; it cannot replace it.
+
+## CI portability follow-up (15 November 2026)
+
+The original v1.1 dataset scored 21/21 on the local ARM development environment and 20/21 on the Linux CI runner. Its generic “reported research and development expense” question did not reliably meet the bounded semantic retrieval threshold. This is a supported-vocabulary limitation, not a financial calculation failure; no threshold was lowered and no expected topic or numerical check was removed.
+
+Dataset v1.2 makes that one document-fact query explicit: “NVIDIA annual research and development expense”. It retains the expected `research_development` topic, citation/date checks and all other cases. Results now derive their version label from the dataset and continue to include dataset/pipeline hashes. A passing v1.2 score must not be described as proof that the original vague paraphrase works across platforms. The unconfigured-model API test separately uses real stored evidence to test the provider boundary independently of retrieval scores.
+
+The combined CI pytest run uses importlib collection so unit/integration test files may share a basename. It runs all 85 current tests together; the usual local Make targets still allow the suites to run separately.

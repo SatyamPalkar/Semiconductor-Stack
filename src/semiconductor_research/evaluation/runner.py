@@ -70,7 +70,7 @@ def evaluate():
     report = {
         "executed": True,
         "generated_at": datetime.now(UTC).isoformat(),
-        "version": "milestone1-v1.1",
+        "version": f"milestone1-v{dataset['version']}",
         "dataset_sha256": hashlib.sha256(raw).hexdigest(),
         "pipeline_sha256": pipeline_hash,
         "embedding_identifier": encoder.identifier,

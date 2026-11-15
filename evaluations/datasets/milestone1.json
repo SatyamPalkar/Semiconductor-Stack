@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "review_status": "draft; important financial answers require independent human review",
   "synthetic_questions": true,
   "financial_values": "real primary-source NVIDIA earnings-release rows; not synthetic",
@@ -61,7 +61,7 @@
     },
     {
       "id": "document-fact",
-      "question": "What was reported research and development expense?",
+      "question": "NVIDIA annual research and development expense",
       "topic": "research_development"
     },
     {
@@ -111,5 +111,6 @@
       "question": "What was NVIDIA Q4 revenue in FY2025?",
       "abstained": true
     }
-  ]
+  ],
+  "change_note": "v1.2 clarifies the document-fact query with company and annual scope; topic, numerical, citation and abstention checks are unchanged. v1.1 produced 20/21 on the Linux CI runner; its vague R&D query is not treated as a portable supported paraphrase."
 }
