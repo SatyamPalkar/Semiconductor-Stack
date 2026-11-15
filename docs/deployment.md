@@ -15,3 +15,7 @@ Stop foreground preview/API with Ctrl+C. Use `make native-down` or `make db-stop
 ## Retained expansion preview (15 November 2026)
 
 The local review remains available at `http://127.0.0.1:3100/value-chain/`, `/sources/` and `/industry-economics/`, with API docs at `http://127.0.0.1:8100/docs`. Stop only these known task-owned processes with `kill 54834` (static preview) and `kill 65736` (API), or Ctrl+C in their terminals. Restart with `make preview` and `make api`. See [the expansion report](industry-expansion-report.md) for actual verification and source scope. No hosted deployment was performed.
+
+## Current application-view preview (15 November 2026)
+
+Applications are available locally at `http://127.0.0.1:3100/applications/`, with the application-led opening at `/`. Current task-owned processes are PID 54834 (static preview) and PID 77927 (API). Stop with `kill 54834` and `kill 77927`, or Ctrl+C in their terminals; restart with `make preview` and `make api`. These API process IDs supersede the earlier reports’ retained IDs. No deployment or GitHub push was performed in this application-view milestone.

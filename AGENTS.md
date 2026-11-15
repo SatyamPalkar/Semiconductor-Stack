@@ -30,6 +30,8 @@ Keep recorded REAL source excerpts distinct from synthetic test inputs. Syntheti
 
 Model output schemas and citation IDs provide structural validation, not proof of entailment. Extractive answers and recorded examples must remain labelled. Live LLM use is opt-in, server-side only; no arbitrary SQL, shell or URLs become model tools. The pilot's bounded vocabulary can abstain on paraphrases; don't claim a general conversational router.
 
+Application worlds are separately dated educational context in `data/catalog/application-worlds.json`, not financial facts or assistant evidence. Portfolio examples require matching company references but do not establish OEM contracts or application revenue. Geographic examples distinguish headquarters from operating sites; do not infer shipment routes. Preserve visible notes for restricted source URLs.
+
 ## Scope and quality
 
 Milestone 1 does not implement the LangGraph thesis workflow, worker execution, AWS, valuation or trading. Don't create empty framework directories or suggest their presence means those capabilities work. Full agent budgets, checkpoints and retries belong to the next workflow milestone.

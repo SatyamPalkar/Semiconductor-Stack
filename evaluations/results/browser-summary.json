@@ -1,11 +1,11 @@
 {
-  "kind": "Executed guided-story, directory and financial production-export browser workflows using isolated Chrome",
-  "executed_at": "2026-11-15T07:29:44.035Z",
-  "passed": 23,
+  "kind": "Executed refined-homepage and application-led research workflows using isolated Chrome",
+  "executed_at": "2026-11-15T11:05:36.593Z",
+  "passed": 31,
   "failed": 0,
   "skipped": 0,
   "flaky": 0,
-  "duration_ms": 17589.01,
+  "duration_ms": 24648.769,
   "runner": "Playwright 1.65.1",
   "backend": "local PostgreSQL/pgvector + FastAPI",
   "hosted_model_calls": 0,
@@ -15,6 +15,13 @@
     768,
     393
   ],
-  "research_routes_checked": 7,
-  "scope": "Four-chapter narrative, responsive original SVG scenes, accessible business tabs, reading progress, guided cash navigation with header clearance, signed Micron history and as-of withholding, exact source disclosures and page-to-page continuity; prior directory, native-unit financial, offline, keyboard/reduced-motion and seven-route responsive workflows. Not independent financial/citation review."
+  "research_routes_checked": 8,
+  "scope": "Refined silicon-core homepage; six application links via keyboard; non-overlapping 44px targets across five widths; reduced motion and responsive masthead. Plus application-first entry, nine system scenes, function filters, task/hotspot navigation, cited portfolio versus contract distinctions, geographic site context, source access notes, offline/date boundaries, and existing financial/directory/source workflows. Not independent content/financial/citation review.",
+  "homepage_map_widths": [
+    1440,
+    1024,
+    768,
+    393,
+    320
+  ]
 }

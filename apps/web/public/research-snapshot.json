@@ -1,7 +1,7 @@
 {
   "title": "Semiconductor Research Platform",
   "version": "0.1.0",
-  "generated_at": "2026-11-15T08:46:15.424270+00:00",
+  "generated_at": "2026-11-15T10:43:50.180109+00:00",
   "research_as_of": "2025-03-13",
   "mode": "database_export; real reported facts, not synthetic",
   "sources": [
@@ -9991,6 +9991,1018 @@
       }
     ]
   },
+  "applications": {
+    "version": "application-worlds-v1",
+    "reviewed_on": "2026-11-15",
+    "human_reviewed": false,
+    "scope": "Curated educational application map. System diagrams and chip lists are illustrative, not complete bills of materials. Company links are cited portfolio examples, not verified OEM supplier relationships. Application relevance is not a revenue or investment claim.",
+    "functions": [
+      {
+        "id": "compute",
+        "label": "Compute",
+        "description": "Process information, run software and work with memory.",
+        "color": "#8daeff"
+      },
+      {
+        "id": "sense",
+        "label": "Sense",
+        "description": "Turn a physical condition into an electronic signal.",
+        "color": "#ee98b9"
+      },
+      {
+        "id": "communicate",
+        "label": "Communicate",
+        "description": "Move information between components and systems.",
+        "color": "#b89df6"
+      },
+      {
+        "id": "control",
+        "label": "Control",
+        "description": "Translate a decision into a timed action.",
+        "color": "#7ee4c1"
+      },
+      {
+        "id": "power",
+        "label": "Manage power",
+        "description": "Convert, deliver and monitor electrical energy.",
+        "color": "#efc36d"
+      }
+    ],
+    "sources": [
+      {
+        "id": "sia-end-use",
+        "publisher": "Semiconductor Industry Association",
+        "title": "Semiconductor end uses",
+        "url": "https://www.semiconductors.org/semiconductors-101/what-are-the-end-uses-of-semiconductors/",
+        "reviewed_on": "2026-11-15",
+        "support": "Industry-level examples of computing, communications, automotive, consumer and industrial applications; no company supplier relationships.",
+        "company_id": null,
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "nvidia-ai",
+        "publisher": "NVIDIA",
+        "title": "Enterprise AI Factory overview",
+        "url": "https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ai-factory-overview.html",
+        "reviewed_on": "2026-11-15",
+        "support": "AI systems combine accelerators, memory/storage, networking and supporting power/cooling infrastructure.",
+        "company_id": "nvidia",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "micron-ai",
+        "publisher": "Micron",
+        "title": "AI data center",
+        "url": "https://www.micron.com/markets-industries/ai/ai-data-center",
+        "reviewed_on": "2026-11-15",
+        "support": "Micron discusses memory and storage in AI data centers; portfolio relevance, not a named customer contract.",
+        "company_id": "micron",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "nvidia-network",
+        "publisher": "NVIDIA",
+        "title": "Magnum IO and data movement",
+        "url": "https://www.nvidia.com/en-us/data-center/magnum-io/",
+        "reviewed_on": "2026-11-15",
+        "support": "NVIDIA describes data movement and networking across accelerated systems.",
+        "company_id": "nvidia",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "ti-data-power",
+        "publisher": "Texas Instruments",
+        "title": "Data center power architecture",
+        "url": "https://www.ti.com/lit/ta/ssztdb4/ssztdb4.pdf",
+        "reviewed_on": "2026-11-15",
+        "support": "TI explains power delivery to data center computing functions. No efficiency or market-share figure is asserted here.",
+        "company_id": "texas-instruments",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "infineon-ev",
+        "publisher": "Infineon",
+        "title": "Electric vehicle semiconductor solutions",
+        "url": "https://www.infineon.com/product-information/ev-solutions",
+        "reviewed_on": "2026-11-15",
+        "support": "Application examples include traction inverters, battery management and on-board charging; not a particular vehicle bill of materials.",
+        "company_id": "infineon",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "infineon-bms",
+        "publisher": "Infineon",
+        "title": "High-voltage battery management",
+        "url": "https://www.infineon.com/applications/automotive/electric-drivetrain/battery-management-system/high-voltage-bms",
+        "reviewed_on": "2026-11-15",
+        "support": "Battery monitoring and control of cell parameters; portfolio example only.",
+        "company_id": "infineon",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "ti-inverter",
+        "publisher": "Texas Instruments",
+        "title": "HEV/EV inverter and motor control",
+        "url": "https://www.ti.com/en-us/applications/automotive/hev-ev-powertrain/hev-ev-inverter-motor-control",
+        "reviewed_on": "2026-11-15",
+        "support": "Embedded processing, gate driving and current/voltage sensing in motor-control systems.",
+        "company_id": "texas-instruments",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "ti-building",
+        "publisher": "Texas Instruments",
+        "title": "Building automation",
+        "url": "https://www.ti.com/en-us/applications/industrial/building-automation",
+        "reviewed_on": "2026-11-15",
+        "support": "Building control, HVAC, sensing, motor control and gateway applications.",
+        "company_id": "texas-instruments",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "adi-structures",
+        "publisher": "Analog Devices",
+        "title": "Structural health monitoring demonstration",
+        "url": "https://www.analog.com/en/resources/media-center/videos/5811730245001.html",
+        "reviewed_on": "2026-11-15",
+        "support": "A demonstration of bridge vibration/tilt sensing, node processing and network communications. It does not establish deployment in a named bridge.",
+        "company_id": "analog-devices",
+        "publication_date": "2018-07-20",
+        "link_status": 403,
+        "link_checked_on": "2026-11-15",
+        "access_note": "Automated request returned HTTP 403. The indexed official demonstration supports this context; the page was not retried or bypassed. Availability in your browser may differ."
+      },
+      {
+        "id": "ti-robotics",
+        "publisher": "Texas Instruments",
+        "title": "Robotics system applications",
+        "url": "https://www.ti.com/en-us/applications/industrial/robotics",
+        "reviewed_on": "2026-11-15",
+        "support": "Processors, sensing, communications and motor control across robot types.",
+        "company_id": "texas-instruments",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "ti-aviation",
+        "publisher": "Texas Instruments",
+        "title": "Flight control unit",
+        "url": "https://www.ti.com/solution/flight-control-unit/",
+        "reviewed_on": "2026-11-15",
+        "support": "Flight-control electronics combine analog conversion, communications and remote control functions; not an aircraft supplier claim.",
+        "company_id": "texas-instruments",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "nvidia-aec",
+        "publisher": "NVIDIA",
+        "title": "Architecture, engineering and construction",
+        "url": "https://www.nvidia.com/en-us/design-visualization/industries/architecture-engineering-construction/",
+        "reviewed_on": "2026-11-15",
+        "support": "GPU-enabled architectural visualization and engineering simulation; downstream design is distinct from chip design.",
+        "company_id": "nvidia",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "ti-energy",
+        "publisher": "Texas Instruments",
+        "title": "Energy infrastructure",
+        "url": "https://www.ti.com/en-us/applications/industrial/energy-infrastructure",
+        "reviewed_on": "2026-11-15",
+        "support": "Energy storage, solar conversion, smart metering and grid monitoring examples.",
+        "company_id": "texas-instruments",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "ti-health",
+        "publisher": "Texas Instruments",
+        "title": "Hospital patient care",
+        "url": "https://www.ti.com/en-us/applications/industrial/medical-healthcare/hospital-patient-care",
+        "reviewed_on": "2026-11-15",
+        "support": "Electronic patient-care equipment and sensing/control applications; not clinical advice or a device-certification claim.",
+        "company_id": "texas-instruments",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "nvidia-hq",
+        "publisher": "NVIDIA",
+        "title": "Santa Clara headquarters",
+        "url": "https://nvidianews.nvidia.com/multimedia//santa-clara-headquarters",
+        "reviewed_on": "2026-11-15",
+        "support": "Headquarters location only; not the location of every design, fabrication or deployment activity.",
+        "company_id": "nvidia",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "tsmc-taiwan",
+        "publisher": "TSMC",
+        "title": "Documented Fab 18 manufacturing site",
+        "url": "https://pr.tsmc.com/english/news/2986",
+        "reviewed_on": "2026-11-15",
+        "support": "The 2022 release documents Fab 18 in Southern Taiwan Science Park. This is a site example, not a current capacity estimate.",
+        "company_id": "tsmc",
+        "publication_date": "2022-12-29",
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "asml-veldhoven",
+        "publisher": "ASML",
+        "title": "Veldhoven R&D and manufacturing site",
+        "url": "https://www.asml.com/en/company/about-asml/locations/veldhoven",
+        "reviewed_on": "2026-11-15",
+        "support": "ASML describes its Veldhoven headquarters as its largest R&D and manufacturing site.",
+        "company_id": "asml",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      },
+      {
+        "id": "amkor-vietnam",
+        "publisher": "Amkor",
+        "title": "Vietnam packaging and test site",
+        "url": "https://amkor.com/amkor-technology-vietnam/",
+        "reviewed_on": "2026-11-15",
+        "support": "Amkor describes its Bac Ninh facility and packaging/test capabilities; no application-specific shipment route is asserted.",
+        "company_id": "amkor",
+        "publication_date": null,
+        "link_status": 200,
+        "link_checked_on": "2026-11-15",
+        "access_note": null
+      }
+    ],
+    "worlds": [
+      {
+        "id": "ai-cloud",
+        "label": "AI, software & cloud",
+        "short_label": "AI & cloud",
+        "scene": "ai",
+        "color": "#8daeff",
+        "summary": "An AI service feels like software. Behind it are physical systems that compute, store information, move data and deliver power.",
+        "functions": [
+          "compute",
+          "communicate",
+          "power"
+        ],
+        "source_ids": [
+          "nvidia-ai",
+          "micron-ai"
+        ],
+        "depth": "guided_story",
+        "steps": [
+          {
+            "id": "compute",
+            "label": "Run the workload",
+            "task": "Train a model or serve an inference request.",
+            "functions": [
+              "compute"
+            ],
+            "chips": [
+              "GPUs / accelerators",
+              "Host CPUs"
+            ],
+            "explanation": "Processors execute the workload. The software experience depends on the hardware system and how efficiently it is used.",
+            "company_ids": [
+              "nvidia"
+            ],
+            "source_ids": [
+              "nvidia-ai"
+            ],
+            "economic_question": "How much revenue is supported by the computing platform, and what is needed to sustain it?"
+          },
+          {
+            "id": "memory",
+            "label": "Keep information close",
+            "task": "Feed the processors with model weights and data.",
+            "functions": [
+              "compute"
+            ],
+            "chips": [
+              "DRAM / high-bandwidth memory",
+              "Storage controllers"
+            ],
+            "explanation": "Memory and storage keep information available to the computing system. Capacity and data movement belong in the story alongside processing.",
+            "company_ids": [
+              "micron"
+            ],
+            "source_ids": [
+              "micron-ai"
+            ],
+            "economic_question": "How does memory demand translate into investment and cash generation across reporting years?"
+          },
+          {
+            "id": "network",
+            "label": "Move the data",
+            "task": "Connect processors, servers and storage.",
+            "functions": [
+              "communicate"
+            ],
+            "chips": [
+              "Network interface controllers",
+              "Switch / interconnect silicon"
+            ],
+            "explanation": "A distributed workload needs information to move between devices. Networking is part of the system, not a separate software abstraction.",
+            "company_ids": [
+              "nvidia"
+            ],
+            "source_ids": [
+              "nvidia-network"
+            ],
+            "economic_question": "Where is value captured as systems scale beyond one processor?"
+          },
+          {
+            "id": "power",
+            "label": "Keep the system supplied",
+            "task": "Deliver usable power to the computing equipment.",
+            "functions": [
+              "power"
+            ],
+            "chips": [
+              "Power-management ICs",
+              "Power conversion / gate drivers"
+            ],
+            "explanation": "Power-delivery electronics support the computing load. This layer makes the physical infrastructure behind a software service visible.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-data-power"
+            ],
+            "economic_question": "What capital and operating requirements sit behind the headline demand for AI?"
+          }
+        ]
+      },
+      {
+        "id": "electric-mobility",
+        "label": "Automotive & electric mobility",
+        "short_label": "Cars & mobility",
+        "scene": "car",
+        "color": "#7ee4c1",
+        "summary": "A vehicle is a collection of electronic systems: battery monitoring, motor control, power conversion and information exchange.",
+        "functions": [
+          "sense",
+          "control",
+          "power",
+          "communicate"
+        ],
+        "source_ids": [
+          "infineon-ev",
+          "ti-inverter"
+        ],
+        "depth": "guided_story",
+        "steps": [
+          {
+            "id": "battery",
+            "label": "Watch the battery",
+            "task": "Monitor cell conditions and coordinate battery operation.",
+            "functions": [
+              "sense",
+              "control"
+            ],
+            "chips": [
+              "Battery-monitor ICs",
+              "Current / voltage sensing"
+            ],
+            "explanation": "Battery-management electronics observe cell conditions and support control decisions. This is an illustrative system, not a vehicle-specific design.",
+            "company_ids": [
+              "infineon"
+            ],
+            "source_ids": [
+              "infineon-bms"
+            ],
+            "economic_question": "Which product functions matter as vehicle electrification changes the electronics mix?"
+          },
+          {
+            "id": "drive",
+            "label": "Turn energy into movement",
+            "task": "Control the power delivered to the traction motor.",
+            "functions": [
+              "power",
+              "control"
+            ],
+            "chips": [
+              "Power switches",
+              "Gate drivers",
+              "Motor-control MCUs"
+            ],
+            "explanation": "The traction inverter converts battery-side electrical power into the form needed by the motor. Control and power devices work together.",
+            "company_ids": [
+              "infineon",
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "infineon-ev",
+              "ti-inverter"
+            ],
+            "economic_question": "How do power and control portfolios differ from a high-performance computing business?"
+          },
+          {
+            "id": "charge",
+            "label": "Bring energy on board",
+            "task": "Convert and regulate power during charging.",
+            "functions": [
+              "power",
+              "control"
+            ],
+            "chips": [
+              "Power semiconductors",
+              "Charging controllers"
+            ],
+            "explanation": "Charging adds another power-conversion task. A semiconductor discussion that only follows processors would miss this part of the vehicle.",
+            "company_ids": [
+              "infineon"
+            ],
+            "source_ids": [
+              "infineon-ev"
+            ],
+            "economic_question": "How much application relevance is disclosed, and how much revenue attribution is still unknown?"
+          },
+          {
+            "id": "coordinate",
+            "label": "Keep control signals moving",
+            "task": "Coordinate sensing and motor-control electronics.",
+            "functions": [
+              "communicate",
+              "control"
+            ],
+            "chips": [
+              "Interface / isolation ICs",
+              "Embedded controllers"
+            ],
+            "explanation": "Control information must pass between electronic subsystems. The chip mix follows the task and its reliability requirements.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-inverter"
+            ],
+            "economic_question": "What evidence would be needed to connect a product portfolio to a named vehicle program?"
+          }
+        ]
+      },
+      {
+        "id": "smart-infrastructure",
+        "label": "Civil infrastructure & construction",
+        "short_label": "Cities & construction",
+        "scene": "city",
+        "color": "#efc36d",
+        "summary": "Buildings and infrastructure can be sensed, connected and controlled. Digital design tools and physical monitoring are related but distinct layers.",
+        "functions": [
+          "sense",
+          "communicate",
+          "compute",
+          "control",
+          "power"
+        ],
+        "source_ids": [
+          "ti-building",
+          "adi-structures",
+          "nvidia-aec"
+        ],
+        "depth": "guided_story",
+        "steps": [
+          {
+            "id": "observe",
+            "label": "Listen to the structure",
+            "task": "Measure movement, tilt or vibration.",
+            "functions": [
+              "sense"
+            ],
+            "chips": [
+              "MEMS accelerometers",
+              "Analog sensor interfaces"
+            ],
+            "explanation": "A structural-monitoring demonstration shows how physical movement becomes electronic data. It does not prove that a named bridge uses these parts.",
+            "company_ids": [
+              "analog-devices"
+            ],
+            "source_ids": [
+              "adi-structures"
+            ],
+            "economic_question": "What is demonstrated capability, and what would establish a real deployment?"
+          },
+          {
+            "id": "connect",
+            "label": "Connect the observations",
+            "task": "Move measurements from nodes into a connected system.",
+            "functions": [
+              "communicate",
+              "compute"
+            ],
+            "chips": [
+              "Low-power processors",
+              "Network transceivers"
+            ],
+            "explanation": "Local processing and communications can make sensor information available beyond the measurement point.",
+            "company_ids": [
+              "analog-devices"
+            ],
+            "source_ids": [
+              "adi-structures"
+            ],
+            "economic_question": "Which layers of the sensing system create recurring hardware or software needs?"
+          },
+          {
+            "id": "operate",
+            "label": "Control the building",
+            "task": "Coordinate ventilation, equipment and other building functions.",
+            "functions": [
+              "control",
+              "power"
+            ],
+            "chips": [
+              "Microcontrollers",
+              "Motor drivers",
+              "Power-management ICs"
+            ],
+            "explanation": "Building automation connects sensing and control to physical equipment. HVAC is one example of an electronic control loop in a built environment.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-building"
+            ],
+            "economic_question": "How do long-lived industrial systems shape the questions asked of a chip supplier?"
+          },
+          {
+            "id": "design",
+            "label": "Explore the design first",
+            "task": "Visualize and simulate architecture and engineering work.",
+            "functions": [
+              "compute"
+            ],
+            "chips": [
+              "Workstation / rendering GPUs",
+              "CPU and memory systems"
+            ],
+            "explanation": "Design software uses computing hardware to render and simulate a proposed environment. This is downstream engineering design, distinct from designing a semiconductor.",
+            "company_ids": [
+              "nvidia"
+            ],
+            "source_ids": [
+              "nvidia-aec"
+            ],
+            "economic_question": "Where does the software layer depend on computing platforms, and what does that prove economically?"
+          }
+        ]
+      },
+      {
+        "id": "automation",
+        "label": "Automation & robotics",
+        "short_label": "Robots & factories",
+        "scene": "robot",
+        "color": "#b89df6",
+        "summary": "A robot links perception, processing, communications and movement in a control loop.",
+        "functions": [
+          "sense",
+          "compute",
+          "communicate",
+          "control",
+          "power"
+        ],
+        "source_ids": [
+          "ti-robotics"
+        ],
+        "depth": "overview",
+        "steps": [
+          {
+            "id": "perceive",
+            "label": "Observe and decide",
+            "task": "Turn sensor information into a machine response.",
+            "functions": [
+              "sense",
+              "compute"
+            ],
+            "chips": [
+              "Radar / position sensors",
+              "Embedded processors"
+            ],
+            "explanation": "Robot electronics combine sensing with processing. Different robot tasks call for different combinations of devices.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-robotics"
+            ],
+            "economic_question": "Which system functions are supported by the supplier\u2019s disclosed portfolio?"
+          },
+          {
+            "id": "act",
+            "label": "Move with control",
+            "task": "Drive motors and coordinate real-time actions.",
+            "functions": [
+              "control",
+              "power",
+              "communicate"
+            ],
+            "chips": [
+              "Motor-control MCUs",
+              "Gate drivers",
+              "Industrial transceivers"
+            ],
+            "explanation": "Motor control and communications connect a computed decision to physical movement. This overview is not a robot safety design.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-robotics"
+            ],
+            "economic_question": "What must be checked before treating robotics exposure as a measurable financial driver?"
+          }
+        ]
+      },
+      {
+        "id": "aviation",
+        "label": "Aviation & aerospace",
+        "short_label": "Aircraft & aerospace",
+        "scene": "plane",
+        "color": "#86cce9",
+        "summary": "Aircraft electronics connect sensors, communications and control functions, with reliability central to the engineering task.",
+        "functions": [
+          "sense",
+          "communicate",
+          "control"
+        ],
+        "source_ids": [
+          "ti-aviation"
+        ],
+        "depth": "overview",
+        "steps": [
+          {
+            "id": "measure",
+            "label": "Read the physical signal",
+            "task": "Convert remote sensor signals into usable data.",
+            "functions": [
+              "sense"
+            ],
+            "chips": [
+              "Analog-to-digital converters",
+              "Signal-conditioning ICs"
+            ],
+            "explanation": "A flight-control unit may aggregate remote sensor signals. Analog conversion is a different semiconductor task from rendering graphics or training AI.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-aviation"
+            ],
+            "economic_question": "Which requirements shape this product category, beyond headline processing speed?"
+          },
+          {
+            "id": "coordinate",
+            "label": "Coordinate a control function",
+            "task": "Connect sensing, communication and remote actuation.",
+            "functions": [
+              "communicate",
+              "control"
+            ],
+            "chips": [
+              "Interface ICs",
+              "Embedded control electronics"
+            ],
+            "explanation": "TI describes communications and remote control functions in flight-control electronics. No aircraft program or certification is inferred from that portfolio.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-aviation"
+            ],
+            "economic_question": "What documentation would establish qualification or supply to a particular aviation program?"
+          }
+        ]
+      },
+      {
+        "id": "engineering-design",
+        "label": "Design & digital engineering",
+        "short_label": "Design & simulation",
+        "scene": "design",
+        "color": "#d7a0ee",
+        "summary": "Architecture, engineering and product visualization use hardware to build digital representations of the physical world.",
+        "functions": [
+          "compute"
+        ],
+        "source_ids": [
+          "nvidia-aec"
+        ],
+        "depth": "overview",
+        "steps": [
+          {
+            "id": "visualize",
+            "label": "Make an idea visible",
+            "task": "Render a digital model for review.",
+            "functions": [
+              "compute"
+            ],
+            "chips": [
+              "Graphics processors",
+              "CPU / memory systems"
+            ],
+            "explanation": "Architectural visualization is a downstream use of computing hardware. It is a separate activity from semiconductor design and fabrication.",
+            "company_ids": [
+              "nvidia"
+            ],
+            "source_ids": [
+              "nvidia-aec"
+            ],
+            "economic_question": "How does a software workflow depend on hardware and platform capabilities?"
+          },
+          {
+            "id": "simulate",
+            "label": "Test the digital representation",
+            "task": "Explore a design using engineering simulation.",
+            "functions": [
+              "compute"
+            ],
+            "chips": [
+              "GPUs / accelerators",
+              "Memory and storage"
+            ],
+            "explanation": "Simulation and visualization can inform design decisions. An application guide is evidence of capability, not evidence of a customer\u2019s achieved savings.",
+            "company_ids": [
+              "nvidia"
+            ],
+            "source_ids": [
+              "nvidia-aec"
+            ],
+            "economic_question": "What usage or customer evidence would support an economic impact claim?"
+          }
+        ]
+      },
+      {
+        "id": "energy",
+        "label": "Energy & utilities",
+        "short_label": "Energy & grids",
+        "scene": "energy",
+        "color": "#e9cc72",
+        "summary": "Conversion, sensing and communications connect semiconductor devices to power systems and utility infrastructure.",
+        "functions": [
+          "sense",
+          "power",
+          "control",
+          "communicate"
+        ],
+        "source_ids": [
+          "ti-energy"
+        ],
+        "depth": "overview",
+        "steps": [
+          {
+            "id": "convert",
+            "label": "Convert electrical energy",
+            "task": "Manage conversion in storage or solar-energy systems.",
+            "functions": [
+              "power",
+              "control"
+            ],
+            "chips": [
+              "Power-conversion ICs",
+              "Gate drivers",
+              "Control processors"
+            ],
+            "explanation": "Energy systems use power electronics and control to manage electrical conversion. This overview is not a grid-design specification.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-energy"
+            ],
+            "economic_question": "Which parts of the supplier\u2019s portfolio are relevant to energy-system investment?"
+          },
+          {
+            "id": "monitor",
+            "label": "Measure and connect",
+            "task": "Observe energy use and infrastructure conditions.",
+            "functions": [
+              "sense",
+              "communicate"
+            ],
+            "chips": [
+              "Metering / sensing ICs",
+              "Communications devices"
+            ],
+            "explanation": "Smart meters and grid monitoring add sensing and data exchange to the power-system picture.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-energy"
+            ],
+            "economic_question": "How would disclosed end-market exposure be distinguished from an analyst\u2019s demand assumption?"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Healthcare & medical equipment",
+        "short_label": "Health & medical",
+        "scene": "health",
+        "color": "#ee98b9",
+        "summary": "Electronic medical equipment combines measurement, processing and control. This is an industry view, not clinical or device-design advice.",
+        "functions": [
+          "sense",
+          "compute",
+          "control"
+        ],
+        "source_ids": [
+          "ti-health"
+        ],
+        "depth": "overview",
+        "steps": [
+          {
+            "id": "measure",
+            "label": "Capture a measurement",
+            "task": "Turn a physical or electrical signal into electronic information.",
+            "functions": [
+              "sense",
+              "compute"
+            ],
+            "chips": [
+              "Analog signal chains",
+              "Embedded processors"
+            ],
+            "explanation": "Patient-care electronics use sensing and processing functions. The suitability of a specific component for a device requires separate engineering evidence.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-health"
+            ],
+            "economic_question": "What application capability is actually documented?"
+          },
+          {
+            "id": "respond",
+            "label": "Support equipment operation",
+            "task": "Coordinate monitoring, alarms and equipment functions.",
+            "functions": [
+              "control"
+            ],
+            "chips": [
+              "Microcontrollers",
+              "Interface / control ICs"
+            ],
+            "explanation": "Control electronics support medical equipment operation. Portfolio examples do not establish clinical performance or regulatory approval.",
+            "company_ids": [
+              "texas-instruments"
+            ],
+            "source_ids": [
+              "ti-health"
+            ],
+            "economic_question": "What further evidence would be needed before making a clinical or commercial claim?"
+          }
+        ]
+      },
+      {
+        "id": "connected-life",
+        "label": "Communications & everyday devices",
+        "short_label": "Connected life",
+        "scene": "connected",
+        "color": "#7dd9cb",
+        "summary": "Phones, communications infrastructure and consumer devices combine computing, radio interfaces and embedded control.",
+        "functions": [
+          "compute",
+          "communicate",
+          "control"
+        ],
+        "source_ids": [
+          "sia-end-use"
+        ],
+        "depth": "overview",
+        "steps": [
+          {
+            "id": "communicate",
+            "label": "Exchange information",
+            "task": "Connect a device to another device or a network.",
+            "functions": [
+              "communicate"
+            ],
+            "chips": [
+              "RF chips",
+              "Baseband processors",
+              "Transceivers"
+            ],
+            "explanation": "The SIA end-use overview identifies communications as an application category spanning phones and network equipment.",
+            "company_ids": [],
+            "source_ids": [
+              "sia-end-use"
+            ],
+            "economic_question": "Which end-market disclosures would connect a particular company to this demand?"
+          },
+          {
+            "id": "interact",
+            "label": "Run the everyday device",
+            "task": "Process inputs and coordinate device functions.",
+            "functions": [
+              "compute",
+              "control"
+            ],
+            "chips": [
+              "Microcontrollers / SoCs",
+              "Display drivers"
+            ],
+            "explanation": "Consumer electronics use several chip functions together. This overview deliberately does not assign an unverified supplier to a particular product.",
+            "company_ids": [],
+            "source_ids": [
+              "sia-end-use"
+            ],
+            "economic_question": "What is the difference between a common chip category and a verified supplier relationship?"
+          }
+        ]
+      }
+    ],
+    "footprints": [
+      {
+        "id": "north-america",
+        "region": "North America",
+        "location": "Santa Clara, United States",
+        "role": "Company headquarters context",
+        "company_id": "nvidia",
+        "description": "NVIDIA documents its headquarters here. Headquarters is one location attribute, not the location of every chip activity.",
+        "source_ids": [
+          "nvidia-hq",
+          "nvidia-ai"
+        ]
+      },
+      {
+        "id": "east-asia",
+        "region": "East Asia",
+        "location": "Southern Taiwan Science Park, Taiwan",
+        "role": "Documented wafer-fabrication site",
+        "company_id": "tsmc",
+        "description": "TSMC\u2019s 2022 Fab 18 release provides a manufacturing-site example. No current capacity or application-specific shipment is inferred.",
+        "source_ids": [
+          "tsmc-taiwan"
+        ]
+      },
+      {
+        "id": "europe",
+        "region": "Europe",
+        "location": "Veldhoven, Netherlands",
+        "role": "Equipment R&D and manufacturing",
+        "company_id": "asml",
+        "description": "ASML describes R&D and manufacturing at its Veldhoven site. This is a selected operating example, not an entire regional supply chain.",
+        "source_ids": [
+          "asml-veldhoven"
+        ]
+      },
+      {
+        "id": "southeast-asia",
+        "region": "Southeast Asia",
+        "location": "Bac Ninh, Vietnam",
+        "role": "Packaging and test capability",
+        "company_id": "amkor",
+        "description": "Amkor describes packaging and test capabilities at its Vietnam facility. The example does not establish a route for a selected application.",
+        "source_ids": [
+          "amkor-vietnam"
+        ]
+      }
+    ]
+  },
   "investigation": {
     "id": "nvda-tsmc-cash-v1",
     "as_of": "2025-03-13",
@@ -11992,10 +13004,10 @@
   },
   "evaluation": {
     "executed": true,
-    "generated_at": "2026-11-15T08:46:14.990201+00:00",
+    "generated_at": "2026-11-15T10:43:49.745670+00:00",
     "version": "milestone1-v1.2",
     "dataset_sha256": "e946f3fd491cdeae310bb50b80c27ea4c64ceb5bc4d2209317dd6fdb028beddd",
-    "pipeline_sha256": "44bda3c273d624f739daac74e9fe71092f3ea4196eae0b035f4003f729e04e8a",
+    "pipeline_sha256": "c135786c0e60033d66a33b360898b29d9faa6cfc0b349b10e5001ce9cba37ba7",
     "embedding_identifier": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:uint8:mean:l2:256",
     "kind": "Deterministic local financial-tool and hybrid-retrieval development checks; no live LLM or investment-performance assessment",
     "human_reviewed": false,
@@ -12003,7 +13015,7 @@
     "research_workflow_comparison": "not implemented; no agent score reported",
     "total": 21,
     "passed": 21,
-    "median_latency_ms": 0.49,
+    "median_latency_ms": 0.54,
     "model_calls": 0,
     "hosted_input_tokens": 0,
     "hosted_output_tokens": 0,
@@ -12020,7 +13032,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 15.53,
+        "latency_ms": 12.04,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12036,7 +13048,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.71,
+        "latency_ms": 0.85,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12052,7 +13064,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.57,
+        "latency_ms": 0.76,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12068,7 +13080,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.54,
+        "latency_ms": 0.65,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12084,7 +13096,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.6,
+        "latency_ms": 0.69,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12100,7 +13112,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.6,
+        "latency_ms": 0.68,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12116,7 +13128,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.49,
+        "latency_ms": 0.57,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12132,7 +13144,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.49,
+        "latency_ms": 0.58,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12148,7 +13160,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.5,
+        "latency_ms": 0.55,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12164,7 +13176,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.47,
+        "latency_ms": 0.53,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12180,7 +13192,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.49,
+        "latency_ms": 0.54,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12195,7 +13207,7 @@
           "as_of": true,
           "retrieval_relevance": true
         },
-        "latency_ms": 20.24,
+        "latency_ms": 17.62,
         "mode": "extractive",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -12210,7 +13222,7 @@
           "as_of": true,
           "abstention": true
         },
-        "latency_ms": 0.22,
+        "latency_ms": 0.23,
         "mode": "extractive",
         "sources": []
       },
@@ -12223,7 +13235,7 @@
           "as_of": true,
           "abstention": true
         },
-        "latency_ms": 0.18,
+        "latency_ms": 0.19,
         "mode": "extractive",
         "sources": []
       },
@@ -12236,7 +13248,7 @@
           "as_of": true,
           "abstention": true
         },
-        "latency_ms": 0.47,
+        "latency_ms": 0.5,
         "mode": "extractive",
         "sources": []
       },
@@ -12249,7 +13261,7 @@
           "as_of": true,
           "abstention": true
         },
-        "latency_ms": 0.23,
+        "latency_ms": 0.26,
         "mode": "extractive",
         "sources": []
       },

@@ -27,3 +27,9 @@ Synthetic amendment/conflict records exist only inside rollback-controlled integ
 `GET /api/directory` and `snapshot.directory` expose the validated `data/catalog/semiconductor-directory.json` plus allowlisted link observations. Catalog date, scope, eight role categories, company/business metadata and research resources are distinct from financial facts. Optional `financial_company_id` maps a directory record to a supported financial issuer; `financial_loaded` is derived from actual database coverage, not inferred from a website URL. It describes dataset presence, not availability at every selected date.
 
 Only the current catalog’s public URLs and observation fields `url/state/status/checked_at` enter the browser export. HTTP status does not prove content or availability. Directory text is not embedded, retrieved, or cited as financial evidence. The server’s financial router rejects named directory-only companies rather than substituting the selected issuer’s figures.
+
+## Application context API / export
+
+`GET /api/applications` and `snapshot.applications` contain nine educational application worlds, five function definitions, source references and selected geographic examples. World steps carry `task/functions/chips/company_ids/source_ids/economic_question`. Each company ID must resolve to the discovery directory and a company-specific supporting reference. The data does not assert a bill of materials, supplier contract or application revenue.
+
+Reference records preserve publisher, URL, scope of support, curation/review date, known publication date and the latest bounded HTTP observation (`link_status/link_checked_on/access_note`). HTTP 401/403/429 observations require a note. The catalog’s `human_reviewed` remains false. `footprints` distinguish region/location/role and source-supported company context; they are not shipment edges. No application records enter the financial fact or embedding tables.

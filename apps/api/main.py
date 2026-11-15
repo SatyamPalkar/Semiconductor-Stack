@@ -18,6 +18,7 @@ from semiconductor_research.financials.engine import (
 )
 from semiconductor_research.financials.investigation import cash_investigation
 from semiconductor_research.retrieval.answer import Question, answer_question
+from semiconductor_research.sources.applications import load_applications
 from semiconductor_research.sources.catalog import COMPANIES
 from semiconductor_research.sources.directory import load_directory
 
@@ -99,6 +100,11 @@ def industry_directory():
     with session_scope() as session:
         covered = session.scalars(select(Fact.company).distinct()).all()
     return load_directory(covered)
+
+
+@app.get("/api/applications")
+def application_worlds():
+    return load_applications()
 
 
 @app.get("/api/investigation")

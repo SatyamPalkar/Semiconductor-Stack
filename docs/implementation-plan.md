@@ -24,3 +24,10 @@ This follow-on does not implement the deferred LangGraph workflow or authorize c
 2. Ingest fixed ASML, Micron, TI and Amkor sources with real recorded excerpts, native units and explicit company cash definitions. Generalize financial tools without implicit FX/calendar conversion.
 3. Add role/search/coverage/resource filters, profiles and pagination, six-company financial selection, annual cash visuals and optional source details. Keep the existing focused two-company investigation.
 4. Verify numerical/source-date behavior, missing offsets, signed losses, uncovered-company abstention, responsive/keyboard flows and production export. [Executed results](industry-expansion-report.md). No publication, cloud resources or hosted-model evaluation.
+
+## Application-led global view — implemented locally
+
+1. Add a cited, validated end-use catalog across nine fields, using five recurring chip functions and three deeper stories.
+2. Lead the homepage with application worlds; connect selectable systems/tasks to chip categories, cited portfolio examples and existing company financial tools.
+3. Add a separately labelled geography lens without inferring supplier chains or market shares. Keep application dates separate from financial as-of filtering and retrieval evidence.
+4. Verify catalog/API/export boundaries, source access notes, navigation, offline/date behavior and responsive/reduced-motion graphics. [Executed report](application-worlds-report.md).

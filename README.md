@@ -1,12 +1,14 @@
 # Semiconductor Research Platform
 
-**A visual semiconductor atlas with 139 companies and businesses, 36 official research resources, and six historical financial datasets.** The interface is branded **semiscope**. It connects official financial tables to PostgreSQL facts, Decimal calculations, hybrid retrieval, cited answers and a static research site.
+**An application-led semiconductor atlas: nine real-world application areas, 139 companies and businesses, 36 research resources and six historical financial datasets.** The interface is branded **semiscope**. It connects official financial tables to PostgreSQL facts, Decimal calculations, hybrid retrieval, cited answers and a static research site.
 
 The directory is a curated discovery catalog, not an exhaustive census. Financial coverage is historical: NVIDIA FY2024/FY2025, Micron FY2023/FY2024, and TSMC, ASML, Texas Instruments and Amkor CY2023/CY2024. Directory metadata is dated separately from the financial evidence cutoff. Native currencies, units, period ends and company-specific cash definitions remain visible. Independent human financial/citation review is pending.
 
 ## What works
 
-- A four-chapter visual story: illustrated business models → the cash investigation → Micron’s changing annual picture → a choice of next research questions. Chapter navigation, original SVG scenes, guided controls and page-to-page continuation links keep the reading connected; motion respects reduced-motion preferences.
+- Nine application worlds, with deeper AI, EV and smart-infrastructure stories. Click a system task to connect chip functions, categories, cited company capabilities and economic questions. A separate geography lens distinguishes selected operating sites from headquarters context.
+
+- An application-led visual story: real-world systems → illustrated business models → the cash investigation → Micron’s changing annual picture → next research questions. Chapter navigation, original SVG scenes, guided controls and page-to-page continuation links keep the reading connected; motion respects reduced-motion preferences.
 
 - An eight-role orbital atlas, searchable company profiles, official website/IR links, financial-coverage filtering and pagination.
 - A resource library for industry data, filings, research, standards, open tools and policy; discovery destinations are separate from ingested evidence.
@@ -14,7 +16,7 @@ The directory is a curated discovery catalog, not an exhaustive census. Financia
 - Six-company financial exploration: two annual cash periods, per-100-revenue cash visuals, native-currency charts, negative margins and optional source calculations. ASML uses EUR millions; Amkor uses USD thousands; NVIDIA, Micron and TI use USD millions; TSMC uses TWD thousands.
 - A focused NVIDIA/TSMC visual investigation with three chapters, two annual pairs, source inspection and a research note containing counterevidence and invalidation conditions.
 - A bounded six-company evidence desk. Financial questions use deterministic tools; unsupported companies, forecasts and cross-company questions abstain. Extractive answers and offline examples remain labelled.
-- PostgreSQL 17/pgvector, SQLAlchemy and three Alembic migrations. Pinned local MiniLM embeddings, full-text search and reciprocal rank fusion. Seven Next.js pages remain usable with the API offline.
+- PostgreSQL 17/pgvector, SQLAlchemy and three Alembic migrations. Pinned local MiniLM embeddings, full-text search and reciprocal rank fusion. Eight Next.js pages remain usable with the API offline.
 
 The LangGraph workflow, AWS, DCF and trading are outside this local milestone. A Groq JSON adapter is optional; no live hosted-model evaluation has been run.
 
@@ -75,9 +77,12 @@ make build
 make e2e
 ```
 
-See [the storytelling update report](docs/storytelling-report.md), [the directory and financial expansion report](docs/industry-expansion-report.md), [the visual-conclusions report](docs/visual-conclusions-report.md), [the cash-investigation report](docs/cash-investigation-report.md), [the original milestone verification report](docs/milestone1-report.md) and [the executed development results](evaluations/results/milestone1.json). These checks verify calculations, source resolution, scope/as-of handling and abstention. Important finance answers still need independent human review; no LLM judge or investment-performance result is reported. Pytest also verifies amendments, conflicts, units, missing values and injected instructions. See [evaluation methodology](docs/evaluation-plan.md).
+See [the application-worlds report](docs/application-worlds-report.md), [the storytelling update report](docs/storytelling-report.md), [the directory and financial expansion report](docs/industry-expansion-report.md), [the visual-conclusions report](docs/visual-conclusions-report.md), [the cash-investigation report](docs/cash-investigation-report.md), [the original milestone verification report](docs/milestone1-report.md) and [the executed development results](evaluations/results/milestone1.json). These checks verify calculations, source resolution, scope/as-of handling and abstention. Important finance answers still need independent human review; no LLM judge or investment-performance result is reported. Pytest also verifies amendments, conflicts, units, missing values and injected instructions. See [evaluation methodology](docs/evaluation-plan.md).
 
 ## Try it
+
+- Start at `/applications/`: choose AI, a vehicle, infrastructure, robotics, aviation, engineering design, energy, healthcare or connected devices. Filter by compute, sense, communicate, control or power.
+- Try `/applications/?world=smart-infrastructure` for sensing, connectivity, building control and digital design. Company links are cited portfolio examples, not named supplier contracts or application revenue.
 
 - Open `/value-chain/` for the company atlas and `/sources/` for the resource library.
 - In `/industry-economics/`, select any of the six companies and switch annual cash periods. Micron FY2023 retains its negative cash residual and gross margin.

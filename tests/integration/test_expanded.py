@@ -72,3 +72,19 @@ def test_directory_company_without_facts_cannot_receive_selected_company_numbers
 ):
     response = answer_question(session, encoder, Question(question=question))
     assert response["abstained"] and not response["paragraphs"] and not response["evidence"]
+
+
+def test_application_context_api_and_snapshot_use_the_same_validated_catalog(session):
+    from fastapi.testclient import TestClient
+
+    from apps.api.main import app
+    from semiconductor_research.cli import snapshot
+
+    with TestClient(app) as client:
+        response = client.get("/api/applications")
+        assert response.status_code == 200
+        catalog = response.json()
+        assert catalog == snapshot(date(2025, 3, 13))["applications"]
+        assert len(catalog["worlds"]) == 9 and len(catalog["functions"]) == 5
+        assert not catalog["human_reviewed"]
+        assert "metrics" not in catalog

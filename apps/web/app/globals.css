@@ -573,3 +573,13 @@ select { max-width: 100%; background: var(--panel); color: var(--text); border: 
 }
 .metric-trace { white-space: normal; overflow-wrap: anywhere; }
 .investigation-table table { table-layout: fixed; white-space: normal; }
+
+/* Keep the shared date and navigation controls inside narrow phone widths. */
+@media(max-width:380px) {
+  .atlas-masthead-inner { gap: 8px; padding-inline: 18px; }
+  .atlas-wordmark { font-size: 23px; }
+  .atlas-header-actions { gap: 3px; }
+  .asof { font-size: 8px; letter-spacing: 1px; }
+  .asof input { font-size: 10px; max-width: 112px; }
+  .atlas-menu-button { padding: 7px; }
+}

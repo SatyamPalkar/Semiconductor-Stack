@@ -1,9 +1,9 @@
 {
   "executed": true,
-  "generated_at": "2026-11-15T08:46:14.990201+00:00",
+  "generated_at": "2026-11-15T10:43:49.745670+00:00",
   "version": "milestone1-v1.2",
   "dataset_sha256": "e946f3fd491cdeae310bb50b80c27ea4c64ceb5bc4d2209317dd6fdb028beddd",
-  "pipeline_sha256": "44bda3c273d624f739daac74e9fe71092f3ea4196eae0b035f4003f729e04e8a",
+  "pipeline_sha256": "c135786c0e60033d66a33b360898b29d9faa6cfc0b349b10e5001ce9cba37ba7",
   "embedding_identifier": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:uint8:mean:l2:256",
   "kind": "Deterministic local financial-tool and hybrid-retrieval development checks; no live LLM or investment-performance assessment",
   "human_reviewed": false,
@@ -11,7 +11,7 @@
   "research_workflow_comparison": "not implemented; no agent score reported",
   "total": 21,
   "passed": 21,
-  "median_latency_ms": 0.49,
+  "median_latency_ms": 0.54,
   "model_calls": 0,
   "hosted_input_tokens": 0,
   "hosted_output_tokens": 0,
@@ -28,7 +28,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 15.53,
+      "latency_ms": 12.04,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -44,7 +44,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.71,
+      "latency_ms": 0.85,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -60,7 +60,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.57,
+      "latency_ms": 0.76,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -76,7 +76,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.54,
+      "latency_ms": 0.65,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -92,7 +92,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.6,
+      "latency_ms": 0.69,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -108,7 +108,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.6,
+      "latency_ms": 0.68,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -124,7 +124,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.49,
+      "latency_ms": 0.57,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -140,7 +140,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.49,
+      "latency_ms": 0.58,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -156,7 +156,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.5,
+      "latency_ms": 0.55,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -172,7 +172,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.47,
+      "latency_ms": 0.53,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -188,7 +188,7 @@
         "numerical_accuracy": true,
         "reporting_period": true
       },
-      "latency_ms": 0.49,
+      "latency_ms": 0.54,
       "mode": "financial_tool",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -203,7 +203,7 @@
         "as_of": true,
         "retrieval_relevance": true
       },
-      "latency_ms": 20.24,
+      "latency_ms": 17.62,
       "mode": "extractive",
       "sources": [
         "nvda-fy2025-d623c5f2d81983c7"
@@ -218,7 +218,7 @@
         "as_of": true,
         "abstention": true
       },
-      "latency_ms": 0.22,
+      "latency_ms": 0.23,
       "mode": "extractive",
       "sources": []
     },
@@ -231,7 +231,7 @@
         "as_of": true,
         "abstention": true
       },
-      "latency_ms": 0.18,
+      "latency_ms": 0.19,
       "mode": "extractive",
       "sources": []
     },
@@ -244,7 +244,7 @@
         "as_of": true,
         "abstention": true
       },
-      "latency_ms": 0.47,
+      "latency_ms": 0.5,
       "mode": "extractive",
       "sources": []
     },
@@ -257,7 +257,7 @@
         "as_of": true,
         "abstention": true
       },
-      "latency_ms": 0.23,
+      "latency_ms": 0.26,
       "mode": "extractive",
       "sources": []
     },

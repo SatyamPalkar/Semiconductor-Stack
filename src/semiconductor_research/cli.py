@@ -19,6 +19,7 @@ from semiconductor_research.financials.profiles import PROFILES
 from semiconductor_research.ingestion.expanded import ingest_expanded
 from semiconductor_research.ingestion.service import ingest_nvidia
 from semiconductor_research.ingestion.tsmc import ingest_tsmc
+from semiconductor_research.sources.applications import load_applications
 from semiconductor_research.sources.catalog import COMPANIES
 from semiconductor_research.sources.directory import load_directory
 
@@ -73,6 +74,7 @@ def snapshot(as_of: date):
             "metrics": metrics,
             "companies": companies,
             "directory": load_directory({s.company for s in source_rows}),
+            "applications": load_applications(),
             "investigation": cash_investigation(session, as_of),
             "definitions": DEFINITIONS,
             "evaluation": {

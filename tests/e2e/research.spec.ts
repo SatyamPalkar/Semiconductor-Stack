@@ -230,7 +230,7 @@ test('all research routes render without page overflow or browser errors at desk
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   for (const width of [1440, 768, 393]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const route of ['/', '/companies/', '/industry-economics/', '/briefs/', '/assistant/', '/sources/', '/value-chain/']) {
+    for (const route of ['/', '/companies/', '/industry-economics/', '/briefs/', '/assistant/', '/sources/', '/value-chain/', '/applications/']) {
       await page.goto(route);
       await page.locator('.snapshot-freshness').waitFor({ state: 'attached' });
       if (route === '/industry-economics/') await expect(page.locator('.plot .main-svg').first()).toBeVisible();
@@ -352,8 +352,10 @@ test('guided story connects business illustrations, cash chapters and the next q
   await expect(page.getByRole('heading', { level: 1 })).toContainText('A tiny chip.');
   const rail=page.getByRole('navigation', { name: 'Story chapters' });
   await page.getByRole('link', { name: 'Start the story', exact: true }).click();
+  await expect(page.locator('#story-worlds')).toBeInViewport();
+  await rail.getByRole('link', { name: '02 The system' }).click();
   await expect(page.locator('#story-system')).toBeInViewport();
-  await expect(rail.getByRole('link', { name: '01 The system' })).toHaveAttribute('aria-current', 'location');
+  await expect(rail.getByRole('link', { name: '02 The system' })).toHaveAttribute('aria-current', 'location');
   await page.getByRole('button', { name: 'Next: Fabricate', exact: true }).click();
   await expect(page.getByRole('tab', { name: 'Fabricate', exact: true })).toHaveAttribute('aria-selected','true');
   await expect(page.getByRole('tabpanel')).toContainText('Give the idea a physical form.');
@@ -372,8 +374,8 @@ test('guided story connects business illustrations, cash chapters and the next q
   await expect(page.locator('.conclusion-node[data-company="NVDA"]')).toContainText('46.53%');
   await page.getByRole('link', { name: 'Next: Change the year', exact: true }).click();
   await expect(page.locator('#story-cycle')).toBeInViewport();
-  await expect(rail.getByRole('link', { name: '03 The changing year' })).toHaveAttribute('aria-current','location');
-  await rail.getByRole('link', { name: '04 Your next question' }).click();
+  await expect(rail.getByRole('link', { name: '04 The changing year' })).toHaveAttribute('aria-current','location');
+  await rail.getByRole('link', { name: '05 Your next question' }).click();
   await expect(page.locator('#story-next')).toBeInViewport();
   await expect(page.locator('.story-next-paths a')).toHaveCount(4);
   await page.goto('/companies/');
@@ -420,10 +422,10 @@ test('the illustrated narrative fits small screens and honors reduced motion', a
   await page.setViewportSize({width:393,height:852});
   await page.goto('/');
   await expect(page.getByRole('heading',{name:/A tiny chip/})).toBeVisible();
-  expect(await page.locator('.scene-cover .silicon-stack').evaluate(el=>getComputedStyle(el).animationName)).toBe('none');
+  expect(await page.locator('.story-cover svg path[stroke-dasharray="3 24"]').evaluate(el=>getComputedStyle(el).animationName)).toBe('none');
   expect(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior)).toBe('auto');
-  for(const act of ['story-system','story-cash','story-cycle','story-next']) {
-    await page.getByRole('navigation',{name:'Story chapters'}).getByRole('link',{name:new RegExp(act==='story-system'?'The system':act==='story-cash'?'The cash':act==='story-cycle'?'The changing year':'Your next question')}).click();
+  for(const act of ['story-worlds','story-system','story-cash','story-cycle','story-next']) {
+    await page.getByRole('navigation',{name:'Story chapters'}).getByRole('link',{name:new RegExp(act==='story-worlds'?'Applications':act==='story-system'?'The system':act==='story-cash'?'The cash':act==='story-cycle'?'The changing year':'Your next question')}).click();
     await expect(page.locator(`#${act}`)).toBeInViewport();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
   }
@@ -439,8 +441,174 @@ test('the illustrated narrative fits small screens and honors reduced motion', a
   await page.screenshot({path:`${shots}/guided-story-desktop.png`,fullPage:true,animations:'disabled'});
   await page.screenshot({path:`${shots}/guided-cover-desktop.png`,animations:'disabled'});
   await page.getByRole('link',{name:'Start the story',exact:true}).click();
+  await page.getByRole('navigation',{name:'Story chapters'}).getByRole('link',{name:'02 The system'}).click();
   await page.screenshot({path:`${shots}/guided-system-desktop.png`,animations:'disabled'});
-  await page.getByRole('navigation',{name:'Story chapters'}).getByRole('link',{name:'03 The changing year'}).click();
-  await expect(page.getByRole('navigation',{name:'Story chapters'}).getByRole('link',{name:'03 The changing year'})).toHaveAttribute('aria-current','location');
+  await page.getByRole('navigation',{name:'Story chapters'}).getByRole('link',{name:'04 The changing year'}).click();
+  await expect(page.getByRole('navigation',{name:'Story chapters'}).getByRole('link',{name:'04 The changing year'})).toHaveAttribute('aria-current','location');
   await page.screenshot({path:`${shots}/guided-year-desktop.png`,animations:'disabled'});
+});
+
+
+test('the homepage leads with nine application worlds and five recurring chip functions', async ({ page }) => {
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.goto('/');
+  await page.getByRole('link',{name:'Start the story',exact:true}).click();
+  const gateway=page.locator('#story-worlds');
+  await expect(gateway).toBeInViewport();
+  await expect(gateway.locator('.application-feature')).toHaveCount(3);
+  await expect(gateway.locator('.application-more-worlds a')).toHaveCount(6);
+  await expect(gateway.locator('.application-five-functions a')).toHaveCount(5);
+  const ordering=await page.locator('#story-worlds, #story-system, #story-cash').evaluateAll(nodes=>nodes.map(n=>n.id));
+  expect(ordering).toEqual(['story-worlds','story-system','story-cash']);
+  await gateway.getByRole('link',{name:/AI & cloud/}).click();
+  await expect(page).toHaveURL(/\/applications\/\?world=ai-cloud$/);
+  await expect(page.getByRole('region',{name:'Selected application story'}).getByRole('heading',{level:2})).toHaveText('AI, software & cloud');
+});
+
+test('AI tasks connect memory, networking and power to cited portfolio examples', async ({ page }) => {
+  await page.goto('/applications/?world=ai-cloud');
+  const story=page.getByRole('region',{name:'Selected application story'});
+  await story.getByRole('button',{name:'Explore task: Keep information close',exact:true}).click();
+  await expect(page).toHaveURL(/world=ai-cloud&step=memory/);
+  await expect(story.locator('.application-chip-list')).toContainText('high-bandwidth memory');
+  const company=story.locator('.application-company-examples article');
+  await expect(company).toContainText('Micron');
+  await expect(company.getByRole('link',{name:'Historical company financials'})).toHaveAttribute('href','/industry-economics/?company=MU');
+  await expect(story.locator('.application-evidence>.application-reference-list')).toContainText('AI data center');
+  await expect(story.locator('.application-evidence')).toContainText('do not establish a named customer contract');
+  await story.getByRole('button',{name:'Next: Move the data',exact:true}).click();
+  await expect(story.getByRole('region',{name:'Selected system task'})).toContainText('Network interface controllers');
+  await expect(story.locator('.application-company-examples')).toContainText('NVIDIA');
+  await story.getByRole('button',{name:'Next: Keep the system supplied',exact:true}).click();
+  await expect(story.getByRole('region',{name:'Selected system task'})).toContainText('Manage power');
+  await expect(story.locator('.application-company-examples')).toContainText('Texas Instruments');
+  await expect(story.locator('.application-economic-question')).toContainText('do not measure this application’s revenue');
+  await page.evaluate(()=>window.scrollTo(0,0));
+  await page.screenshot({path:`${shots}/applications-ai-desktop.png`,fullPage:true,animations:'disabled'});
+});
+
+test('every application world has a working scene, tasks and contextual references', async ({ page }) => {
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('/applications/');
+  const picker=page.getByRole('complementary',{name:'Choose an application world'});
+  for(const label of ['AI & cloud','Cars & mobility','Cities & construction','Robots & factories','Aircraft & aerospace','Design & simulation','Energy & grids','Health & medical','Connected life']) {
+    await picker.getByRole('button',{name:new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))}).click();
+    const story=page.getByRole('region',{name:'Selected application story'});
+    await expect(story.locator('.application-system-figure svg')).toHaveCount(1);
+    expect(await story.locator('.application-hotspot').count()).toBeGreaterThanOrEqual(2);
+    await expect(story.locator('.application-task-detail')).toBeVisible();
+    expect(await story.locator('.application-evidence>.application-reference-list a').count()).toBeGreaterThan(0);
+    await expect(story.locator('.application-chip-list')).not.toBeEmpty();
+    if(label==='Cars & mobility') { await page.evaluate(()=>window.scrollTo(0,0)); await page.screenshot({path:`${shots}/applications-ev-desktop.png`,fullPage:true,animations:'disabled'}); }
+  }
+  await expect(page.locator('.application-unassigned')).toContainText('does not assign a supplier');
+  expect(errors).toEqual([]);
+});
+
+test('function and text filters handle empty states and unsupported deep links safely', async ({ page }) => {
+  await page.goto('/applications/?function=sense');
+  const filter=page.getByRole('group',{name:'Filter application worlds by chip function'});
+  await expect(filter.getByRole('button',{name:'Sense',exact:true})).toHaveAttribute('aria-pressed','true');
+  const picker=page.getByRole('complementary',{name:'Choose an application world'});
+  await expect(picker.getByRole('button',{name:/AI & cloud/})).toHaveCount(0);
+  await page.getByLabel('Find a field or chip type').fill('unmatched-application-000');
+  await expect(page.getByRole('heading',{name:'No matching application worlds.'})).toBeVisible();
+  await page.getByRole('button',{name:'Show all application worlds'}).click();
+  await expect(picker.getByRole('status')).toHaveText('9 application worlds');
+  await page.goto('/applications/?world=invalid&step=invalid&function=invalid');
+  await expect(page.getByRole('region',{name:'Selected application story'}).getByRole('heading',{level:2})).toHaveText('AI, software & cloud');
+  await expect(page.getByRole('region',{name:'Selected system task'})).toContainText('Train a model');
+});
+
+test('geography distinguishes headquarters from operating sites and actual supplier chains', async ({ page }) => {
+  await page.goto('/applications/?world=electric-mobility');
+  await page.getByRole('button',{name:'Global footprint',exact:true}).click();
+  const geography=page.getByRole('region',{name:'Global operating examples'});
+  await expect(geography).toContainText('do not establish its supplier chain');
+  await geography.getByRole('group',{name:'Filter geographic examples'}).getByRole('button',{name:'North America',exact:true}).click();
+  await expect(geography.locator('.application-footprint-list')).toContainText('Company headquarters context');
+  await expect(geography.locator('.application-footprint-list')).not.toContainText('Southern Taiwan');
+  await geography.getByRole('button',{name:'Explore East Asia operating example'}).click();
+  await expect(geography.locator('.application-footprint-list')).toContainText('Documented wafer-fabrication site');
+  await expect(geography.locator('.application-footprint-list')).toContainText('Source dated 2022-12-29');
+  await expect(geography.locator('.application-footprint-list a').first()).toHaveAttribute('href','https://pr.tsmc.com/english/news/2986');
+  await page.evaluate(()=>window.scrollTo(0,0));
+  await page.screenshot({path:`${shots}/application-geography-desktop.png`,fullPage:true,animations:'disabled'});
+});
+
+test('current application guides work offline while linked historical financials honor the date', async ({ page }) => {
+  await page.route('http://127.0.0.1:8100/**',route=>route.abort());
+  await page.goto('/applications/?world=ai-cloud');
+  await page.getByLabel('Research as-of date').fill('2024-03-11');
+  await expect(page.getByRole('region',{name:'Selected system task'})).toContainText('Train a model');
+  await expect(page.getByText('No financial source was available by this selected date.',{exact:false})).toHaveCount(0);
+  await page.locator('.application-company-examples').getByRole('link',{name:'Historical company financials'}).click();
+  await expect(page.getByLabel('Research as-of date')).toHaveValue('2024-03-11');
+  await expect(page.locator('.financial-cash-lens')).toHaveCount(0);
+  await expect(page.getByRole('status').filter({hasText:'No annual dataset'})).toBeVisible();
+});
+
+test('application stories fit phones with accessible hotspots, readable values and reduced motion', async ({ page }) => {
+  await page.emulateMedia({reducedMotion:'reduce'});await page.setViewportSize({width:393,height:852});
+  await page.goto('/applications/?world=electric-mobility');
+  await page.getByRole('complementary',{name:'Choose an application world'}).getByRole('button',{name:/Cities & construction/}).click();
+  const story=page.getByRole('region',{name:'Selected application story'});
+  await expect(story).toBeFocused();
+  await expect(story.getByRole('heading',{level:2})).toHaveText('Civil infrastructure & construction');
+  for(const hotspot of await story.locator('.application-hotspot').all()) {
+    const bounds=await hotspot.boundingBox();expect(bounds!.width).toBeGreaterThanOrEqual(44);expect(bounds!.height).toBeGreaterThanOrEqual(44);
+  }
+  await story.getByRole('button',{name:'Explore task: Connect the observations'}).click();
+  await expect(story.locator('.application-company-examples')).toContainText('Analog Devices');
+  await expect(story.locator('.application-task-detail')).toContainText('Network transceivers');
+  await expect(story.locator('.application-access-note')).toContainText('HTTP 403');
+  expect(await page.locator('.application-signal').first().evaluate(el=>getComputedStyle(el).animationName)).toBe('none');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  await page.evaluate(()=>window.scrollTo(0,0));
+  await page.screenshot({path:`${shots}/applications-infrastructure-mobile.png`,fullPage:true,animations:'disabled'});
+  await story.getByRole('link',{name:'Choose another world'}).click();
+  await expect(page.getByRole('complementary',{name:'Choose an application world'})).toBeInViewport();
+});
+
+test('the homepage application map stays usable across screen sizes and opens each world', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const expected = [
+    ['AI & cloud', 'ai-cloud', 'AI, software & cloud'],
+    ['Electric mobility', 'electric-mobility', 'Automotive & electric mobility'],
+    ['Cities & buildings', 'smart-infrastructure', 'Civil infrastructure & construction'],
+    ['Automation', 'automation', 'Automation & robotics'],
+    ['Energy', 'energy', 'Energy & utilities'],
+    ['Aviation', 'aviation', 'Aviation & aerospace'],
+  ];
+  for (const width of [1440, 1024, 768, 393, 320]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto('/');
+    const map = page.getByRole('navigation', { name: 'Explore application worlds', exact: true });
+    await expect(map).toBeVisible();
+    const boxes = await map.getByRole('link').evaluateAll(links => links.map(link => {
+      const r = link.getBoundingClientRect();
+      return { left:r.left, right:r.right, top:r.top, bottom:r.bottom, width:r.width, height:r.height };
+    }));
+    expect(boxes).toHaveLength(6);
+    for (const box of boxes) {
+      expect(box.width).toBeGreaterThanOrEqual(44);
+      expect(box.height).toBeGreaterThanOrEqual(44);
+      expect(box.left).toBeGreaterThanOrEqual(0);
+      expect(box.right).toBeLessThanOrEqual(width);
+    }
+    for (let i=0;i<boxes.length;i++) for (let j=i+1;j<boxes.length;j++) {
+      const a=boxes[i], b=boxes[j];
+      expect(a.right<=b.left || b.right<=a.left || a.bottom<=b.top || b.bottom<=a.top).toBe(true);
+    }
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  }
+  for (const [label, id, title] of expected) {
+    await page.goto('/');
+    const link = page.getByRole('navigation', { name: 'Explore application worlds', exact: true }).getByRole('link', { name:`Explore ${label}`, exact:true });
+    await link.focus();
+    await expect(link).toBeFocused();
+    await page.keyboard.press('Enter');
+    await expect(page).toHaveURL(new RegExp(`world=${id}`));
+    await expect(page.getByRole('region', { name: 'Selected application story' }).getByRole('heading', { level:2 })).toHaveText(title);
+  }
 });

@@ -61,3 +61,14 @@ The existing cash visualization has sequential controls and a continuation into 
 Short transition passages carry a question from one chapter into the next. Supporting pages each recommend one next step. Details and sources remain available without dominating the initial reading. There is no timed carousel or automatic chapter change; gentle chip float/signal motion and illustration transitions stop when reduced motion is requested.
 
 [Executed verification and local review](storytelling-report.md).
+
+## Application-led opening — current expansion
+
+The entry point now shows the real-world systems that chips enable, ahead of the production lifecycle. An original server/vehicle/city/aircraft SVG composition introduces the scope. Three guided stories and six overviews connect concrete tasks to five recurring functions: compute, sense, communicate, control and manage power. All nine worlds have their own illustrative scene and selectable tasks.
+
+The application explorer keeps chip functions, company portfolio examples and financial research distinct. Global geography is a separate filtered view of selected sites, not an inferred shipping or supplier map. Current application references remain dated independently from financial evidence. Eight routes share the dark visual language, keyboard controls, mobile layouts and reduced-motion behavior. [Verification](application-worlds-report.md).
+
+
+## Homepage composition refinement
+
+The current opening replaces the application collage with an original silicon core and a restrained orbital application map. Six linked worlds provide direct entries into the complete nine-world explorer. A larger headline, mint call to action and balanced spacing establish one visual focus; phone layouts stack naturally and keep all application links at least 44px high. Desktop hover/focus captions disappear at narrow widths to prevent crowding. The illustration is conceptual, not a supplier or shipment map. [Implementation and executed checks](homepage-refinement-report.md).
