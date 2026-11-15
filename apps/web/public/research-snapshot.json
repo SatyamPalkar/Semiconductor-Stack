@@ -1,7 +1,7 @@
 {
   "title": "Semiconductor Research Platform",
   "version": "0.1.0",
-  "generated_at": "2026-11-15T01:43:34.451626+00:00",
+  "generated_at": "2026-11-15T01:47:22.519137+00:00",
   "research_as_of": "2025-03-01",
   "mode": "database_export; real reported facts, not synthetic",
   "sources": [
@@ -843,18 +843,18 @@
   },
   "evaluation": {
     "executed": true,
-    "generated_at": "2026-11-15T01:43:34.155074+00:00",
-    "version": "milestone1-v1",
-    "dataset_sha256": "fa1d89541da48d42a8c7ce0ed1f385d743e11428eeb8ae9cd6cf493bf5332669",
-    "pipeline_sha256": "b9c6b66274134df8219f5687a8d66e0d5f8738929488f9ff9df1240389676ba0",
+    "generated_at": "2026-11-15T01:47:22.224755+00:00",
+    "version": "milestone1-v1.1",
+    "dataset_sha256": "0bf41c51a73b2dac0ae29c59a3e19eab8ea62eb98220fb8850833e2cab5edf45",
+    "pipeline_sha256": "d10f520dae101743993700cb352235cfbcb4485ea53cbe1eb6826b07b79fc504",
     "embedding_identifier": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:uint8:mean:l2:256",
     "kind": "Deterministic local financial-tool and hybrid-retrieval development checks; no live LLM or investment-performance assessment",
     "human_reviewed": false,
     "citation_entailment_review": "pending independent human review",
     "research_workflow_comparison": "not implemented; no agent score reported",
-    "total": 20,
-    "passed": 20,
-    "median_latency_ms": 0.48,
+    "total": 21,
+    "passed": 21,
+    "median_latency_ms": 0.44,
     "model_calls": 0,
     "hosted_input_tokens": 0,
     "hosted_output_tokens": 0,
@@ -871,7 +871,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 7.58,
+        "latency_ms": 7.78,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -887,7 +887,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.81,
+        "latency_ms": 0.79,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -903,7 +903,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.68,
+        "latency_ms": 0.67,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -919,7 +919,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.59,
+        "latency_ms": 0.65,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -935,7 +935,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.57,
+        "latency_ms": 0.52,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -951,7 +951,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.66,
+        "latency_ms": 0.63,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -967,7 +967,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.49,
+        "latency_ms": 0.45,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -983,7 +983,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.49,
+        "latency_ms": 0.45,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -999,7 +999,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.49,
+        "latency_ms": 0.44,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -1015,7 +1015,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.48,
+        "latency_ms": 0.43,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -1031,7 +1031,7 @@
           "numerical_accuracy": true,
           "reporting_period": true
         },
-        "latency_ms": 0.44,
+        "latency_ms": 0.43,
         "mode": "financial_tool",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -1046,7 +1046,7 @@
           "as_of": true,
           "retrieval_relevance": true
         },
-        "latency_ms": 17.52,
+        "latency_ms": 18.04,
         "mode": "extractive",
         "sources": [
           "nvda-fy2025-d623c5f2d81983c7"
@@ -1061,7 +1061,7 @@
           "as_of": true,
           "abstention": true
         },
-        "latency_ms": 0.17,
+        "latency_ms": 0.19,
         "mode": "extractive",
         "sources": []
       },
@@ -1126,7 +1126,7 @@
           "as_of": true,
           "abstention": true
         },
-        "latency_ms": 0.01,
+        "latency_ms": 0.0,
         "mode": "extractive",
         "sources": []
       },
@@ -1139,7 +1139,7 @@
           "as_of": true,
           "abstention": true
         },
-        "latency_ms": 0.0,
+        "latency_ms": 0.01,
         "mode": "extractive",
         "sources": []
       },
@@ -1153,6 +1153,19 @@
           "abstention": true
         },
         "latency_ms": 0.01,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "quarter-not-annual",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.0,
         "mode": "extractive",
         "sources": []
       }

@@ -1,6 +1,6 @@
 from datetime import date
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
@@ -10,6 +10,7 @@ from semiconductor_research.financials.engine import cutoff
 
 
 class RetrievalFilters(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     company: str = Field(default="NVDA", pattern=r"^[A-Z]{1,6}$")
     as_of: date = date(2025, 3, 1)
     document_type: str | None = Field(default=None, max_length=50)

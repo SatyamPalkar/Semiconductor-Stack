@@ -3,7 +3,7 @@
   "passed": 8,
   "failed": 0,
   "skipped": 0,
-  "duration_ms": 3784.214,
+  "duration_ms": 3879.2349999999997,
   "runner": "Playwright 1.65.1",
   "backend": "local PostgreSQL/pgvector + FastAPI",
   "hosted_model_calls": 0

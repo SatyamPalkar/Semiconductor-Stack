@@ -6,9 +6,9 @@ A real NVIDIA FY2025 results document was ingested with original bytes/checksums
 
 ## Executed verification
 
-- 41 pytest tests passed, including real isolated PostgreSQL/pgvector integration and API contracts.
+- 42 pytest tests passed, including real isolated PostgreSQL/pgvector integration and API contracts.
 - 8 Playwright workflows passed against the production static export with an isolated Chrome profile; mobile and API-offline behavior included. See `evaluations/results/browser-summary.json`.
-- 20/20 versioned development cases passed. See `evaluations/results/milestone1.json` for dataset/pipeline checksums, model identity, latency and actual usage. Human review is pending.
+- 21/21 versioned development cases passed. See `evaluations/results/milestone1.json` for dataset/pipeline checksums, model identity, latency and actual usage. Human review is pending.
 - Ruff lint/format checks, TypeScript checks, uv lock consistency and Next static production build passed.
 - Final local HTTP smoke checks: healthy API, cited FCF calculation, conflicting fiscal-year/filter abstention, whitespace rejection (422) and reachable static preview.
 - Native startup is idempotent. It uses this project's separate database on 55432 and leaves the existing service on 5432 alone.

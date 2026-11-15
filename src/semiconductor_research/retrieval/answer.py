@@ -87,23 +87,29 @@ def answer_question(session: Session, encoder, body: Question):
     ):
         metric = None
     requested_years = re.findall(r"\b(?:fy\s*)?(20\d{2})\b", question)
-    unsupported = len(set(requested_years)) > 1 or any(
-        term in question
-        for term in (
-            "forecast",
-            "next year",
-            "today",
-            "current",
-            "stock price",
-            "share price",
-            "tsmc",
-            "asml",
-            "micron",
-            "texas instruments",
-            "amkor",
-            "compare",
-            "valuation",
-            "dcf",
+    unsupported = (
+        bool(re.search(r"\b(?:quarter(?:ly)?|q[1-4]|ttm|trailing)\b", question))
+        or len(set(requested_years)) > 1
+        or any(
+            term in question
+            for term in (
+                "forecast",
+                "next year",
+                "today",
+                "current",
+                "stock price",
+                "share price",
+                "tsmc",
+                "asml",
+                "micron",
+                "texas instruments",
+                "amkor",
+                "compare",
+                "valuation",
+                "dcf",
+                "convert",
+                "exchange rate",
+            )
         )
     )
     if unsupported:

@@ -102,6 +102,7 @@ def test_same_publication_conflict_requires_review(session):
         "What is NVIDIA stock price today?",
         "Compare TSMC and NVIDIA gross margins.",
         "What is NVIDIA revenue in FY2028?",
+        "What was NVIDIA Q4 revenue in FY2025?",
     ],
 )
 def test_unsupported_financial_questions_do_not_get_substitute_answers(session, encoder, question):
