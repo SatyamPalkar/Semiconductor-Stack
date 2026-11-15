@@ -60,7 +60,10 @@ jobs:
       - name: Essential browser workflows
         run: |
           ./apps/web/node_modules/.bin/playwright install --with-deps chrome
-          uv run uvicorn apps.api.main:app --host 127.0.0.1 --port 8100 --no-access-log > /tmp/semi-api.log 2>&1 &
-          uv run python -m http.server 3100 --bind 127.0.0.1 --directory apps/web/out > /tmp/semi-web.log 2>&1 &
+          .venv/bin/uvicorn apps.api.main:app --host 127.0.0.1 --port 8100 --no-access-log > /tmp/semi-api.log 2>&1 &
+          semi_api_pid=$!
+          .venv/bin/python -m http.server 3100 --bind 127.0.0.1 --directory apps/web/out > /tmp/semi-web.log 2>&1 &
+          semi_web_pid=$!
+          trap 'kill "$semi_api_pid" "$semi_web_pid" 2>/dev/null || true' EXIT
           for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:8100/api/health >/dev/null && break; sleep 1; done
           npm --prefix apps/web run test:e2e
