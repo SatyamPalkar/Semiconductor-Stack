@@ -1,0 +1,64 @@
+name: Verify local research slice
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:0.8.1-pg17
+        env:
+          POSTGRES_DB: semiconductor
+          POSTGRES_USER: semi
+          POSTGRES_PASSWORD: local-only-change-me
+        ports: ["55432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U semi -d semiconductor"
+          --health-interval 3s --health-timeout 3s --health-retries 20
+    env:
+      DATABASE_URL: postgresql+psycopg://semi:local-only-change-me@127.0.0.1:55432/semiconductor
+      ENABLE_LIVE_LLM: "false"
+      UV_CACHE_DIR: .cache/uv
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.12.1"
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install locked dependencies
+        run: |
+          uv sync --locked
+          npm --prefix apps/web ci
+      - name: Lint and type checks
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+          npm --prefix apps/web run typecheck
+      - name: Prepare isolated recorded-source data
+        run: |
+          uv run alembic upgrade head
+          uv run semi prepare-model
+          uv run semi ingest --recorded
+      - name: Backend and database contracts
+        run: RUN_DB_TESTS=1 uv run pytest -q
+      - name: Execute development checks and build the static showcase
+        run: |
+          uv run semi evaluate
+          uv run semi export-showcase
+          npm --prefix apps/web run build
+      - name: Essential browser workflows
+        run: |
+          ./apps/web/node_modules/.bin/playwright install --with-deps chrome
+          uv run uvicorn apps.api.main:app --host 127.0.0.1 --port 8100 --no-access-log > /tmp/semi-api.log 2>&1 &
+          uv run python -m http.server 3100 --bind 127.0.0.1 --directory apps/web/out > /tmp/semi-web.log 2>&1 &
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:8100/api/health >/dev/null && break; sleep 1; done
+          npm --prefix apps/web run test:e2e

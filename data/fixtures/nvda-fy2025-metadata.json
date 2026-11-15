@@ -1,0 +1,9 @@
+{
+  "kind": "recorded_primary_source_excerpt",
+  "synthetic": false,
+  "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+  "retrieved_at": "2026-11-15T01:04:03.499565+00:00",
+  "original_sha256": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+  "extract_sha256": "8041b536081ecf1c5199897aac7d421d46487a996988e7f6610caf928b52c71d",
+  "extraction": "Selected rows and annual/quarterly column headers from original HTML; real reported financial values."
+}

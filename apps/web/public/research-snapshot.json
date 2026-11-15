@@ -1,0 +1,1168 @@
+{
+  "title": "Semiconductor Research Platform",
+  "version": "0.1.0",
+  "generated_at": "2026-11-15T01:43:34.451626+00:00",
+  "research_as_of": "2025-03-01",
+  "mode": "database_export; real reported facts, not synthetic",
+  "sources": [
+    {
+      "id": "nvda-fy2025-d623c5f2d81983c7",
+      "company": "NVDA",
+      "title": "NVIDIA fourth-quarter and fiscal 2025 financial results",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+      "publisher": "NVIDIA Newsroom",
+      "publication_date": "2025-02-26",
+      "published_at": "2025-02-27T18:59:59+11:00",
+      "retrieved_at": "2026-11-15T12:04:03.499565+11:00",
+      "checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+      "capture_kind": "original_primary_source",
+      "accounting_basis": "US GAAP; unaudited earnings release"
+    }
+  ],
+  "metrics": [
+    {
+      "company": "NVDA",
+      "metric": "revenue",
+      "value": "60922.0000",
+      "unit": "USD million",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "reported_fact",
+      "definition": "Reported annual revenue; no currency conversion.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:revenue",
+          "metric": "revenue",
+          "value": "60922.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "gross_margin",
+      "value": "72.7176",
+      "unit": "%",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "calculated_metric",
+      "definition": "Gross profit / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:gross_profit",
+          "metric": "gross_profit",
+          "value": "44301.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Gross profit / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:revenue",
+          "metric": "revenue",
+          "value": "60922.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "operating_margin",
+      "value": "54.1217",
+      "unit": "%",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "calculated_metric",
+      "definition": "Operating income / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:operating_income",
+          "metric": "operating_income",
+          "value": "32972.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Operating income / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:revenue",
+          "metric": "revenue",
+          "value": "60922.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "capex_revenue",
+      "value": "1.7547",
+      "unit": "%",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "calculated_metric",
+      "definition": "Purchases of property, equipment and intangible assets / revenue \u00d7 100. Intangibles included; not comparable to PPE-only capex.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:capital_purchases",
+          "metric": "capital_purchases",
+          "value": "1069.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Purchase related to property and equipment and intangible assets / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:revenue",
+          "metric": "revenue",
+          "value": "60922.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "rd_revenue",
+      "value": "14.2395",
+      "unit": "%",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "calculated_metric",
+      "definition": "Research and development expense / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:research_development",
+          "metric": "research_development",
+          "value": "8675.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Research and development / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:revenue",
+          "metric": "revenue",
+          "value": "60922.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "operating_cash_flow",
+      "value": "28090.0000",
+      "unit": "USD million",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "reported_fact",
+      "definition": "Reported net cash provided by operating activities.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:operating_cash_flow",
+          "metric": "operating_cash_flow",
+          "value": "28090.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Net cash provided by operating activities / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "free_cash_flow",
+      "value": "26947.0000",
+      "unit": "USD million",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "calculated_metric",
+      "definition": "Operating cash flow less purchases AND principal payments related to property, equipment and intangible assets. NVIDIA release definition; non-GAAP measure.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:operating_cash_flow",
+          "metric": "operating_cash_flow",
+          "value": "28090.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Net cash provided by operating activities / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:capital_purchases",
+          "metric": "capital_purchases",
+          "value": "1069.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Purchase related to property and equipment and intangible assets / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:capital_principal",
+          "metric": "capital_principal",
+          "value": "74.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Principal payments on property and equipment and intangible assets / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "free_cash_flow_margin",
+      "value": "44.2320",
+      "unit": "%",
+      "period_end": "2024-01-28",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2024",
+      "classification": "calculated_metric",
+      "definition": "Free cash flow (including capital principal payments) / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:operating_cash_flow",
+          "metric": "operating_cash_flow",
+          "value": "28090.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Net cash provided by operating activities / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:capital_purchases",
+          "metric": "capital_purchases",
+          "value": "1069.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Purchase related to property and equipment and intangible assets / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:capital_principal",
+          "metric": "capital_principal",
+          "value": "74.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Principal payments on property and equipment and intangible assets / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:revenue",
+          "metric": "revenue",
+          "value": "60922.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "revenue",
+      "value": "130497.0000",
+      "unit": "USD million",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "reported_fact",
+      "definition": "Reported annual revenue; no currency conversion.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:revenue",
+          "metric": "revenue",
+          "value": "130497.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "revenue_growth",
+      "value": "114.2034",
+      "unit": "%",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "calculated_metric",
+      "definition": "(Annual revenue / prior annual revenue - 1) \u00d7 100. Prior end dates must be 350\u2013380 days apart.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:revenue",
+          "metric": "revenue",
+          "value": "130497.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2024:revenue",
+          "metric": "revenue",
+          "value": "60922.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2024-01-28",
+          "fiscal_label": "FY2024",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2024-01-28",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "gross_margin",
+      "value": "74.9887",
+      "unit": "%",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "calculated_metric",
+      "definition": "Gross profit / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:gross_profit",
+          "metric": "gross_profit",
+          "value": "97858.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Gross profit / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:revenue",
+          "metric": "revenue",
+          "value": "130497.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "operating_margin",
+      "value": "62.4175",
+      "unit": "%",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "calculated_metric",
+      "definition": "Operating income / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:operating_income",
+          "metric": "operating_income",
+          "value": "81453.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Operating income / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:revenue",
+          "metric": "revenue",
+          "value": "130497.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "capex_revenue",
+      "value": "2.4798",
+      "unit": "%",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "calculated_metric",
+      "definition": "Purchases of property, equipment and intangible assets / revenue \u00d7 100. Intangibles included; not comparable to PPE-only capex.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:capital_purchases",
+          "metric": "capital_purchases",
+          "value": "3236.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Purchase related to property and equipment and intangible assets / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:revenue",
+          "metric": "revenue",
+          "value": "130497.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "rd_revenue",
+      "value": "9.8960",
+      "unit": "%",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "calculated_metric",
+      "definition": "Research and development expense / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:research_development",
+          "metric": "research_development",
+          "value": "12914.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Research and development / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:revenue",
+          "metric": "revenue",
+          "value": "130497.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "operating_cash_flow",
+      "value": "64089.0000",
+      "unit": "USD million",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "reported_fact",
+      "definition": "Reported net cash provided by operating activities.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:operating_cash_flow",
+          "metric": "operating_cash_flow",
+          "value": "64089.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Net cash provided by operating activities / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "free_cash_flow",
+      "value": "60724.0000",
+      "unit": "USD million",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "calculated_metric",
+      "definition": "Operating cash flow less purchases AND principal payments related to property, equipment and intangible assets. NVIDIA release definition; non-GAAP measure.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:operating_cash_flow",
+          "metric": "operating_cash_flow",
+          "value": "64089.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Net cash provided by operating activities / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:capital_purchases",
+          "metric": "capital_purchases",
+          "value": "3236.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Purchase related to property and equipment and intangible assets / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:capital_principal",
+          "metric": "capital_principal",
+          "value": "129.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Principal payments on property and equipment and intangible assets / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    },
+    {
+      "company": "NVDA",
+      "metric": "free_cash_flow_margin",
+      "value": "46.5329",
+      "unit": "%",
+      "period_end": "2025-01-26",
+      "period_kind": "annual",
+      "as_of": "2025-03-01",
+      "fiscal_label": "FY2025",
+      "classification": "calculated_metric",
+      "definition": "Free cash flow (including capital principal payments) / revenue \u00d7 100.",
+      "accounting_basis": "US GAAP; unaudited earnings release",
+      "inputs": [
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:operating_cash_flow",
+          "metric": "operating_cash_flow",
+          "value": "64089.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Net cash provided by operating activities / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:capital_purchases",
+          "metric": "capital_purchases",
+          "value": "3236.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Purchase related to property and equipment and intangible assets / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:capital_principal",
+          "metric": "capital_principal",
+          "value": "129.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS / Principal payments on property and equipment and intangible assets / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        },
+        {
+          "fact_id": "nvda-fy2025-d623c5f2d81983c7:FY2025:revenue",
+          "metric": "revenue",
+          "value": "130497.00000000",
+          "currency": "USD",
+          "unit_scale": 1000000,
+          "period_end": "2025-01-26",
+          "fiscal_label": "FY2025",
+          "source_id": "nvda-fy2025-d623c5f2d81983c7",
+          "locator": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME / Revenue / Twelve Months Ended 2025-01-26",
+          "published_at": "2025-02-27T18:59:59+11:00",
+          "document_checksum": "d623c5f2d81983c7e0db0293bba7c67700423c8e0d21e62d9b17488afddd18be",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+        }
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "role": "Fabless design & computing platforms",
+      "layer": "Design",
+      "coverage": "financial_pilot",
+      "url": "https://investor.nvidia.com/"
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC",
+      "role": "Semiconductor foundry",
+      "layer": "Fabrication",
+      "coverage": "source_access_pending",
+      "url": "https://investor.tsmc.com/"
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML",
+      "role": "Lithography equipment",
+      "layer": "Equipment",
+      "coverage": "planned",
+      "url": "https://www.asml.com/en/investors"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "role": "Memory products",
+      "layer": "Memory",
+      "coverage": "planned",
+      "url": "https://investors.micron.com/"
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments",
+      "role": "Analog & embedded processing",
+      "layer": "Integrated manufacturing",
+      "coverage": "planned",
+      "url": "https://investor.ti.com/"
+    },
+    {
+      "ticker": "AMKR",
+      "name": "Amkor",
+      "role": "Assembly, packaging & test",
+      "layer": "Packaging",
+      "coverage": "planned",
+      "url": "https://ir.amkor.com/"
+    }
+  ],
+  "definitions": {
+    "revenue": "Reported annual revenue; no currency conversion.",
+    "revenue_growth": "(Annual revenue / prior annual revenue - 1) \u00d7 100. Prior end dates must be 350\u2013380 days apart.",
+    "gross_margin": "Gross profit / revenue \u00d7 100.",
+    "operating_margin": "Operating income / revenue \u00d7 100.",
+    "capex_revenue": "Purchases of property, equipment and intangible assets / revenue \u00d7 100. Intangibles included; not comparable to PPE-only capex.",
+    "rd_revenue": "Research and development expense / revenue \u00d7 100.",
+    "operating_cash_flow": "Reported net cash provided by operating activities.",
+    "free_cash_flow": "Operating cash flow less purchases AND principal payments related to property, equipment and intangible assets. NVIDIA release definition; non-GAAP measure.",
+    "free_cash_flow_margin": "Free cash flow (including capital principal payments) / revenue \u00d7 100."
+  },
+  "evaluation": {
+    "executed": true,
+    "generated_at": "2026-11-15T01:43:34.155074+00:00",
+    "version": "milestone1-v1",
+    "dataset_sha256": "fa1d89541da48d42a8c7ce0ed1f385d743e11428eeb8ae9cd6cf493bf5332669",
+    "pipeline_sha256": "b9c6b66274134df8219f5687a8d66e0d5f8738929488f9ff9df1240389676ba0",
+    "embedding_identifier": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:uint8:mean:l2:256",
+    "kind": "Deterministic local financial-tool and hybrid-retrieval development checks; no live LLM or investment-performance assessment",
+    "human_reviewed": false,
+    "citation_entailment_review": "pending independent human review",
+    "research_workflow_comparison": "not implemented; no agent score reported",
+    "total": 20,
+    "passed": 20,
+    "median_latency_ms": 0.48,
+    "model_calls": 0,
+    "hosted_input_tokens": 0,
+    "hosted_output_tokens": 0,
+    "hosted_model_cost_usd": "0.00",
+    "scope_note": "Source resolution is checked; citation presence does not prove support for arbitrary generated claims. Restatement/conflict/injection protections are also tested separately in pytest.",
+    "results": [
+      {
+        "id": "revenue",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 7.58,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "growth",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.81,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "gross-margin",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.68,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "operating-margin",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.59,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "capex",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.57,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "research",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.66,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "ocf",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.49,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "fcf",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.49,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "fcf-margin",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.49,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "prior-revenue",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.48,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "prior-fcf",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "numerical_accuracy": true,
+          "reporting_period": true
+        },
+        "latency_ms": 0.44,
+        "mode": "financial_tool",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "document-fact",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "retrieval_relevance": true
+        },
+        "latency_ms": 17.52,
+        "mode": "extractive",
+        "sources": [
+          "nvda-fy2025-d623c5f2d81983c7"
+        ]
+      },
+      {
+        "id": "historical-asof",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.17,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "missing-year",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.14,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "missing-growth",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.44,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "missing-company",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.01,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "current-price",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.01,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "unsupported-comparison",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.01,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "forecast",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.0,
+        "mode": "extractive",
+        "sources": []
+      },
+      {
+        "id": "question-injection",
+        "passed": true,
+        "checks": {
+          "no_hosted_calls": true,
+          "citation_resolution": true,
+          "as_of": true,
+          "abstention": true
+        },
+        "latency_ms": 0.01,
+        "mode": "extractive",
+        "sources": []
+      }
+    ]
+  },
+  "limitations": [
+    "Historical FY2024/FY2025 NVIDIA pilot; not current market data.",
+    "TSMC source returned HTTP 403; no TSMC financial figures are loaded.",
+    "The remaining company roster is scope metadata, not an evidence-backed industry ranking.",
+    "Original IR page captured later than its publication date; not an independently certified point-in-time archive.",
+    "Investment-thesis workflow, cloud deployment, DCF and trading are not implemented in milestone 1."
+  ]
+}

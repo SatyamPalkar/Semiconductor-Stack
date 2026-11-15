@@ -1,0 +1,317 @@
+{
+  "executed": true,
+  "generated_at": "2026-11-15T01:43:34.155074+00:00",
+  "version": "milestone1-v1",
+  "dataset_sha256": "fa1d89541da48d42a8c7ce0ed1f385d743e11428eeb8ae9cd6cf493bf5332669",
+  "pipeline_sha256": "b9c6b66274134df8219f5687a8d66e0d5f8738929488f9ff9df1240389676ba0",
+  "embedding_identifier": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:uint8:mean:l2:256",
+  "kind": "Deterministic local financial-tool and hybrid-retrieval development checks; no live LLM or investment-performance assessment",
+  "human_reviewed": false,
+  "citation_entailment_review": "pending independent human review",
+  "research_workflow_comparison": "not implemented; no agent score reported",
+  "total": 20,
+  "passed": 20,
+  "median_latency_ms": 0.48,
+  "model_calls": 0,
+  "hosted_input_tokens": 0,
+  "hosted_output_tokens": 0,
+  "hosted_model_cost_usd": "0.00",
+  "scope_note": "Source resolution is checked; citation presence does not prove support for arbitrary generated claims. Restatement/conflict/injection protections are also tested separately in pytest.",
+  "results": [
+    {
+      "id": "revenue",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 7.58,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "growth",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.81,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "gross-margin",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.68,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "operating-margin",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.59,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "capex",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.57,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "research",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.66,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "ocf",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.49,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "fcf",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.49,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "fcf-margin",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.49,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "prior-revenue",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.48,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "prior-fcf",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "numerical_accuracy": true,
+        "reporting_period": true
+      },
+      "latency_ms": 0.44,
+      "mode": "financial_tool",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "document-fact",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "retrieval_relevance": true
+      },
+      "latency_ms": 17.52,
+      "mode": "extractive",
+      "sources": [
+        "nvda-fy2025-d623c5f2d81983c7"
+      ]
+    },
+    {
+      "id": "historical-asof",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.17,
+      "mode": "extractive",
+      "sources": []
+    },
+    {
+      "id": "missing-year",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.14,
+      "mode": "extractive",
+      "sources": []
+    },
+    {
+      "id": "missing-growth",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.44,
+      "mode": "extractive",
+      "sources": []
+    },
+    {
+      "id": "missing-company",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.01,
+      "mode": "extractive",
+      "sources": []
+    },
+    {
+      "id": "current-price",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.01,
+      "mode": "extractive",
+      "sources": []
+    },
+    {
+      "id": "unsupported-comparison",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.01,
+      "mode": "extractive",
+      "sources": []
+    },
+    {
+      "id": "forecast",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.0,
+      "mode": "extractive",
+      "sources": []
+    },
+    {
+      "id": "question-injection",
+      "passed": true,
+      "checks": {
+        "no_hosted_calls": true,
+        "citation_resolution": true,
+        "as_of": true,
+        "abstention": true
+      },
+      "latency_ms": 0.01,
+      "mode": "extractive",
+      "sources": []
+    }
+  ]
+}

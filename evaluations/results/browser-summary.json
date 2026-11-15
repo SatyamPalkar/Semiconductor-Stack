@@ -1,0 +1,10 @@
+{
+  "kind": "Executed production-export browser checks using isolated Chrome",
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "duration_ms": 3784.214,
+  "runner": "Playwright 1.65.1",
+  "backend": "local PostgreSQL/pgvector + FastAPI",
+  "hosted_model_calls": 0
+}
