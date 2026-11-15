@@ -1,4 +1,7 @@
 from fastapi.testclient import TestClient
+from sqlalchemy import select
+
+from semiconductor_research.database.models import Chunk, Source
 
 
 def test_api_source_financial_and_question_contracts(session, encoder, monkeypatch):
@@ -27,6 +30,34 @@ def test_unconfigured_live_model_does_not_become_a_fake_generation(session, enco
     from apps.api import main
 
     monkeypatch.setitem(main.state, "encoder", encoder)
+    # Isolate provider configuration from platform-dependent embedding scores.
+    # Retrieval quality has separate integration coverage; these are real stored rows.
+    chunk, source = session.execute(
+        select(Chunk, Source)
+        .join(Source, Chunk.source_id == Source.id)
+        .where(Chunk.company == "NVDA", Chunk.topic == "research_development")
+        .order_by(Chunk.id)
+        .limit(1)
+    ).one()
+    evidence = [
+        {
+            "citation_id": 1,
+            "chunk_id": chunk.id,
+            "source_id": source.id,
+            "text": chunk.text,
+            "company": chunk.company,
+            "topic": chunk.topic,
+            "period_end": str(chunk.period_end),
+            "published_at": source.published_at.isoformat(),
+            "locator": chunk.locator,
+            "url": source.url,
+            "title": source.title,
+            "document_checksum": source.checksum,
+        }
+    ]
+    monkeypatch.setattr(
+        "semiconductor_research.retrieval.answer.retrieve", lambda *_args, **_kwargs: evidence
+    )
     with TestClient(main.app) as client:
         response = client.post(
             "/api/questions",
@@ -36,6 +67,7 @@ def test_unconfigured_live_model_does_not_become_a_fake_generation(session, enco
             },
         )
         assert response.status_code == 503
+        assert "disabled or not configured" in response.json()["detail"]
         assert "paragraphs" not in response.json()
 
 
