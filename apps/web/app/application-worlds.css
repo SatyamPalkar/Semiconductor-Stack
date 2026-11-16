@@ -8,3 +8,40 @@
 .application-change-world{display:none}.application-system-story,.application-task-detail,.application-world-picker{scroll-margin-top:160px}@media(max-width:900px){.application-change-world{display:flex;align-items:center;gap:9px;color:#a1bfff;font-size:12px;min-height:44px;margin-bottom:10px}.application-system-story,.application-task-detail,.application-world-picker{scroll-margin-top:110px}}
 
 .application-reference-list .application-access-note{padding:10px 13px;border-left:2px solid #e1b976;background:#7c5d2220;color:#d9bd8c;font-size:11px;line-height:1.85}
+
+/* Studio-rendered scenes: the image and its callouts share one exact aspect ratio. */
+.scene-render { display:block; width:100%; min-width:0; }
+.scene-render>img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:contain; }
+.application-feature>.application-object { width:calc(100% + 44px); margin:12px -22px 20px; overflow:hidden; border-block:1px solid #ffffff08; }
+.application-feature>.application-object>img { transition:transform .6s ease; }
+.application-feature:hover>.application-object>img { transform:scale(1.025); }
+.application-system-figure { margin:24px 0 30px; border:1px solid #243044; border-radius:16px; background:#06080c; overflow:hidden; }
+.application-scene-topline { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:17px 22px 0; font-size:9px; letter-spacing:1.6px; color:#8697b2; }
+.application-scene-topline>span:last-child { color:var(--world-color); font-size:8px; letter-spacing:1.4px; }
+.application-scene-stage { position:relative; aspect-ratio:3/2; isolation:isolate; }
+.application-scene-stage>.application-object { width:100%; margin:0; }
+.application-hotspot { z-index:2; width:46px; height:46px; padding:0; background:transparent; border:0; box-shadow:none; color:#e9f0fb; }
+.application-hotspot>span { display:grid; place-content:center; width:29px; height:29px; border:1px solid color-mix(in srgb,var(--world-color),#fff 15%); border-radius:50%; background:#07101de8; box-shadow:0 0 0 5px #07101d55,0 4px 20px #0006; font-size:12px; transition:background .2s,box-shadow .2s; }
+.application-hotspot.active { background:transparent; color:#071a17; box-shadow:none; }
+.application-hotspot.active>span { background:var(--world-color); border-color:#ffffffa0; box-shadow:0 0 0 5px color-mix(in srgb,var(--world-color) 18%,transparent),0 4px 20px #0006; }
+.application-hotspot:hover>span { box-shadow:0 0 0 7px color-mix(in srgb,var(--world-color) 16%,transparent),0 4px 20px #0006; }
+.application-hotspot:focus-visible { outline:2px solid white; outline-offset:0; border-radius:50%; }
+.application-system-figure figcaption { margin:0; padding:16px 22px 18px; border-top:1px solid #243044; background:linear-gradient(110deg,#111a26,#0a0e16); display:flex; align-items:center; justify-content:space-between; gap:15px; text-align:left; }
+.application-system-figure figcaption>span { display:flex; align-items:center; gap:9px; font-size:12px; color:#d4e2f3; max-width:45%; line-height:1.5; }
+.application-system-figure figcaption>span i { height:5px; width:5px; flex-shrink:0; border-radius:50%; background:var(--world-color); }
+.application-system-figure figcaption>small { font-size:10px; line-height:1.7; color:#8396b2; max-width:49%; text-align:right; }
+.story-lens-figure .scene-render { border:1px solid #243044; border-radius:13px; overflow:hidden; background:#06080c; }
+.story-lens-figure figcaption { margin:13px auto 0; }
+@media(max-width:900px) { .application-feature>.application-object { width:calc(100% + 34px); margin-inline:-17px; } }
+@media(max-width:600px) {
+  .application-feature>.application-object { width:calc(100% + 44px); max-width:none; margin:12px -22px 20px; }
+  .application-system-figure { margin:20px 0 26px; border-radius:10px; }
+  .application-scene-topline { padding:14px 13px 0; font-size:8px; letter-spacing:.9px; }
+  .application-scene-topline>span:last-child { font-size:7px; letter-spacing:.8px; }
+  .application-hotspot { width:44px; height:44px; }
+  .application-hotspot>span { width:27px; height:27px; font-size:11px; }
+  .application-system-figure figcaption { padding:13px; display:block; }
+  .application-system-figure figcaption>span { max-width:none; font-size:12px; }
+  .application-system-figure figcaption>small { display:block; text-align:left; max-width:none; font-size:10px; margin-top:6px; }
+}
+@media(prefers-reduced-motion:reduce) { .scene-render>img { transition:none!important; } }

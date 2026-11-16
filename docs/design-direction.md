@@ -72,3 +72,10 @@ The application explorer keeps chip functions, company portfolio examples and fi
 ## Homepage composition refinement
 
 The current opening replaces the application collage with an original silicon core and a restrained orbital application map. Six linked worlds provide direct entries into the complete nine-world explorer. A larger headline, mint call to action and balanced spacing establish one visual focus; phone layouts stack naturally and keep all application links at least 44px high. Desktop hover/focus captions disappear at narrow widths to prevent crowding. The illustration is conceptual, not a supplier or shipment map. [Implementation and executed checks](homepage-refinement-report.md).
+
+
+## Studio 3D visual system — 16 November 2026
+
+Application illustrations now use a complete set of nine photorealistic 3D-style studio renders with recognizable industrial proportions, realistic glass/metal/polymer materials, soft light and near-black cycloramas. Four matching semiconductor renders extend the style through design, wafer fabrication, generic precision equipment and packaging. The homepage core uses the same silicon artwork. Earlier SVG object descriptions above record previous iterations.
+
+The visual assets are AI-generated conceptual illustrations, not product photographs, verified mechanical drawings or rotatable 3D models. Native callout buttons remain separate from the image, keep 44px minimum targets and update the sourced task explanations. Smaller visible pins reveal more of the artwork. The scene image and pins share one 3:2 frame; a restrained footer states the selected task and illustrative scope. Locally stored 768px/1536px WebP variants keep the complete 26-file set around 2.8 MB. [Prompt record and verification](studio-3d-report.md).

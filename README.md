@@ -6,9 +6,11 @@ The directory is a curated discovery catalog, not an exhaustive census. Financia
 
 ## What works
 
+- Thirteen detailed, AI-generated 3D-style studio renders across application and semiconductor business scenes, with local responsive WebP assets and accessible task controls. [Visual system and prompts](docs/studio-3d-report.md).
+
 - Nine application worlds, with deeper AI, EV and smart-infrastructure stories. Click a system task to connect chip functions, categories, cited company capabilities and economic questions. A separate geography lens distinguishes selected operating sites from headquarters context.
 
-- An application-led visual story: real-world systems → illustrated business models → the cash investigation → Micron’s changing annual picture → next research questions. Chapter navigation, original SVG scenes, guided controls and page-to-page continuation links keep the reading connected; motion respects reduced-motion preferences.
+- An application-led visual story: real-world systems → illustrated business models → the cash investigation → Micron’s changing annual picture → next research questions. Chapter navigation, studio-rendered conceptual scenes, guided controls and page-to-page continuation links keep the reading connected; motion respects reduced-motion preferences.
 
 - An eight-role orbital atlas, searchable company profiles, official website/IR links, financial-coverage filtering and pagination.
 - A resource library for industry data, filings, research, standards, open tools and policy; discovery destinations are separate from ingested evidence.

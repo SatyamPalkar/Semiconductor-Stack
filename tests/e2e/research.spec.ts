@@ -359,7 +359,7 @@ test('guided story connects business illustrations, cash chapters and the next q
   await page.getByRole('button', { name: 'Next: Fabricate', exact: true }).click();
   await expect(page.getByRole('tab', { name: 'Fabricate', exact: true })).toHaveAttribute('aria-selected','true');
   await expect(page.getByRole('tabpanel')).toContainText('Give the idea a physical form.');
-  await expect(page.getByRole('tabpanel').getByRole('img')).toHaveAttribute('aria-label','Illustrated wafer with an array of chip dies');
+  await expect(page.getByRole('tabpanel').getByRole('img')).toHaveAttribute('alt','3D render of an iridescent silicon wafer with an array of chip dies');
   await page.getByRole('tab', { name: 'Fabricate', exact: true }).focus();
   await page.keyboard.press('ArrowRight');
   await expect(page.getByRole('tab', { name: 'Equip', exact: true })).toBeFocused();
@@ -494,7 +494,10 @@ test('every application world has a working scene, tasks and contextual referenc
   for(const label of ['AI & cloud','Cars & mobility','Cities & construction','Robots & factories','Aircraft & aerospace','Design & simulation','Energy & grids','Health & medical','Connected life']) {
     await picker.getByRole('button',{name:new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))}).click();
     const story=page.getByRole('region',{name:'Selected application story'});
-    await expect(story.locator('.application-system-figure svg')).toHaveCount(1);
+    const render=story.locator('.application-system-figure img');
+    await expect(render).toBeVisible();
+    await expect(render).toHaveAttribute('alt', /^3D render/);
+    await expect.poll(()=>render.evaluate(el=>(el as HTMLImageElement).complete && (el as HTMLImageElement).naturalWidth>=768)).toBe(true);
     expect(await story.locator('.application-hotspot').count()).toBeGreaterThanOrEqual(2);
     await expect(story.locator('.application-task-detail')).toBeVisible();
     expect(await story.locator('.application-evidence>.application-reference-list a').count()).toBeGreaterThan(0);
@@ -562,7 +565,7 @@ test('application stories fit phones with accessible hotspots, readable values a
   await expect(story.locator('.application-company-examples')).toContainText('Analog Devices');
   await expect(story.locator('.application-task-detail')).toContainText('Network transceivers');
   await expect(story.locator('.application-access-note')).toContainText('HTTP 403');
-  expect(await page.locator('.application-signal').first().evaluate(el=>getComputedStyle(el).animationName)).toBe('none');
+  expect(await page.locator('.application-scene-stage img').evaluate(el=>getComputedStyle(el).animationName)).toBe('none');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
   await page.evaluate(()=>window.scrollTo(0,0));
   await page.screenshot({path:`${shots}/applications-infrastructure-mobile.png`,fullPage:true,animations:'disabled'});
@@ -610,5 +613,47 @@ test('the homepage application map stays usable across screen sizes and opens ea
     await page.keyboard.press('Enter');
     await expect(page).toHaveURL(new RegExp(`world=${id}`));
     await expect(page.getByRole('region', { name: 'Selected application story' }).getByRole('heading', { level:2 })).toHaveText(title);
+  }
+});
+
+test('studio renders load locally and application callouts remain usable on narrow screens', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion:'reduce' });
+  const worlds = [
+    ['ai-cloud','ai'], ['electric-mobility','car'], ['smart-infrastructure','city'],
+    ['automation','robot'], ['aviation','plane'], ['engineering-design','design'],
+    ['energy','energy'], ['healthcare','health'], ['connected-life','connected'],
+  ];
+  for (const width of [1440,768,393,320]) {
+    await page.setViewportSize({ width,height:1000 });
+    for (const [world,scene] of worlds) {
+      await page.goto(`/applications/?world=${world}`);
+      const stage=page.locator('.application-scene-stage');
+      await expect(stage.locator('picture')).toHaveAttribute('data-scene',scene);
+      const image=stage.getByRole('img');
+      await expect.poll(()=>image.evaluate(el=>(el as HTMLImageElement).complete && (el as HTMLImageElement).naturalWidth>0)).toBe(true);
+      expect(await image.evaluate(el=>new URL((el as HTMLImageElement).currentSrc).pathname)).toMatch(new RegExp(`/visuals/3d/${scene}-(768|1536)\\.webp$`));
+      const frame=await stage.boundingBox();
+      const boxes=await stage.getByRole('button').evaluateAll(els=>els.map(el=>{const r=el.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height};}));
+      for(const box of boxes) {
+        expect(box.width).toBeGreaterThanOrEqual(44);expect(box.height).toBeGreaterThanOrEqual(44);
+        expect(box.left).toBeGreaterThanOrEqual(frame!.x);expect(box.right).toBeLessThanOrEqual(frame!.x+frame!.width);
+        expect(box.top).toBeGreaterThanOrEqual(frame!.y);expect(box.bottom).toBeLessThanOrEqual(frame!.y+frame!.height);
+      }
+      for(let i=0;i<boxes.length;i++) for(let j=i+1;j<boxes.length;j++) {
+        const a=boxes[i],b=boxes[j];expect(a.right<=b.left||b.right<=a.left||a.bottom<=b.top||b.bottom<=a.top, `${world} at ${width}px: callouts ${i+1} and ${j+1} overlap`).toBe(true);
+      }
+      const last=stage.getByRole('button').last();
+      const label=(await last.getAttribute('aria-label'))!.replace('Explore task: ','');
+      await last.focus();await page.keyboard.press('Enter');
+      await expect(last).toHaveAttribute('aria-pressed','true');
+      await expect(page.locator('.application-system-figure figcaption')).toContainText(label);
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    }
+  }
+  await page.setViewportSize({width:1440,height:1000});await page.goto('/');
+  for(const name of ['Design','Fabricate','Equip','Connect']) {
+    await page.getByRole('tab',{name,exact:true}).click();
+    const image=page.getByRole('tabpanel').getByRole('img');
+    await expect.poll(()=>image.evaluate(el=>(el as HTMLImageElement).complete&&(el as HTMLImageElement).naturalWidth>0)).toBe(true);
   }
 });

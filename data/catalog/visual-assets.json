@@ -1,0 +1,279 @@
+{
+  "version": "studio-renders-v1",
+  "scope": "Illustrative visual assets only. These are raster renders, not interactive 3D models, product photographs, verified component layouts or financial evidence.",
+  "assets": [
+    {
+      "id": "car",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: production website application-scene image, landscape 3:2. Create a premium photorealistic 3D automotive product visualization for an editorial semiconductor atlas. Subject: a beautifully proportioned, immediately recognizable unbranded modern electric grand touring car, metallic graphite-silver paint, real sculpted body panels, sophisticated multi-spoke alloy wheels with rubber tires, glass windshield, headlights, mirrors, flush doors, realistic wheelbase. Full vehicle visible, front facing right, elevated three-quarter view revealing the near side and hood, not a flat side view. A very restrained mint-lit translucent lower sill reveals a tidy flat underfloor battery module; keep the rest of the car solid and realistically finished. Small discreet EV charging pedestal behind rear left, connected cable, optional subtle mint accent. Scene: isolated on a seamless near-black #06080c studio cyclorama, soft grounded contact shadow, background fades to uniform near-black at every edge. Materials: brushed aluminum, satin graphite, clear glass, rubber, accurate curved surfaces. Lighting: large softbox reflections, white key light, subtle mint rim light, elegant cinematic contrast, physically based ray-traced render quality, extremely detailed refined product photography, no cartoon or low-poly shapes, no neon wireframes. Composition: single centered car occupies 78 percent image width, comfortable margins, landscape 3:2 with all objects within central 80 percent, clean restrained studio floor. No people, brand logos, typography, labels, numbers, annotations, UI, badges, watermark, grids or decorative orbit lines. This is a conceptual product visual, not a real vehicle model or certified technical diagram.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/car-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 29736
+        },
+        {
+          "file": "/visuals/3d/car-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 91302
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: finished production website illustration, landscape 3:2. High-end photorealistic physically based 3D product render, refined industrial design editorial photography. Seamless near-black #06080c studio background and floor, background fading smoothly to black at all four edges. Soft white key light, subtle colored rim light, restrained soft reflections and grounded contact shadows. Realistic engineering proportions, fine materials, clean silhouettes, exceptional detail, no cartoon, no low-poly geometry, no line art, no holographic wireframes, no exaggerated bloom. Objects fully framed with comfortable 10 percent margins, centered balanced composition, occupy 75 to 80 percent frame. No people, brands, logos, text, letters, numbers, interface, badges, arrows, annotation, watermark or grids. Conceptual equipment only, not a named product or certified technical diagram. Subject: Three premium AI data-center server cabinets in three-quarter view, genuinely realistic black anodized aluminum chassis, smoked perforated mesh front doors revealing meticulously detailed rack servers, ventilation slots, visible removable accelerator tray near foreground exposing GPU heatsinks and copper heat pipes, neatly organized fiber cables and blue network ports, slim power-distribution unit. Cabinets differ subtly in depth for visual rhythm, all verticals plausible. Restrained ice-blue status LEDs and cool-blue rim light, expensive enterprise technology campaign photography, not simple blank black boxes.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/ai-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 60142
+        },
+        {
+          "file": "/visuals/3d/ai-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 215334
+        }
+      ]
+    },
+    {
+      "id": "city",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: finished production website illustration, landscape 3:2. High-end photorealistic physically based 3D product render, refined industrial design editorial photography. Seamless near-black #06080c studio background and floor, background fading smoothly to black at all four edges. Soft white key light, subtle colored rim light, restrained soft reflections and grounded contact shadows. Realistic engineering proportions, fine materials, clean silhouettes, exceptional detail, no cartoon, no low-poly geometry, no line art, no holographic wireframes, no exaggerated bloom. Objects fully framed with comfortable 10 percent margins, centered balanced composition, occupy 75 to 80 percent frame. No people, brands, logos, text, letters, numbers, interface, badges, arrows, annotation, watermark or grids. Conceptual equipment only, not a named product or certified technical diagram. Subject: Architectural visualization of a coherent small modern infrastructure district on one carefully detailed low plinth: two elegant glass-and-steel mid-rise office buildings with realistic curtain-wall facades and visible warm office interiors, landscaped street with young trees, lit pedestrian sidewalk, and one structurally plausible miniature cable-stayed road bridge extending right. Detailed concrete, brushed steel, reflective glazing, roadway markings without text. Bird's-eye three-quarter view, exquisite architectural maquette realism, restrained amber light from windows and warm-gold rim light; no sci-fi towers, no fantasy floating pieces.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/city-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 75016
+        },
+        {
+          "file": "/visuals/3d/city-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 260704
+        }
+      ]
+    },
+    {
+      "id": "robot",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: finished production website illustration, landscape 3:2. High-end photorealistic physically based 3D product render, refined industrial design editorial photography. Seamless near-black #06080c studio background and floor, background fading smoothly to black at all four edges. Soft white key light, subtle colored rim light, restrained soft reflections and grounded contact shadows. Realistic engineering proportions, fine materials, clean silhouettes, exceptional detail, no cartoon, no low-poly geometry, no line art, no holographic wireframes, no exaggerated bloom. Objects fully framed with comfortable 10 percent margins, centered balanced composition, occupy 75 to 80 percent frame. No people, brands, logos, text, letters, numbers, interface, badges, arrows, annotation, watermark or grids. Conceptual equipment only, not a named product or certified technical diagram. Subject: A mechanically plausible premium six-axis industrial robotic arm mounted on a bolted steel base, dark graphite cast-metal links and satin titanium joint housings with restrained violet accents. Clearly articulated shoulder, upper arm, elbow, forearm, wrist and practical two-finger gripper. Visible joint bearings, fasteners and neatly routed flexible cable harness. Arm reaches right toward a small machined metal part on a compact work fixture. Cinematic engineering product photography, subtle lavender rim light, real curved mechanical surfaces, accurate scale and convincing weight.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/robot-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 36136
+        },
+        {
+          "file": "/visuals/3d/robot-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 119148
+        }
+      ]
+    },
+    {
+      "id": "plane",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: finished production website scene, landscape 3:2. Premium photorealistic physically based 3D product render, refined industrial design editorial photography. Seamless near-black #06080c studio background and floor, softly fading to black at all four edges. Large soft white key light, subtle color rim, restrained reflections, grounded contact shadows. Realistic proportions and engineering geometry, fine detailed materials, recognizable clean silhouettes. All objects fully framed with comfortable 10 percent margins, centered and balanced, occupy 75 to 80 percent frame. No cartoon, low-poly geometry, wireframe drawings or glowing holograms. No people, real brands, logos, typography, letters, numbers, annotations, interface overlays, watermarks or grids. A conceptual visualization, not a named product or certified technical diagram. Subject: A beautiful complete realistic modern twin-engine commercial passenger jet aircraft, camera in elevated front three-quarter view, nose pointing right and slightly toward viewer, both swept wings clearly visible, smooth aerodynamic silver-white fuselage, correctly placed two turbofan engines underneath wings with visible dark fan blades, convincing cockpit glass, neat regular passenger windows, correct conventional tail fin and horizontal stabilizers, detailed wing-root fairings and flap seams, retracted landing gear. Subtle ice-blue rim light. Jet suspended just above dark studio floor with gentle shadow, no airport scene, no contrails. Physically convincing aircraft that immediately reads as a passenger airplane, not a flat silhouette.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/plane-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 23326
+        },
+        {
+          "file": "/visuals/3d/plane-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 71178
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: finished production website scene, landscape 3:2. Premium photorealistic physically based 3D product render, refined industrial design editorial photography. Seamless near-black #06080c studio background and floor, softly fading to black at all four edges. Large soft white key light, subtle color rim, restrained reflections, grounded contact shadows. Realistic proportions and engineering geometry, fine detailed materials, recognizable clean silhouettes. All objects fully framed with comfortable 10 percent margins, centered and balanced, occupy 75 to 80 percent frame. No cartoon, low-poly geometry, wireframe drawings or glowing holograms. No people, real brands, logos, typography, letters, numbers, annotations, interface overlays, watermarks or grids. A conceptual visualization, not a named product or certified technical diagram. Subject: A professional digital-engineering workstation: elegant detailed widescreen monitor on an aluminum stand, compact precision keyboard and CAD 3D controller on a minimal graphite desk platform, side workstation tower with finely perforated aluminum housing. The monitor shows a sophisticated 3D CAD model of a silver turbine assembly with an adjacent warm-toned mechanical sectional view, geometry only, no words or illegible pseudo-UI text. Three-quarter view, monitor angled toward viewer and screen fully visible. Satin aluminum, real glass, carefully detailed keys, soft violet rim light. Premium industrial-design product photography.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/design-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 58992
+        },
+        {
+          "file": "/visuals/3d/design-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 180544
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: finished production website scene, landscape 3:2. Premium photorealistic physically based 3D product render, refined industrial design editorial photography. Seamless near-black #06080c studio background and floor, softly fading to black at all four edges. Large soft white key light, subtle color rim, restrained reflections, grounded contact shadows. Realistic proportions and engineering geometry, fine detailed materials, recognizable clean silhouettes. All objects fully framed with comfortable 10 percent margins, centered and balanced, occupy 75 to 80 percent frame. No cartoon, low-poly geometry, wireframe drawings or glowing holograms. No people, real brands, logos, typography, letters, numbers, annotations, interface overlays, watermarks or grids. A conceptual visualization, not a named product or certified technical diagram. Subject: A meticulously rendered miniature renewable-energy installation: a realistic slender white wind turbine with three gracefully tapered aerodynamic blades and detailed nacelle, one bank of dark-blue photovoltaic solar panels in brushed-aluminum frames, and a compact industrial battery storage cabinet with vent details. All on one low refined engineering plinth, turbine behind near center, solar foreground left, storage foreground right. Correct physical proportions and real depth, attractive balanced composition, restrained warm-gold rim light. All blade tips fully visible, recognizable solar cells, no text or labels.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/energy-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 29788
+        },
+        {
+          "file": "/visuals/3d/energy-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 89844
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: premium production website 3D illustration, landscape 3:2. Photorealistic physically based studio product render with refined engineering detail, realistic surfaces, polished commercial visualization quality. Seamless near-black #06080c cyclorama, soft dark floor and grounded contact shadow, smooth fade to black at edges, large soft white key light, restrained colored rim light, no overexposure. Centered balanced composition, objects fully visible, comfortable 10 percent margin, occupy 75 percent frame. No brands, logos, letters, numbers, text, annotations, people, watermarks, interface overlays, flat vector shapes, cartoon style, wireframe objects or excessive glow. Conceptual illustrative equipment, not a named real product. Subject: A professional hospital bedside patient monitor on a well-engineered compact rolling medical cart, realistically molded white medical polymer with fine seams and tactile unlabeled controls. Dark glass screen displays ONLY restrained cyan and green ECG waveforms, no text, numbers or patient information. Attached generic blood-pressure cuff, a coiled ECG lead and pulse oximeter clip arranged neatly on cart shelf; realistic casters and stainless-steel adjustable stand. Three-quarter perspective from above, recognizable hospital equipment, clean sophisticated design. Soft cyan-green rim light, hygienic white materials, glossy screen glass.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/health-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 24296
+        },
+        {
+          "file": "/visuals/3d/health-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 66490
+        }
+      ]
+    },
+    {
+      "id": "connected",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: premium production website 3D illustration, landscape 3:2. Photorealistic physically based studio product render with refined engineering detail, realistic surfaces, polished commercial visualization quality. Seamless near-black #06080c cyclorama, soft dark floor and grounded contact shadow, smooth fade to black at edges, large soft white key light, restrained colored rim light, no overexposure. Centered balanced composition, objects fully visible, comfortable 10 percent margin, occupy 75 percent frame. No brands, logos, letters, numbers, text, annotations, people, watermarks, interface overlays, flat vector shapes, cartoon style, wireframe objects or excessive glow. Conceptual illustrative equipment, not a named real product. Subject: A premium coordinated set of connected everyday devices in a sculptural studio product composition: a generic modern smartphone standing upright at a slight three-quarter angle with dark reflective glass and faint abstract blue-green screen gradient; a round smartwatch in foreground with unmarked dark face and graphite silicone strap; a small elegant Wi-Fi router with two modest antennas and fine vent details behind to the right; compact earbuds in an open case. Satin aluminum, optical glass, finely detailed speaker grills, beautiful soft mint-blue edge lighting. All four objects form a deliberate balanced group on a dark low plinth, accurate human-scale consumer-product proportions.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/connected-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 22412
+        },
+        {
+          "file": "/visuals/3d/connected-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 72354
+        }
+      ]
+    },
+    {
+      "id": "chip",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: premium production website 3D illustration, landscape 3:2. Photorealistic physically based studio product render with refined engineering detail, realistic surfaces, polished commercial visualization quality. Seamless near-black #06080c cyclorama, soft dark floor and grounded contact shadow, smooth fade to black at edges, large soft white key light, restrained colored rim light, no overexposure. Centered balanced composition, objects fully visible, comfortable 10 percent margin, occupy 75 percent frame. No brands, logos, letters, numbers, text, annotations, people, watermarks, interface overlays, flat vector shapes, cartoon style, wireframe objects or excessive glow. Conceptual illustrative equipment, not a named real product. Subject: An exquisite macro engineering render of an advanced semiconductor processor package on a small precisely detailed dark PCB. A square bare silicon die with intricate iridescent etched circuit blocks and copper traces sits in a dark ceramic carrier, subtle surrounding tiny capacitors and gold contacts, elegantly beveled edges, realistic solder connections. Three-quarter elevated close-up view, the chip is large and centered, diamond-like perspective. Sapphire/violet iridescent silicon, tiny copper-gold details, subtle mint edge reflections, rich physical material depth. No printed markings anywhere. Render the geometry as a plausible generic semiconductor, not a specific manufacturer or chip architecture.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/chip-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 64804
+        },
+        {
+          "file": "/visuals/3d/chip-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 225076
+        }
+      ]
+    },
+    {
+      "id": "wafer",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: premium production website semiconductor scene, landscape 3:2. Photorealistic physically based 3D engineering studio render, exquisite microscopic and mechanical material detail, refined commercial technology imagery. Seamless near-black #06080c background, softly lit dark floor, restrained realistic contact shadow, soft white key lighting, elegant rim light, rich contrast. Centered balanced composition, object fully visible within central 80 percent, generous dark margins. No people, brands, logos, markings, text, letters, numbers, annotations, arrows, watermark, grid background, cartoon geometry, line art or holograms. This is a generic conceptual illustration, not a photograph of a manufacturer or a verified process diagram. Subject: A precisely rendered circular silicon wafer held at a subtle angle above a low dark aluminum carrier, close elevated three-quarter view. Wafer has a flawless round outline with one small orientation notch, fine rectilinear die grid with genuinely intricate tiny chip patterns, beautiful physically realistic iridescent diffraction changing from deep cobalt and teal to violet and restrained gold. Thin polished silicon edge and accurate circular curvature, delicate etched circuit detail readable at high resolution. The wafer is the dominant subject, occupies 75 percent image width, soft blue rim light, expensive semiconductor materials product photograph.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/wafer-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 102890
+        },
+        {
+          "file": "/visuals/3d/wafer-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 381608
+        }
+      ]
+    },
+    {
+      "id": "lithography",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: premium production website semiconductor scene, landscape 3:2. Photorealistic physically based 3D engineering studio render, exquisite microscopic and mechanical material detail, refined commercial technology imagery. Seamless near-black #06080c background, softly lit dark floor, restrained realistic contact shadow, soft white key lighting, elegant rim light, rich contrast. Centered balanced composition, object fully visible within central 80 percent, generous dark margins. No people, brands, logos, markings, text, letters, numbers, annotations, arrows, watermark, grid background, cartoon geometry, line art or holograms. This is a generic conceptual illustration, not a photograph of a manufacturer or a verified process diagram. Subject: A sophisticated generic semiconductor precision-processing instrument viewed in three-quarter perspective: meticulously engineered brushed-aluminum optical column and lens assembly mounted in a dark graphite industrial enclosure above a polished circular silicon wafer on a precision motion stage. Visible stage rails, plausible fasteners, insulated cabling and chamfered metal. A tiny restrained warm amber inspection spot on the wafer, NOT a giant laser beam or fantastical optical path. Refined conceptual manufacturing equipment visualization with beautiful mechanical depth and soft warm-gold rim light. The wafer and lower stage remain clearly visible; generic research-machine aesthetic, not a specific company's actual lithography system.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/lithography-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 44078
+        },
+        {
+          "file": "/visuals/3d/lithography-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 134358
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "generated_on": "2026-11-16",
+      "generator": "Built-in image_gen",
+      "kind": "AI-generated conceptual 3D-style studio illustration",
+      "prompt": "Use case: stylized-concept. Asset type: premium production website semiconductor scene, landscape 3:2. Photorealistic physically based 3D engineering studio render, exquisite microscopic and mechanical material detail, refined commercial technology imagery. Seamless near-black #06080c background, softly lit dark floor, restrained realistic contact shadow, soft white key lighting, elegant rim light, rich contrast. Centered balanced composition, object fully visible within central 80 percent, generous dark margins. No people, brands, logos, markings, text, letters, numbers, annotations, arrows, watermark, grid background, cartoon geometry, line art or holograms. This is a generic conceptual illustration, not a photograph of a manufacturer or a verified process diagram. Subject: An exquisite macro 3D technical product visualization of an advanced semiconductor package in a restrained exploded assembly. A square dark-green organic substrate with fine copper traces and a regular array of tiny solder balls underneath; immediately above it an interposer and two realistic silicon chiplets, with a softly floating machined metal heat spreader at the top. Layers are separated only enough to reveal their different materials and connections. Elevated three-quarter view, elegant realistic scale and perfectly aligned assembly, fine substrate texture, silicon sheen, copper micro-connections and silver metal. Lavender-violet rim light, dark studio floor, no diagram arrows or labels; illustrative generic assembly rather than a specific chip stack.",
+      "outputs": [
+        {
+          "file": "/visuals/3d/package-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 66348
+        },
+        {
+          "file": "/visuals/3d/package-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 240240
+        }
+      ]
+    }
+  ]
+}
